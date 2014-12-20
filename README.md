@@ -37,7 +37,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-TODO
+* `ember build --environment production`
+* `cp -a ./dist/. ./../bobisjan.github.com/`
+* `git add .`
+* `git commit -m "Update website"`
+* `git push -f origin master`
 
 ## Further Reading / Useful Links
 
