@@ -1,0 +1,24 @@
+<div class="site-wrapper-inner">
+  <div class="cover-container">
+    <div class="masthead clearfix">
+      <div class="inner">
+        <h3 class="masthead-brand">{{gravatar-image email=gravatar size="100" default="identicon" imgClass="img-circle"}}</h3>
+        <nav>
+          <ul class="nav masthead-nav">
+            {{#each link in model}}
+            <li><a {{bind-attr href=link.url}} target="_blank">{{link.title}}</a></li>
+            {{/each}}
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    {{ outlet }}
+
+    <div class="mastfoot">
+      <div class="inner">
+        <p>{{current-year}}, {{city}}</p>
+      </div>
+    </div>
+  </div>
+</div>
