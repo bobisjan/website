@@ -26,6 +26,7 @@ module.exports = function(environment) {
 
     about: {
       email: 'me@bobisjan.com',
+      company: 'User Technologies',
       city: 'Prague'
     },
 
