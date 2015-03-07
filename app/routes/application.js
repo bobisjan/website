@@ -13,7 +13,7 @@ var contact = {
     url: 'https://twitter.com/bobisjan'
   }, {
     title: 'LinkedIn',
-    url: 'https://www.linkedin.com/pub/jan-bobisud/76/802/273'
+    url: 'https://linkedin.com/in/bobisjan'
   }]
 };
 
