@@ -24,12 +24,6 @@ module.exports = function(environment) {
       'media-src': "'self'"
     },
 
-    about: {
-      email: 'me@bobisjan.com',
-      company: 'Usertech',
-      city: 'Prague'
-    },
-
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
