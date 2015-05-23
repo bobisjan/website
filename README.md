@@ -11,8 +11,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone git@github.com:bobisjan/bobisjan.git`
-* `cd bobisjan`
+* `git clone git@github.com:bobisjan/website.git`
+* `cd website`
 * `npm install`
 * `bower install`
 
