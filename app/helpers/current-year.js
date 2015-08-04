@@ -7,4 +7,6 @@ export function currentYear() {
   return year;
 }
 
+// https://github.com/ember-cli/ember-cli/issues/4364
+// export default Ember.Helper.helper(currentYear);
 export default Ember.Handlebars.makeBoundHelper(currentYear);

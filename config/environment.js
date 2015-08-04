@@ -19,7 +19,7 @@ module.exports = function(environment) {
       'script-src': "'self'",
       'font-src': "'self'",
       'connect-src': "'self'",
-      'img-src': "'self' https://www.gravatar.com",
+      'img-src': "'self' http://www.gravatar.com https://www.gravatar.com",
       'style-src': "'self'",
       'media-src': "'self'"
     },
