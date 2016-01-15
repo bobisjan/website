@@ -6,22 +6,11 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
-
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       }
-    },
-
-    contentSecurityPolicy: {
-      'default-src': "'none'",
-      'script-src': "'self'",
-      'font-src': "'self'",
-      'connect-src': "'self'",
-      'img-src': "'self' http://www.gravatar.com https://www.gravatar.com",
-      'style-src': "'self'",
-      'media-src': "'self'"
     },
 
     APP: {
