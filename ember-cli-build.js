@@ -2,16 +2,14 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, { });
+  var app = new EmberApp(defaults, {
+    sassOptions: {
+      extension: 'sass'
+    },
 
-  // import bootstrap
-  app.import(app.bowerDirectory + '/bootstrap/dist/js/bootstrap.js');
-  app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
-  app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css.map', {
-    destDir: 'assets'
-  });
-  app.import(app.bowerDirectory + '/bootstrap/dist/fonts/glyphicons-halflings-regular.woff', {
-    destDir: 'fonts'
+    'ember-cli-bootstrap-sassy': {
+      js: false
+    }
   });
 
   return app.toTree();
