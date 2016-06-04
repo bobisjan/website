@@ -11,7 +11,7 @@ export default Ember.Component.extend({
   retina: false,
   hash: null,
 
-  src: Ember.computed('email', 'imageSize', 'default', 'hash', function() {
+  src: Ember.computed('imageSize', 'default', 'hash', function() {
     var imageSize = this.get('imageSize');
     var def = this.get('defaultImage');
     var secure = this.get('secure');
