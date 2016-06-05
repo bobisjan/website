@@ -16,6 +16,22 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    serviceWorker: {
+      enabled: true,
+      debug: environment !== 'production',
+      excludePaths: [
+        'assets/failed.png',
+        'assets/passed.png',
+        'assets/test*',
+        'browserconfig.xml',
+        'crossdomain.xml',
+        new RegExp(/.\.map$/),
+        'robots.txt',
+        'testem.js',
+        'tests/index.html'
+      ]
     }
   };
 
