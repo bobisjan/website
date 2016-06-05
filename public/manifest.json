@@ -1,5 +1,10 @@
 {
- "name": "App",
+ "name": "bobisjan.com",
+ "short_name": "bobisjan",
+ "start_url": "/",
+ "display": "fullscreen",
+ "background_color": "#fff",
+ "theme_color": "#fff",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
