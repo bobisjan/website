@@ -21,7 +21,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember server`
+* `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
@@ -37,15 +37,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-* `ember build --environment production`
-* `cp -a ./dist/. ./../bobisjan.github.com/`
-* `cd ./../bobisjan.github.com`
-* `git add .`
-* `git commit -m "Update website"`
-* `git push -f origin master`
 
 ## Further Reading / Useful Links
 
