@@ -1,7 +1,7 @@
 {
   "name": "bobisjan",
   "version": "0.0.0",
-  "description": "Source of personal website",
+  "description": "Personal website",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -10,14 +10,17 @@
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "postinstall": "bower install",
+    "heroku-postbuild": "ember build --environment=production"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/bobisjan/website.git"
   },
   "engines": {
-    "node": "6.3.0"
+    "node": "6.3.0",
+    "npm": "3.10.3"
   },
   "author": "Jan Bobisud",
   "license": "MIT",
@@ -45,5 +48,8 @@
     "ember-load-initializers": "0.5.1",
     "ember-resolver": "2.0.3",
     "loader.js": "4.0.10"
+  },
+  "dependencies": {
+    "fastboot-app-server": "1.0.0-beta.2"
   }
 }
