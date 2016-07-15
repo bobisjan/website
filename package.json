@@ -11,7 +11,7 @@
     "build": "ember build",
     "start": "ember serve",
     "test": "ember test",
-    "postinstall": "./node_modules/.bin/bower install",
+    "postinstall": "bower install",
     "heroku-postbuild": "ember build --environment=production"
   },
   "repository": {
