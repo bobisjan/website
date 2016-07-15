@@ -25,6 +25,7 @@
   "author": "Jan Bobisud",
   "license": "MIT",
   "devDependencies": {
+    "bower": "1.7.9",
     "broccoli-asset-rev": "2.4.4",
     "broccoli-serviceworker": "0.1.0",
     "ember-ajax": "2.4.1",
