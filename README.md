@@ -1,5 +1,7 @@
 # bobisjan.com
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bobisjan/website.svg)](https://greenkeeper.io/)
+
 Source for personal website.
 
 ## Prerequisites
