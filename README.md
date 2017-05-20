@@ -9,7 +9,7 @@ Source for personal website.
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
+* [Node.js](https://nodejs.org/) (with Yarn)
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
@@ -17,7 +17,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone git@github.com:bobisjan/website.git`
 * `cd website`
-* `npm install`
+* `yarn install`
 
 ## Running / Development
 
