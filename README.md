@@ -1,4 +1,6 @@
-# bobisjan.com
+# @bobisjan/website
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/bobisjan/website.svg)](https://greenkeeper.io/)
 
 Source for personal website.
 
@@ -6,10 +8,9 @@ Source for personal website.
 
 You will need the following things properly installed on your computer.
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
 ## Installation
@@ -17,7 +18,6 @@ You will need the following things properly installed on your computer.
 * `git clone git@github.com:bobisjan/website.git`
 * `cd website`
 * `npm install`
-* `bower install`
 
 ## Running / Development
 
@@ -38,10 +38,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
+### Deploying
+
+Specify what it takes to deploy your app.
+
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
+* [ember-cli](https://ember-cli.com/)
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
