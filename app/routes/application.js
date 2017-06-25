@@ -6,7 +6,7 @@ export default Ember.Route.extend({
     return {
       name: 'Jan Bobisud',
       city: 'Prague',
-      company: 'Usertech',
+      company: 'Zonky',
       gravatar: '7a468faec3b45150e655fb60acd359d8',
       links: [{
         title: 'GitHub',
