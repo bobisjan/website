@@ -49,6 +49,6 @@
     "loader.js": "4.4.0"
   },
   "dependencies": {
-    "fastboot-app-server": "1.0.0-rc.5"
+    "fastboot-app-server": "2.0.0"
   }
 }
