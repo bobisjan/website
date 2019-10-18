@@ -45,7 +45,7 @@
     "ember-load-initializers": "1.0.0",
     "ember-percy": "1.2.11",
     "ember-resolver": "4.1.0",
-    "ember-source": "2.13.2",
+    "ember-source": "3.13.3",
     "loader.js": "4.4.0"
   },
   "dependencies": {
