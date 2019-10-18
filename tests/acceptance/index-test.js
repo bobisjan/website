@@ -1,13 +1,16 @@
-import { test } from 'qunit';
-import moduleForAcceptance from 'bobisjan/tests/helpers/module-for-acceptance';
+import { module, test } from 'qunit';
+import { setupApplicationTest } from 'ember-qunit';
+import { visit, currentURL } from '@ember/test-helpers';
+import { percySnapshot } from 'ember-percy';
 
-moduleForAcceptance('Acceptance | index');
+module('Acceptance | index', function(hooks) {
+  setupApplicationTest(hooks);
 
-test('visiting index', function(assert) {
-  visit('/');
+  test('visiting index', async function(assert) {
+    await visit('/');
 
-  andThen(function() {
     assert.equal(currentURL(), '/');
-    percySnapshot('index');
+
+    await percySnapshot('index');
   });
 });

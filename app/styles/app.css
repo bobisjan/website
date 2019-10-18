@@ -1,40 +1,33 @@
-$black: #000;
-$white: #fff;
-$grey: #333;
-$grey-light: #666;
-
 html,
 body {
-  background-color: $white;
+  background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   height: 100%;
 }
 
 body {
-  color: $grey;
+  color: #333;
   text-align: center;
+}
 
-  > .ember-view {
-    display: table;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
+.site-wrapper {
+  display: table;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
 }
 
-.btn-default {
-  &,
-  &:hover,
-  &:focus {
-    background-color: $white;
-    border: 1px solid $white;
-    color: $grey;
-    text-shadow: none;
-  }
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #333;
+  text-shadow: none;
 }
 
 .site-wrapper-inner {
@@ -54,11 +47,11 @@ a {
 .masthead-brand {
   margin-bottom: 10px;
   margin-top: 10px;
+}
 
-  img {
-    height: 50px;
-    width: 50px;
-  }
+.masthead-brand img {
+  height: 50px;
+  width: 50px;
 }
 
 .masthead-nav {
@@ -83,26 +76,24 @@ a {
 
 .masthead-nav > li > a {
   border-bottom: 2px solid transparent;
-  color: $black;
+  color: #000;
   font-size: 16px;
   font-weight: bold;
   padding-left: 0;
   padding-right: 0;
-
-  &:hover,
-  &:focus {
-    background-color: transparent;
-    border-bottom-color: $grey;
-  }
 }
 
-.masthead-nav > .active > a {
-  &,
-  &:hover,
-  &:focus {
-    border-bottom-color: $white;
-    color: $white;
-  }
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #333;
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  border-bottom-color: #fff;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -117,15 +108,15 @@ a {
 
 .cover {
   padding: 0 20px;
+}
 
-  .btn-lg {
-    font-weight: bold;
-    padding: 10px 20px;
-  }
+.cover .btn-lg {
+  font-weight: bold;
+  padding: 10px 20px;
 }
 
 .mastfoot {
-  color: $grey-light;
+  color: #666;
 }
 
 @media (min-width: 768px) {
