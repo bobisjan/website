@@ -1,24 +1,26 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
 
-export default Ember.Route.extend({
-
+export default class ApplicationRoute extends Route {
   model() {
     return {
       name: 'Jan Bobisud',
       city: 'Prague',
       company: 'Zonky',
       gravatar: '7a468faec3b45150e655fb60acd359d8',
-      links: [{
-        title: 'GitHub',
-        url: 'https://github.com/bobisjan'
-      }, {
-        title: 'Twitter',
-        url: 'https://twitter.com/bobisjan'
-      }, {
-        title: 'LinkedIn',
-        url: 'https://linkedin.com/in/bobisjan'
-      }]
+      links: [
+        {
+          title: 'GitHub',
+          url: 'https://github.com/bobisjan',
+        },
+        {
+          title: 'Twitter',
+          url: 'https://twitter.com/bobisjan',
+        },
+        {
+          title: 'LinkedIn',
+          url: 'https://linkedin.com/in/bobisjan',
+        },
+      ],
     };
   }
-
-});
+}

@@ -1,19 +1,16 @@
 {
   "name": "bobisjan",
   "stack": "heroku-18",
-  "scripts": {
-  },
+  "scripts": {},
   "env": {
-    "NPM_CONFIG_PRODUCTION": "false"
+    "YARN_PRODUCTION": "false"
   },
   "formation": {
     "web": {
       "quantity": 1
     }
   },
-  "addons": [
-
-  ],
+  "addons": [],
   "buildpacks": [
     {
       "url": "heroku/nodejs"

@@ -1,10 +1,10 @@
-import Ember from 'ember';
+import { helper } from '@ember/component/helper';
 
-var year;
+let year;
 
 export function currentYear() {
-  year = year || (new Date()).getFullYear();
+  year = year || new Date().getFullYear();
   return year;
 }
 
-export default Ember.Helper.helper(currentYear);
+export default helper(currentYear);
