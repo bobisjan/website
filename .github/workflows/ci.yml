@@ -24,6 +24,8 @@ jobs:
         run: yarn lint:js
       - name: lint:hbs
         run: yarn lint:hbs
+      - name: lint:css
+        run: yarn lint:css
 
   test:
     name: Tests
