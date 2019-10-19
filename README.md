@@ -1,6 +1,6 @@
 # @bobisjan/website
 
-[![Build Status](https://travis-ci.org/bobisjan/website.svg?branch=master)](https://travis-ci.org/bobisjan/website)
+[![Actions Status](https://github.com/bobisjan/website/workflows/ci/badge.svg)](https://github.com/bobisjan/website/actions)
 [![dependencies Status](https://david-dm.org/bobisjan/website/status.svg)](https://david-dm.org/bobisjan/website)
 [![devDependencies Status](https://david-dm.org/bobisjan/website/dev-status.svg)](https://david-dm.org/bobisjan/website?type=dev)
 

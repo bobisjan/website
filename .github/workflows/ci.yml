@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
+
+jobs:
+  lint:
+    name: Linting
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.16
+      - name: install yarn
+        run: npm install -g yarn
+      - name: install dependencies
+        run: yarn install
+      - name: lint:js
+        run: yarn lint:js
+      - name: lint:hbs
+        run: yarn lint:hbs
+
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+
+    env:
+      PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.16
+      - name: install yarn
+        run: npm install -g yarn
+      - name: install dependencies
+        run: yarn install
+      - name: yarn test
+        run: yarn test
