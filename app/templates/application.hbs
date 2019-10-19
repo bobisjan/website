@@ -1,36 +1,25 @@
-<div class="site-wrapper">
-  <div class="site-wrapper-inner">
-    <div class="cover-container">
-      <div class="masthead clearfix">
-        <div class="inner">
-          <h3 class="masthead-brand">
-            <Gravatar
-              @hash={{this.model.gravatar}}
-              @size={{100}}
-              alt="avatar"
-            />
-          </h3>
-          <nav>
-            <ul class="nav masthead-nav">
-              {{#each this.model.links as |link|}}
-                <li>
-                  <a href={{link.url}} target="_blank" rel="noopener">
-                    {{link.title}}
-                  </a>
-                </li>
-              {{/each}}
-            </ul>
-          </nav>
-        </div>
-      </div>
+<div class="cover-container">
+  <header class="masthead">
+    <h3 class="masthead-brand">
+      <Gravatar
+        @hash={{this.model.gravatar}}
+        @size={{50}}
+        alt="avatar"
+      />
+    </h3>
 
-      {{outlet}}
+    <nav class="masthead-nav">
+      {{#each this.model.links as |link|}}
+        <a href={{link.url}} class="nav-link" target="_blank" rel="noopener">
+          {{link.title}}
+        </a>
+      {{/each}}
+    </nav>
+  </header>
 
-      <div class="mastfoot">
-        <div class="inner">
-          <p>{{current-year}}, {{this.model.city}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  {{outlet}}
+
+  <footer class="mastfoot">
+    <p>{{current-year}}, {{this.model.city}}</p>
+  </footer>
 </div>
