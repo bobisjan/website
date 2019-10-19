@@ -1,25 +1,10 @@
 <div class="cover-container">
-  <header class="masthead">
-    <h3 class="masthead-brand">
-      <Gravatar
-        @hash={{this.model.gravatar}}
-        @size={{50}}
-        alt="avatar"
-      />
-    </h3>
-
-    <nav class="masthead-nav">
-      {{#each this.model.links as |link|}}
-        <a href={{link.url}} class="nav-link" target="_blank" rel="noopener">
-          {{link.title}}
-        </a>
-      {{/each}}
-    </nav>
-  </header>
+  <Header
+    @gravatar={{this.model.gravatar}}
+    @links={{this.model.links}}
+  />
 
   {{outlet}}
 
-  <footer class="mastfoot">
-    <p>{{current-year}}, {{this.model.city}}</p>
-  </footer>
+  <Footer @city={{this.model.city}} />
 </div>
