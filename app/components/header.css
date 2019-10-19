@@ -1,0 +1,45 @@
+.masthead {
+  margin-bottom: auto;
+}
+
+.masthead-brand {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.masthead-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.masthead-nav .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: #000;
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+  text-decoration: none;
+}
+
+.masthead-nav .nav-link:hover,
+.masthead-nav .nav-link:focus {
+  border-bottom-color: #333;
+}
+
+.masthead-nav .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
