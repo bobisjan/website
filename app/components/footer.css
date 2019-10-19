@@ -1,0 +1,10 @@
+.mastfoot {
+  margin-top: auto;
+  text-align: center;
+  color: #666;
+}
+
+.mastfoot p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
