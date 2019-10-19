@@ -1,6 +1,7 @@
 # @bobisjan/website
 
-[![Actions Status](https://github.com/bobisjan/website/workflows/ci/badge.svg)](https://github.com/bobisjan/website/actions)
+[![Actions Status](https://github.com/bobisjan/website/workflows/CI/badge.svg)](https://github.com/bobisjan/website/actions)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/bobisjan/website)
 [![dependencies Status](https://david-dm.org/bobisjan/website/status.svg)](https://david-dm.org/bobisjan/website)
 [![devDependencies Status](https://david-dm.org/bobisjan/website/dev-status.svg)](https://david-dm.org/bobisjan/website?type=dev)
 
