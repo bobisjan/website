@@ -1,28 +1,15 @@
-import Component from '@ember/component';
-import { computed } from '@ember/object';
+import Component from '@glimmer/component';
 
 export default class Gravatar extends Component {
-  tagName = '';
-
-  size = 250;
-
-  secure = true;
-
-  retina = false;
-
-  hash = null;
-
-  @computed('s', 'default', 'hash')
   get src() {
-    let { s, secure, hash } = this;
-    let protocol = secure ? 'https' : 'http';
+    let { s } = this;
+    let { hash } = this.args;
 
-    return `${protocol}://www.gravatar.com/avatar/${hash}?s=${s}`;
+    return `https://www.gravatar.com/avatar/${hash}?s=${s}`;
   }
 
-  @computed('size', 'retina')
   get s() {
-    let { size, retina } = this;
+    let { retina, size = 250 } = this.args;
 
     return retina ? size * 2 : size;
   }
