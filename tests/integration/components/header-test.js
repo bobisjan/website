@@ -18,7 +18,7 @@ module('Integration | Component | header', function(hooks) {
 
     assert.equal(
       this.element.querySelector('img').src,
-      'https://www.gravatar.com/avatar/my-gravatar?s=50'
+      'https://www.gravatar.com/avatar/my-gravatar?s=100'
     );
 
     let link = this.element.querySelector('a');
