@@ -1,10 +1,10 @@
 <div local-class="cover-container">
   <Header
-    @gravatar={{this.model.gravatar}}
-    @links={{this.model.links}}
+    @gravatar={{@model.gravatar}}
+    @links={{@model.links}}
   />
 
   {{outlet}}
 
-  <Footer @city={{this.model.city}} />
+  <Footer @city={{@model.city}} />
 </div>
