@@ -4,13 +4,12 @@
       @hash={{@gravatar}}
       @size={{50}}
       @retina={{true}}
-      alt="avatar"
     />
   </h3>
 
   <nav local-class="masthead-nav">
     {{#each @links as |link|}}
-      <a href={{link.url}} local-class="nav-link" target="_blank" rel="noopener">
+      <a href={{link.url}} local-class="nav-link" target="_blank" rel="noopener noreferrer">
         {{link.title}}
       </a>
     {{/each}}
