@@ -10,15 +10,13 @@ module.exports = {
   plugins: ['ember'],
   extends: [
     'eslint:recommended',
-    'plugin:ember/recommended',
+    'plugin:ember/octane',
     'plugin:prettier/recommended',
   ],
   env: {
     browser: true,
   },
-  rules: {
-    'ember/no-jquery': 'error',
-  },
+  rules: {},
   overrides: [
     // node files
     {
