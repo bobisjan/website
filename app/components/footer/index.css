@@ -1,7 +1,7 @@
 .mastfoot {
   margin-top: auto;
   text-align: center;
-  color: #666;
+  color: var(--color-grey-6);
 }
 
 .mastfoot p {

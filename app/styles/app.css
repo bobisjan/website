@@ -1,3 +1,10 @@
+:root {
+  --color-white: #fff;
+  --color-grey-6: #666;
+  --color-grey-3: #333;
+  --color-black: #000;
+}
+
 *,
 *::before,
 *::after {
@@ -6,13 +13,27 @@
 
 html,
 body {
-  background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   height: 100%;
 }
 
 body {
   display: flex;
-  color: #333;
+  background-color: var(--color-white);
+  color: var(--color-grey-3);
   margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-grey-3);
+    color: var(--color-white);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--color-white);
+    color: var(--color-grey-3);
+  }
 }
