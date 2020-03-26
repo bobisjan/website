@@ -3,10 +3,10 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | header', function(hooks) {
+module('Integration | Component | header', function (hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
+  test('it renders', async function (assert) {
     this.set('gravatar', 'my-gravatar');
     this.set('links', [
       { url: 'https://example.com/my-link', title: 'my-link' },
