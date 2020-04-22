@@ -5103,10 +5103,10 @@ ember-compatibility-helpers@^1.1.2:
     ember-cli-version-checker "^2.1.1"
     semver "^5.4.1"
 
-ember-css-modules@^1.3.0-beta.2:
-  version "1.3.0-beta.2"
-  resolved "https://registry.yarnpkg.com/ember-css-modules/-/ember-css-modules-1.3.0-beta.2.tgz#8669497dfb6db03308ec6efc10defa228e463ff8"
-  integrity sha512-EOq2cdw+NXXNArZg1dL7Zs0zFFWHrH+F7MiyK+GlvbL69pM517RZ7Kq4vo9sRjdeKmwQjWRVRT7f1CnfEGcgfA==
+ember-css-modules@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/ember-css-modules/-/ember-css-modules-1.3.0.tgz#f279a3c069bd1e00d1cf7ad6c741a9694a974d49"
+  integrity sha512-aaVp3QiYE1TpWjBD8xPNMG2rQ+kxZpu5PA1KuX3krMydDExhA2JFGImIFIaHOEzCmDhN26MLxANHPecWpAwzkQ==
   dependencies:
     broccoli-bridge "^1.0.0"
     broccoli-concat "^3.2.2"
