@@ -63,10 +63,14 @@
     "fastboot-app-server": "2.0.0"
   },
   "engines": {
-    "node": "10.16.x",
+    "node": "12.18.x",
     "yarn": "1.x"
   },
   "ember": {
     "edition": "octane"
+  },
+  "volta": {
+    "node": "12.18.0",
+    "yarn": "1.22.4"
   }
 }

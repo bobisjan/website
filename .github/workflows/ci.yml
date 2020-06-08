@@ -13,11 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 10.16
-      - name: install yarn
-        run: npm install -g yarn
+      - uses: volta-cli/action@v1
       - name: install dependencies
         run: yarn install
       - name: lint:js
@@ -36,11 +32,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 10.16
-      - name: install yarn
-        run: npm install -g yarn
+      - uses: volta-cli/action@v1
       - name: install dependencies
         run: yarn install
       - name: yarn test
