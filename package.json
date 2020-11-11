@@ -60,7 +60,7 @@
     "stylelint-prettier": "^1.1.2"
   },
   "dependencies": {
-    "fastboot-app-server": "2.0.0"
+    "fastboot-app-server": "3.0.0"
   },
   "engines": {
     "node": "12.18.x",
