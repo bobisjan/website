@@ -10,7 +10,7 @@ module.exports = {
   plugins: ['ember'],
   extends: [
     'eslint:recommended',
-    'plugin:ember/octane',
+    'plugin:ember/recommended',
     'plugin:prettier/recommended',
   ],
   env: {
