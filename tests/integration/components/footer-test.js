@@ -11,8 +11,6 @@ module('Integration | Component | footer', function (hooks) {
       <Footer @city={{"Prague"}} />
     `);
 
-    let year = new Date().getFullYear();
-
-    assert.equal(this.element.textContent.trim(), `${year}, Prague`);
+    assert.dom().hasText(`${new Date().getFullYear()}, Prague`);
   });
 });

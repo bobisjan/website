@@ -10,6 +10,8 @@ module('Acceptance | index', function (hooks) {
     await visit('/');
 
     assert.equal(currentURL(), '/');
+    assert.dom('h1').hasText('Jan Bobisud');
+    assert.dom('p').hasText('Development at Zonky.');
 
     await percySnapshot('index');
   });

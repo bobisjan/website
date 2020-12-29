@@ -13,7 +13,7 @@ module('Integration | Component | gravatar', function (hooks) {
       <Gravatar @hash={{this.hash}} />
     `);
 
-    assert.equal(this.element.querySelector('img').nodeName, 'IMG');
-    assert.equal(this.element.innerText.trim(), '');
+    assert.dom('img').exists();
+    assert.dom().hasText('');
   });
 });

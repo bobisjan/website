@@ -16,14 +16,13 @@ module('Integration | Component | header', function (hooks) {
       <Header @gravatar={{this.gravatar}} @links={{this.links}} />
     `);
 
-    assert.equal(
-      this.element.querySelector('img').src,
-      'https://www.gravatar.com/avatar/my-gravatar?s=100'
-    );
+    assert.dom('img').exists();
+    assert
+      .dom('img')
+      .hasAttribute('src', 'https://www.gravatar.com/avatar/my-gravatar?s=100');
 
-    let link = this.element.querySelector('a');
-
-    assert.equal(link.href, 'https://example.com/my-link');
-    assert.equal(link.textContent.trim(), 'my-link');
+    assert.dom('a').exists();
+    assert.dom('a').hasAttribute('href', 'https://example.com/my-link');
+    assert.dom('a').hasText('my-link');
   });
 });
