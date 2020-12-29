@@ -11,6 +11,6 @@ module('Integration | Helper | current-year', function (hooks) {
       {{current-year}}
     `);
 
-    assert.equal(this.element.textContent.trim(), new Date().getFullYear());
+    assert.dom().hasText(`${new Date().getFullYear()}`);
   });
 });
