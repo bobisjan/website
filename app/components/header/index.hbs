@@ -1,5 +1,5 @@
-<header local-class="masthead">
-  <h3 local-class="masthead-brand">
+<header class="masthead">
+  <h3 class="masthead-brand">
     <Gravatar
       @hash={{@gravatar}}
       @size={{50}}
@@ -7,9 +7,9 @@
     />
   </h3>
 
-  <nav local-class="masthead-nav">
+  <nav class="masthead-nav">
     {{#each @links as |link|}}
-      <a href={{link.url}} local-class="nav-link" target="_blank" rel="noopener noreferrer">
+      <a href={{link.url}} class="nav-link" target="_blank" rel="noopener noreferrer">
         {{link.title}}
       </a>
     {{/each}}
