@@ -47,7 +47,7 @@
     "ember-percy": "^1.6.0",
     "ember-qunit": "^4.6.0",
     "ember-resolver": "^8.0.2",
-    "ember-source": "~3.25.3",
+    "ember-source": "~3.27.3",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-ember": "^10.2.0",
