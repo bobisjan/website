@@ -7,18 +7,6 @@ on:
   pull_request: {}
 
 jobs:
-  lint:
-    name: Linting
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v1
-      - uses: volta-cli/action@v1
-      - run: yarn install
-      - run: yarn lint:js
-      - run: yarn lint:hbs
-      - run: yarn lint:css
-
   test:
     name: Tests
     runs-on: ubuntu-latest

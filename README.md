@@ -19,7 +19,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-- `git clone git@github.com:bobisjan/website.git`
+- `git clone git@github.com:bobisjan/website.git` this repository
 - `cd website`
 - `yarn install`
 
@@ -27,10 +27,11 @@ You will need the following things properly installed on your computer.
 
 - `yarn start`
 - Visit your app at [http://localhost:4200](http://localhost:4200).
+- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
 ### Code Generators
 
-Make use of the many generators for code, try `yarn ember help generate` for more details
+Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
@@ -39,14 +40,12 @@ Make use of the many generators for code, try `yarn ember help generate` for mor
 
 ### Linting
 
-- `yarn lint:hbs`
-- `yarn lint:js`
-- `yarn lint:js --fix`
+- `yarn lint`
+- `yarn lint:fix`
 
 ### Building
 
-- `yarn build` (development)
-- `yarn build --environment production` (production)
+- `yarn build`
 
 ### Deploying
 
@@ -54,7 +53,7 @@ Heroku is used to deploy this app.
 
 ## Further Reading / Useful Links
 
-- [ember.js](http://emberjs.com/)
+- [ember.js](https://emberjs.com/)
 - [ember-cli](https://ember-cli.com/)
 - Development Browser Extensions
   - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
