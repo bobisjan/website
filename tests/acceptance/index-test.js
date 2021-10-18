@@ -9,7 +9,7 @@ module('Acceptance | index', function (hooks) {
   test('visiting index', async function (assert) {
     await visit('/');
 
-    assert.equal(currentURL(), '/');
+    assert.strictEqual(currentURL(), '/');
     assert.dom('h1').hasText('Jan Bobisud');
     assert.dom('p').hasText('Development at Zonky.');
 
