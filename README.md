@@ -2,8 +2,6 @@
 
 [![Actions Status](https://github.com/bobisjan/website/workflows/CI/badge.svg)](https://github.com/bobisjan/website/actions)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/bobisjan/website)
-[![dependencies Status](https://david-dm.org/bobisjan/website/status.svg)](https://david-dm.org/bobisjan/website)
-[![devDependencies Status](https://david-dm.org/bobisjan/website/dev-status.svg)](https://david-dm.org/bobisjan/website?type=dev)
 
 Source for personal website.
 
@@ -12,8 +10,7 @@ Source for personal website.
 You will need the following things properly installed on your computer.
 
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/)
-- [Yarn](https://yarnpkg.com/)
+- [Node.js](https://nodejs.org/) (with npm)
 - [Ember CLI](https://ember-cli.com/)
 - [Google Chrome](https://google.com/chrome/)
 
@@ -21,11 +18,11 @@ You will need the following things properly installed on your computer.
 
 - `git clone git@github.com:bobisjan/website.git` this repository
 - `cd website`
-- `yarn install`
+- `npm install`
 
 ## Running / Development
 
-- `yarn start`
+- `npm start`
 - Visit your app at [http://localhost:4200](http://localhost:4200).
 - Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
@@ -35,17 +32,17 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Running Tests
 
-- `yarn test`
-- `yarn test --server`
+- `npm run test`
+- `npm run test --server`
 
 ### Linting
 
-- `yarn lint`
-- `yarn lint:fix`
+- `npm run lint`
+- `npm run lint:fix`
 
 ### Building
 
-- `yarn build`
+- `npm run build`
 
 ### Deploying
 

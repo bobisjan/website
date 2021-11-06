@@ -17,5 +17,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2.4.0
       - uses: volta-cli/action@v1
-      - run: yarn install
-      - run: yarn test
+      - run: npm ci
+      - run: npm run test
