@@ -1,6 +1,6 @@
 {
   "name": "bobisjan",
-  "stack": "heroku-18",
+  "stack": "heroku-20",
   "scripts": {},
   "env": {
     "YARN_PRODUCTION": "false"
