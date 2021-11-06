@@ -23,8 +23,7 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
-    "test:ember": "ember test",
-    "heroku-postbuild": "ember build --environment=production"
+    "test:ember": "ember test"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
@@ -76,14 +75,14 @@
     "fastboot-app-server": "3.0.0"
   },
   "engines": {
-    "node": "14.18.x",
+    "node": "16.x",
     "yarn": "1.x"
   },
   "ember": {
     "edition": "octane"
   },
   "volta": {
-    "node": "14.18.1",
-    "yarn": "1.22.10"
+    "node": "16.3.0",
+    "yarn": "1.22.11"
   }
 }
