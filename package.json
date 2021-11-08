@@ -29,8 +29,8 @@
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
-    "@embroider/compat": "^0.43.3",
-    "@embroider/core": "^0.43.3",
+    "@embroider/compat": "^0.47.1",
+    "@embroider/core": "^0.47.1",
     "@embroider/webpack": "^0.43.3",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
