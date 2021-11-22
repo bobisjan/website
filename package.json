@@ -73,7 +73,7 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^6.0.0",
     "stylelint-prettier": "^2.0.0",
-    "webpack": "^5.64.1"
+    "webpack": "^5.64.2"
   },
   "dependencies": {
     "fastboot-app-server": "3.0.0"
