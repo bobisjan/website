@@ -13,6 +13,7 @@ module.exports = function (defaults) {
     staticAddonTestSupportTrees: true,
     staticAddonTrees: true,
     staticHelpers: true,
+    staticModifiers: true,
     staticComponents: true,
   });
 };
