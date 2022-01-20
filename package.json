@@ -27,6 +27,8 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/plugin-proposal-decorators": "^7.16.7",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
     "@embroider/compat": "^1.0.0",
@@ -34,7 +36,6 @@
     "@embroider/webpack": "^1.0.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
-    "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.3.0",
     "ember-cli": "~4.1.0",
@@ -55,7 +56,7 @@
     "ember-source": "~4.1.0",
     "ember-template-lint": "^4.0.0",
     "ember-template-lint-plugin-prettier": "^4.0.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-ember": "^10.5.8",
     "eslint-plugin-node": "^11.1.0",
