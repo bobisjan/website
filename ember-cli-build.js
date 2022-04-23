@@ -7,6 +7,10 @@ const compat = require('@embroider/compat');
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     hinting: false,
+
+    prember: {
+      urls: ['/'],
+    },
   });
 
   return compat.compatBuild(app, Webpack, {

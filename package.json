@@ -21,7 +21,7 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
-    "start": "ember serve",
+    "start": "PREMBER=true ember serve",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test",
     "prepare": "husky install"
@@ -66,6 +66,7 @@
     "lint-staged": "^12.4.0",
     "loader.js": "^4.7.0",
     "npm-run-all": "^4.1.5",
+    "prember": "^1.1.0",
     "prettier": "^2.6.2",
     "qunit": "^2.18.2",
     "qunit-dom": "^2.0.0",
@@ -74,9 +75,6 @@
     "stylelint-config-recommended": "^7.0.0",
     "stylelint-prettier": "^2.0.0",
     "webpack": "^5.72.0"
-  },
-  "dependencies": {
-    "fastboot-app-server": "3.3.0"
   },
   "engines": {
     "node": "16.x",
