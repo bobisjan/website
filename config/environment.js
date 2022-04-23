@@ -21,10 +21,6 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-
-    fastboot: {
-      hostWhitelist: [/^(www\.)?bobisjan\.com$/, /^localhost:\d+$/],
-    },
   };
 
   if (environment === 'development') {
