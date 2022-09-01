@@ -1,13 +1,13 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
-import { hbs } from 'ember-cli-htmlbars';
+import currentYear from 'website/helpers/current-year';
 
 module('Integration | Helper | current-year', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    await render(hbs`{{(current-year)}}`);
+    await render(<template>{{(currentYear)}}</template>);
 
     assert.dom().hasText(`${new Date().getFullYear()}`);
   });

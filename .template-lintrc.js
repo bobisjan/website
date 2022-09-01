@@ -8,4 +8,13 @@ module.exports = {
   ],
   plugins: ['ember-template-lint-plugin-prettier'],
   rules: {},
+  overrides: [
+    {
+      files: ['**/*.{gjs,gts}'],
+      rules: {
+        'no-implicit-this': false,
+        prettier: false,
+      },
+    },
+  ],
 };
