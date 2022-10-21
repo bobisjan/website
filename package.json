@@ -15,15 +15,15 @@
   },
   "scripts": {
     "build": "ember build --environment=production",
-    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
-    "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
+    "lint": "npm-run-all --print-name --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "lint:fix": "npm-run-all --print-name --aggregate-output --continue-on-error --parallel \"lint:*:fix\"",
     "lint:hbs": "ember-template-lint .",
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "lint:checkup": "checkup run .",
     "start": "PREMBER=true ember serve",
-    "test": "npm-run-all lint test:*",
+    "test": "npm-run-all --print-name \"lint\" \"test:*\"",
     "test:ember": "percy exec -- ember test",
     "prepare": "husky install",
     "deploy": "ember deploy production"
@@ -45,7 +45,7 @@
     "checkup-plugin-ember": "^2.0.3",
     "checkup-plugin-javascript": "^2.0.3",
     "ember-auto-import": "^2.4.3",
-    "ember-cli": "~4.7.0",
+    "ember-cli": "~4.8.0",
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-dependency-checker": "^3.3.1",
@@ -87,14 +87,14 @@
     "webpack": "^5.74.0"
   },
   "engines": {
-    "node": "16.16.0",
-    "npm": "8.15.0"
+    "node": "16.18.0",
+    "npm": "8.19.2"
   },
   "ember": {
     "edition": "octane"
   },
   "volta": {
-    "node": "16.16.0",
-    "npm": "8.15.0"
+    "node": "16.18.0",
+    "npm": "8.19.2"
   }
 }
