@@ -53,7 +53,7 @@
     "ember-cli-deploy-build": "^2.0.0",
     "ember-cli-deploy-gzip": "^2.0.1",
     "ember-cli-deploy-manifest": "^2.0.0",
-    "ember-cli-deploy-s3": "^3.1.0",
+    "ember-cli-deploy-s3": "^3.2.0",
     "ember-cli-fastboot": "^3.3.2",
     "ember-cli-fastboot-testing": "^0.6.0",
     "ember-cli-htmlbars": "^6.1.1",
