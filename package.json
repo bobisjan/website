@@ -80,7 +80,7 @@
     "prettier": "^2.7.1",
     "qunit": "^2.19.3",
     "qunit-dom": "^2.0.0",
-    "stylelint": "^14.14.0",
+    "stylelint": "^14.14.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^9.0.0",
     "stylelint-prettier": "^2.0.0",
