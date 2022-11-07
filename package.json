@@ -43,7 +43,7 @@
     "@percy/ember": "^4.0.0",
     "broccoli-asset-rev": "^3.0.0",
     "checkup-plugin-ember": "^2.0.3",
-    "checkup-plugin-javascript": "^2.0.3",
+    "checkup-plugin-javascript": "^2.0.4",
     "ember-auto-import": "^2.4.3",
     "ember-cli": "~4.8.0",
     "ember-cli-app-version": "^5.0.0",
