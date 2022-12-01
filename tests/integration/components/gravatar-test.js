@@ -9,9 +9,7 @@ module('Integration | Component | gravatar', function (hooks) {
   test('it renders', async function (assert) {
     this.set('hash', '7a468faec3b45150e655fb60acd359d8');
 
-    await render(hbs`
-      <Gravatar @hash={{this.hash}} />
-    `);
+    await render(hbs`<Gravatar @hash={{this.hash}} />`);
 
     assert.dom('img').exists();
     assert.dom().hasText('');

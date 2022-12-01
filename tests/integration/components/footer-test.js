@@ -7,9 +7,7 @@ module('Integration | Component | footer', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    await render(hbs`
-      <Footer @city={{"Prague"}} />
-    `);
+    await render(hbs`<Footer @city={{'Prague'}} />`);
 
     assert.dom().hasText(`${new Date().getFullYear()}, Prague`);
   });
