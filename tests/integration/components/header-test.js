@@ -12,9 +12,9 @@ module('Integration | Component | header', function (hooks) {
       { url: 'https://example.com/my-link', title: 'my-link' },
     ]);
 
-    await render(hbs`
-      <Header @gravatar={{this.gravatar}} @links={{this.links}} />
-    `);
+    await render(
+      hbs`<Header @gravatar={{this.gravatar}} @links={{this.links}} />`
+    );
 
     assert.dom('img').exists();
     assert

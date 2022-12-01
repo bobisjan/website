@@ -7,9 +7,7 @@ module('Integration | Helper | current-year', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    await render(hbs`
-      {{current-year}}
-    `);
+    await render(hbs`{{current-year}}`);
 
     assert.dom().hasText(`${new Date().getFullYear()}`);
   });
