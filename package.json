@@ -47,7 +47,7 @@
     "checkup-plugin-javascript": "^2.1.0",
     "concurrently": "^7.6.0",
     "ember-auto-import": "^2.6.0",
-    "ember-cli": "~4.9.2",
+    "ember-cli": "~4.10.0",
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-dependency-checker": "^3.3.1",
@@ -71,7 +71,7 @@
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-ember": "^11.4.4",
-    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-qunit": "^7.3.4",
     "husky": "^8.0.3",
@@ -85,6 +85,7 @@
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-recommended": "^9.0.0",
     "stylelint-prettier": "^2.0.0",
+    "tracked-built-ins": "^3.1.0",
     "webpack": "^5.75.0"
   },
   "engines": {
