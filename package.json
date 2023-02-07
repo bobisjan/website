@@ -41,7 +41,7 @@
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "@percy/cli": "^1.18.0",
-    "@percy/ember": "^4.1.0",
+    "@percy/ember": "^4.2.0",
     "broccoli-asset-rev": "^3.0.0",
     "checkup-plugin-ember": "^2.2.0",
     "checkup-plugin-javascript": "^2.2.0",
