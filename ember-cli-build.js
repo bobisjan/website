@@ -2,7 +2,8 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const { Webpack } = require('@embroider/webpack');
-const compat = require('@embroider/compat');
+const { compatBuild } = require('@embroider/compat');
+const { prerender } = require('prember');
 
 module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
@@ -13,11 +14,14 @@ module.exports = function (defaults) {
     },
   });
 
-  return compat.compatBuild(app, Webpack, {
-    staticAddonTestSupportTrees: true,
-    staticAddonTrees: true,
-    staticHelpers: true,
-    staticModifiers: true,
-    staticComponents: true,
-  });
+  return prerender(
+    app,
+    compatBuild(app, Webpack, {
+      staticAddonTestSupportTrees: true,
+      staticAddonTrees: true,
+      staticHelpers: true,
+      staticModifiers: true,
+      staticComponents: true,
+    })
+  );
 };
