@@ -9,6 +9,10 @@ module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
     hinting: false,
 
+    babel: {
+      sourceMaps: 'inline',
+    },
+
     prember: {
       urls: ['/'],
     },
@@ -22,6 +26,11 @@ module.exports = function (defaults) {
       staticHelpers: true,
       staticModifiers: true,
       staticComponents: true,
+      packageroptions: {
+        webpackConfig: {
+          devtool: 'source-map',
+        },
+      },
     })
   );
 };
