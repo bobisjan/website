@@ -22,10 +22,15 @@ export default class Gravatar extends Component<GravatarSignature> {
 
     return retina ? size * 2 : size;
   }
-}
 
-declare module '@glint/environment-ember-loose/registry' {
-  export default interface Registry {
-    Gravatar: typeof Gravatar;
-  }
+  <template>
+    <img
+      src={{this.src}}
+      class="gravatar"
+      width={{@size}}
+      height={{@size}}
+      alt="avatar"
+      ...attributes
+    />
+  </template>
 }
