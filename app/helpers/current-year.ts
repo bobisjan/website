@@ -8,3 +8,9 @@ export function currentYear() {
 }
 
 export default helper(currentYear);
+
+declare module '@glint/environment-ember-loose/registry' {
+  export default interface Registry {
+    'current-year': typeof currentYear;
+  }
+}
