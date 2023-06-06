@@ -82,7 +82,7 @@
     "ember-cli-deploy": "^2.0.0",
     "ember-cli-deploy-build": "^3.0.0",
     "ember-cli-deploy-gzip": "^3.0.0",
-    "ember-cli-deploy-manifest": "^2.0.0",
+    "ember-cli-deploy-manifest": "^3.0.0",
     "ember-cli-deploy-s3": "^4.0.0",
     "ember-cli-fastboot": "^4.1.1",
     "ember-cli-fastboot-testing": "^0.6.0",
