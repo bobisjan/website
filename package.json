@@ -64,7 +64,7 @@
     "@types/ember__service": "^4.0.3",
     "@types/ember__string": "^3.0.11",
     "@types/ember__template": "^4.0.1",
-    "@types/ember__test": "^4.0.1",
+    "@types/ember__test": "^4.0.2",
     "@types/ember__utils": "^4.0.3",
     "@types/qunit": "^2.19.6",
     "@types/rsvp": "^4.0.4",
