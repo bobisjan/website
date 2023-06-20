@@ -10,7 +10,7 @@ Source for personal website.
 You will need the following things properly installed on your computer.
 
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/) (with npm)
+- [Node.js](https://nodejs.org/) (with pnpm)
 - [Ember CLI](https://ember-cli.com/)
 - [Google Chrome](https://google.com/chrome/)
 
@@ -18,11 +18,11 @@ You will need the following things properly installed on your computer.
 
 - `git clone git@github.com:bobisjan/website.git` this repository
 - `cd website`
-- `npm install`
+- `pnpm install`
 
 ## Running / Development
 
-- `npm start`
+- `pnpm start`
 - Visit your app at [http://localhost:4200](http://localhost:4200).
 - Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
@@ -32,17 +32,17 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Running Tests
 
-- `npm run test`
-- `npm run test --server`
+- `pnpm run test`
+- `pnpm run test --server`
 
 ### Linting
 
-- `npm run lint`
-- `npm run lint:fix`
+- `pnpm run lint`
+- `pnpm run lint:fix`
 
 ### Building
 
-- `npm run build`
+- `pnpm run build`
 
 ### Deploying
 
