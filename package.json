@@ -72,7 +72,7 @@
     "@typescript-eslint/parser": "^5.60.1",
     "broccoli-asset-rev": "^3.0.0",
     "checkup-plugin-ember": "^3.0.1",
-    "checkup-plugin-javascript": "^3.0.0",
+    "checkup-plugin-javascript": "^3.0.1",
     "concurrently": "^8.2.0",
     "ember-auto-import": "^2.6.3",
     "ember-cli": "~4.12.1",
