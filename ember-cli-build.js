@@ -16,6 +16,8 @@ module.exports = function (defaults) {
     prember: {
       urls: ['/'],
     },
+
+    'ember-cli-babel': { enableTypeScriptTransform: true },
   });
 
   return prerender(
@@ -31,6 +33,6 @@ module.exports = function (defaults) {
           devtool: 'source-map',
         },
       },
-    })
+    }),
   );
 };
