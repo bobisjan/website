@@ -32,7 +32,7 @@
     "deploy": "ember deploy production"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.20",
+    "@babel/core": "^7.23.2",
     "@checkup/cli": "^3.0.1",
     "@ember/optional-features": "^2.0.0",
     "@ember/string": "^3.1.1",
