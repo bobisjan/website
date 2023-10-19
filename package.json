@@ -52,7 +52,7 @@
     "@percy/ember": "^4.2.0",
     "@tsconfig/ember": "^3.0.1",
     "@types/ember": "^4.0.8",
-    "@types/ember__application": "^4.0.8",
+    "@types/ember__application": "^4.0.9",
     "@types/ember__array": "^4.0.7",
     "@types/ember__component": "^4.0.19",
     "@types/ember__controller": "^4.0.9",
