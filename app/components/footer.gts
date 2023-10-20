@@ -14,9 +14,3 @@ const Footer: TOC<FooterSignature> = <template>
 </template>;
 
 export default Footer;
-
-declare module '@glint/environment-ember-loose/registry' {
-  export default interface Registry {
-    Footer: typeof Footer;
-  }
-}
