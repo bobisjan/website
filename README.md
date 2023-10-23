@@ -1,6 +1,6 @@
 # @bobisjan/website
 
-[![Actions Status](https://github.com/bobisjan/website/workflows/CI/badge.svg)](https://github.com/bobisjan/website/actions)
+[![CI](https://github.com/bobisjan/website/actions/workflows/ci.yml/badge.svg)](https://github.com/bobisjan/website/actions/workflows/ci.yml)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/bobisjan/website)
 
 Source for personal website.
