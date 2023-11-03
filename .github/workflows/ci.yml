@@ -10,17 +10,30 @@ concurrency:
   group: ci-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
+env:
+  VOLTA_CACHE_PATH: /opt/hostedtoolcache/volta/1.1.1/x64
+
 jobs:
   test:
     name: Tests
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      volta-cache-key: ${{ steps.volta-cache-key.outputs.key }}
 
     env:
       PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
     steps:
       - uses: actions/checkout@v4
+      - id: set-package-json
+        run: echo "json=$(jq -c . < ./package.json)" >> $GITHUB_OUTPUT
+      - id: volta-cache-key
+        run: echo "key=volta|node@v${{fromJSON(steps.set-package-json.outputs.json).volta.node}}|npm@v${{fromJSON(steps.set-package-json.outputs.json).volta.npm}}" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v3
+        with:
+          path: ${{ env.VOLTA_CACHE_PATH }}
+          key: ${{ steps.volta-cache-key.outputs.key }}
       - uses: volta-cli/action@v4.0.1
       - run: npm ci
       - run: npm run test
@@ -43,6 +56,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/cache@v3
+        with:
+          path: ${{ env.VOLTA_CACHE_PATH }}
+          key: ${{ needs.test.outputs.volta-cache-key }}
       - uses: volta-cli/action@v4.0.1
       - run: npm ci
       - run: npm run deploy
