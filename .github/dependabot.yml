@@ -4,6 +4,13 @@ updates:
     directory: '/'
     schedule:
       interval: daily
+    groups:
+      embroider:
+        patterns:
+          - '@embroider/*'
+      ember-cli-deploy:
+        patterns:
+          - 'ember-cli-deploy-*'
   - package-ecosystem: github-actions
     directory: '/'
     schedule:
