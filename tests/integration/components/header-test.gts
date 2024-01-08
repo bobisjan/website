@@ -10,9 +10,9 @@ module('Integration | Component | header', function (hooks) {
     let gravatar = 'my-gravatar';
     let links = [{ url: 'https://example.com/my-link', title: 'my-link' }];
 
-    await render(<template>
-      <Header @gravatar={{gravatar}} @links={{links}} />
-    </template>);
+    await render(
+      <template><Header @gravatar={{gravatar}} @links={{links}} /></template>,
+    );
 
     assert.dom('img').exists();
     assert
