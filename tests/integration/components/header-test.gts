@@ -7,8 +7,8 @@ module('Integration | Component | header', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    let gravatar = 'my-gravatar';
-    let links = [{ url: 'https://example.com/my-link', title: 'my-link' }];
+    const gravatar = 'my-gravatar';
+    const links = [{ url: 'https://example.com/my-link', title: 'my-link' }];
 
     await render(
       <template><Header @gravatar={{gravatar}} @links={{links}} /></template>,
