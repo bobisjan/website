@@ -30,7 +30,7 @@
     "start": "PREMBER=true ember serve",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
     "test:ember": "percy exec -- ember test",
-    "prepare": "husky install",
+    "prepare": "husky",
     "deploy": "ember deploy production"
   },
   "devDependencies": {
@@ -89,7 +89,7 @@
     "eslint-plugin-ember": "^12.0.0",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-qunit": "^8.0.1",
-    "husky": "^8.0.3",
+    "husky": "^9.0.7",
     "lint-staged": "^15.2.0",
     "loader.js": "^4.7.0",
     "prember": "^2.0.0",
