@@ -1,7 +1,7 @@
 {
   "extends": "@tsconfig/ember/tsconfig.json",
   "glint": {
-    "environment": ["ember-loose", "ember-template-imports"],
+    "environment": ["ember-loose", "ember-template-imports"]
   },
   "compilerOptions": {
     "declaration": false,
@@ -13,7 +13,7 @@
     "paths": {
       "website/tests/*": ["tests/*"],
       "website/*": ["app/*"],
-      "*": ["types/*"],
-    },
-  },
+      "*": ["types/*"]
+    }
+  }
 }
