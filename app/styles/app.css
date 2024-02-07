@@ -130,6 +130,34 @@ body {
   text-align: center;
 }
 
+.cover .link {
+  text-decoration: underline dotted;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cover .link {
+    color: var(--color-white);
+  }
+
+  .cover .link:hover,
+  .cover .link:focus {
+    color: var(--color-grey-6);
+    border-bottom-color: var(--color-grey-6);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .cover .link {
+    color: var(--color-black);
+  }
+
+  .cover .link:hover,
+  .cover .link:focus {
+    color: var(--color-grey-3);
+    border-bottom-color: var(--color-grey-3);
+  }
+}
+
 .cover-container {
   max-width: 42em;
   padding: 2.5rem;

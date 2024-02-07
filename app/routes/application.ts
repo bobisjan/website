@@ -7,7 +7,14 @@ export default class ApplicationRoute extends Route {
     return {
       name: 'Jan Bobisud',
       city: 'Prague',
-      company: 'Zonky',
+      project: {
+        title: 'Zonky',
+        url: 'https://zonky.cz',
+      },
+      company: {
+        title: 'Air Bank',
+        url: 'https://airbank.cz',
+      },
       gravatar: '7a468faec3b45150e655fb60acd359d8',
       links: [
         {
