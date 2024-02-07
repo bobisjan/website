@@ -8,6 +8,6 @@ module('FastBoot | index', function (hooks) {
     await visit('/');
 
     assert.dom('h1').hasText('Jan Bobisud');
-    assert.dom('p').hasText('Development at Zonky.');
+    assert.dom('p').hasText('Development on Zonky at Air Bank');
   });
 });
