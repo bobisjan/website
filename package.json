@@ -54,7 +54,7 @@
     "@types/qunit": "^2.19.10",
     "@types/rsvp": "^4.0.9",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/parser": "^7.0.1",
     "broccoli-asset-rev": "^3.0.0",
     "checkup-plugin-ember": "^3.0.1",
     "checkup-plugin-javascript": "^3.0.0",
