@@ -8,7 +8,7 @@ interface IndexRouteSignature {
   };
 }
 
-const template: TOC<IndexRouteSignature> = <template>
+const Template: TOC<IndexRouteSignature> = <template>
   <main class="cover">
     <h1>{{@model.name}}</h1>
     <p>Development on&nbsp;<a
@@ -26,4 +26,4 @@ const template: TOC<IndexRouteSignature> = <template>
   </main>
 </template>;
 
-export default RouteTemplate(template);
+export default RouteTemplate(Template);
