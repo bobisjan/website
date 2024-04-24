@@ -25,7 +25,7 @@ module.exports = {
     // gts files
     {
       files: ['**/*.gts'],
-      parser: 'ember-eslint-parser',
+      // parser: 'ember-eslint-parser',
       plugins: ['ember'],
       extends: [
         'eslint:recommended',
@@ -37,7 +37,7 @@ module.exports = {
     // gjs files
     {
       files: ['**/*.gjs'],
-      parser: 'ember-eslint-parser',
+      // parser: 'ember-eslint-parser',
       plugins: ['ember'],
       extends: [
         'eslint:recommended',
