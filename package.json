@@ -90,7 +90,7 @@
     "eslint-plugin-n": "^17.7.0",
     "eslint-plugin-qunit": "^8.1.1",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^15.2.4",
     "loader.js": "^4.7.0",
     "prember": "^2.0.0",
     "prettier": "^3.2.5",
