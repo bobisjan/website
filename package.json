@@ -59,7 +59,7 @@
     "checkup-plugin-ember": "^3.0.1",
     "checkup-plugin-javascript": "^3.0.0",
     "concurrently": "^8.2.2",
-    "ember-auto-import": "^2.7.3",
+    "ember-auto-import": "^2.7.4",
     "ember-cli": "~5.9.0",
     "ember-cli-app-version": "^7.0.0",
     "ember-cli-babel": "^8.2.0",
