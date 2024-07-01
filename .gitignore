@@ -10,7 +10,6 @@
 /.pnp*
 /.eslintcache
 /coverage/
-/checkup-report*
 /npm-debug.log*
 /testem.log
 /yarn-error.log
