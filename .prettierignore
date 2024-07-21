@@ -8,6 +8,8 @@
 /coverage/
 !.*
 .*/
+pnpm-lock.yaml
 
 # ember-try
 /.node_modules.ember-try/
+/pnpm-lock.ember-try.yaml
