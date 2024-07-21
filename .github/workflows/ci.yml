@@ -53,4 +53,4 @@ jobs:
           node-version: 20.11.0
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm deploy
+      - run: pnpm run deploy
