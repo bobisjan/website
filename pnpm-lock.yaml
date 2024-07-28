@@ -159,8 +159,8 @@ importers:
         specifier: ^12.1.1
         version: 12.1.1(@babel/core@7.24.9)(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
       eslint-plugin-n:
-        specifier: ^17.10.0
-        version: 17.10.0(eslint@8.57.0)
+        specifier: ^17.10.1
+        version: 17.10.1(eslint@8.57.0)
       eslint-plugin-qunit:
         specifier: ^8.1.1
         version: 8.1.1(eslint@8.57.0)
@@ -3628,8 +3628,8 @@ packages:
     peerDependencies:
       eslint: '>=8'
 
-  eslint-plugin-n@17.10.0:
-    resolution: {integrity: sha512-NmrSdEid+ch9SBVuqbsK5CUiEZGtMK32KSI+arWahZbFF0nvX1oEJrWiFOWmhkWFKW9Hqor0g3qPh4AvkvWwlA==}
+  eslint-plugin-n@17.10.1:
+    resolution: {integrity: sha512-hm/q37W6efDptJXdwirsm6A257iY6ZNtpoSG0wEzFzjJ3AhL7OhEIhdSR2e4OdYfHO5EDeqlCfFrjf9q208IPw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
@@ -12830,7 +12830,7 @@ snapshots:
       eslint: 8.57.0
       eslint-compat-utils: 0.5.1(eslint@8.57.0)
 
-  eslint-plugin-n@17.10.0(eslint@8.57.0):
+  eslint-plugin-n@17.10.1(eslint@8.57.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       enhanced-resolve: 5.17.0
