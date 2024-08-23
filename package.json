@@ -97,7 +97,7 @@
     "stylelint-config-standard": "^36.0.1",
     "tracked-built-ins": "^3.3.0",
     "typescript": "^5.5.4",
-    "webpack": "^5.93.0"
+    "webpack": "^5.94.0"
   },
   "overrides": {
     "@glimmer/tracking": {
