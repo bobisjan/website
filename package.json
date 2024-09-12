@@ -85,7 +85,7 @@
     "eslint-plugin-ember": "^12.2.0",
     "eslint-plugin-n": "^17.10.2",
     "eslint-plugin-qunit": "^8.1.2",
-    "husky": "^9.1.5",
+    "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "loader.js": "^4.7.0",
     "prember": "^2.1.0",
