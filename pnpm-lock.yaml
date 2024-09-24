@@ -108,8 +108,8 @@ importers:
         specifier: ^4.1.5
         version: 4.1.5(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0))
       ember-cli-fastboot-testing:
-        specifier: ^0.6.1
-        version: 0.6.1(@glint/template@1.4.0)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0))(webpack@5.94.0)
+        specifier: ^0.6.2
+        version: 0.6.2(@ember/test-helpers@4.0.4(@babel/core@7.25.2)(@glint/template@1.4.0)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0)))(@glint/template@1.4.0)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0))(webpack@5.94.0)
       ember-cli-htmlbars:
         specifier: ^6.3.0
         version: 6.3.0
@@ -3439,10 +3439,11 @@ packages:
     resolution: {integrity: sha512-x6vtuxruExD66qo/OvNldGbxZ3NTaeRSdL63Q9clJ/+JspLXeHtKxl5dDMqRNvl8sItVrZJqq9GYMJfPsg5SWA==}
     engines: {node: 12.* || 14.* || >= 16}
 
-  ember-cli-fastboot-testing@0.6.1:
-    resolution: {integrity: sha512-nevPv77Wjk0Mslb0AF0wgHfbjki6Fi3/dapTrFz17WLX6n5maLr/MTL1hZcZdbT+69DHdgckCza8Z1WyxiUbBA==}
+  ember-cli-fastboot-testing@0.6.2:
+    resolution: {integrity: sha512-RwOM0Y2fT5PtiMkG7yXWCaCLGFatwKpfPT4Xt6Hxqf2ZAEkbVQWJw/aFaKLLOAo2kfted8nKdkRvZM6Jm647Pg==}
     engines: {node: 12.* || 14.* || 16.* || >= 18}
     peerDependencies:
+      '@ember/test-helpers': '>= 3.0.0'
       ember-source: ^3.28.0 || ^4.0.0 || ^5.0.0
 
   ember-cli-fastboot@4.1.5:
@@ -7844,7 +7845,7 @@ snapshots:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-compilation-targets': 7.25.2
       '@babel/helper-plugin-utils': 7.24.8
-      debug: 4.3.6(supports-color@8.1.1)
+      debug: 4.3.7(supports-color@8.1.1)
       lodash.debounce: 4.0.8
       resolve: 1.22.8
     transitivePeerDependencies:
@@ -7855,7 +7856,7 @@ snapshots:
       '@babel/core': 7.25.2
       '@babel/helper-compilation-targets': 7.25.2
       '@babel/helper-plugin-utils': 7.24.8
-      debug: 4.3.6(supports-color@8.1.1)
+      debug: 4.3.7(supports-color@8.1.1)
       lodash.debounce: 4.0.8
       resolve: 1.22.8
     transitivePeerDependencies:
@@ -10831,7 +10832,7 @@ snapshots:
 
   agent-base@6.0.2(supports-color@8.1.1):
     dependencies:
-      debug: 4.3.6(supports-color@8.1.1)
+      debug: 4.3.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -11006,7 +11007,7 @@ snapshots:
 
   async-disk-cache@2.1.0:
     dependencies:
-      debug: 4.3.6(supports-color@8.1.1)
+      debug: 4.3.7(supports-color@8.1.1)
       heimdalljs: 0.2.6
       istextorbinary: 2.6.0
       mkdirp: 0.5.6
@@ -12507,8 +12508,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-fastboot-testing@0.6.1(@glint/template@1.4.0)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0))(webpack@5.94.0):
+  ember-cli-fastboot-testing@0.6.2(@ember/test-helpers@4.0.4(@babel/core@7.25.2)(@glint/template@1.4.0)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0)))(@glint/template@1.4.0)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0))(webpack@5.94.0):
     dependencies:
+      '@ember/test-helpers': 4.0.4(@babel/core@7.25.2)(@glint/template@1.4.0)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0))
       body-parser: 1.20.2
       ember-auto-import: 2.8.1(@glint/template@1.4.0)(webpack@5.94.0)
       ember-cli-babel: 7.26.11
@@ -14262,7 +14264,7 @@ snapshots:
     dependencies:
       '@tootallnate/once': 1.1.2
       agent-base: 6.0.2(supports-color@8.1.1)
-      debug: 4.3.6(supports-color@8.1.1)
+      debug: 4.3.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -14292,7 +14294,7 @@ snapshots:
   https-proxy-agent@5.0.1(supports-color@8.1.1):
     dependencies:
       agent-base: 6.0.2(supports-color@8.1.1)
-      debug: 4.3.6(supports-color@8.1.1)
+      debug: 4.3.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -16450,7 +16452,7 @@ snapshots:
 
   sync-disk-cache@2.1.0:
     dependencies:
-      debug: 4.3.6(supports-color@8.1.1)
+      debug: 4.3.7(supports-color@8.1.1)
       heimdalljs: 0.2.6
       mkdirp: 0.5.6
       rimraf: 3.0.2
