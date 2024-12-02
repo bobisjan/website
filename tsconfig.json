@@ -12,6 +12,7 @@
       "website/tests/*": ["tests/*"],
       "website/*": ["app/*"],
       "*": ["types/*"]
-    }
+    },
+    "types": ["ember-source/types"]
   }
 }
