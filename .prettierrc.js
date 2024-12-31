@@ -5,7 +5,7 @@ module.exports = {
 
   overrides: [
     {
-      files: '*.{js,ts,mjs,mts}',
+      files: '*.{js,ts,mjs,mts,cjs,cts}',
       options: {
         singleQuote: true,
       },
@@ -13,15 +13,8 @@ module.exports = {
     {
       files: '*.{gjs,gts}',
       options: {
-        parser: 'ember-template-tag',
         singleQuote: true,
         templateSingleQuote: false,
-      },
-    },
-    {
-      files: '**/*.hbs',
-      options: {
-        singleQuote: false,
       },
     },
   ],
