@@ -47,7 +47,7 @@
     "@glimmer/tracking": "^1.1.2",
     "@glint/core": "^1.5.1",
     "@glint/environment-ember-loose": "^1.5.1",
-    "@glint/environment-ember-template-imports": "^1.5.0",
+    "@glint/environment-ember-template-imports": "^1.5.1",
     "@glint/template": "^1.5.1",
     "@percy/cli": "^1.30.6",
     "@percy/ember": "^4.2.0",
