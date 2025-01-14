@@ -100,7 +100,7 @@
     "qunit": "^2.23.1",
     "qunit-dom": "^3.4.0",
     "stylelint": "^16.13.1",
-    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard": "^37.0.0",
     "tracked-built-ins": "^3.4.0",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.20.0",
