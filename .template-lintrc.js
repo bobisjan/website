@@ -7,6 +7,7 @@ module.exports = {
     'eol-last': false,
     'linebreak-style': false,
     quotes: false,
+    'require-strict-mode': true,
     'self-closing-void-elements': false,
   },
 };
