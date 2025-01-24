@@ -51,7 +51,7 @@
     "@glint/template": "^1.5.1",
     "@percy/cli": "^1.30.6",
     "@percy/ember": "^4.2.0",
-    "@tsconfig/ember": "^3.0.8",
+    "@tsconfig/ember": "^3.0.9",
     "@types/eslint__js": "^8.42.3",
     "@types/qunit": "^2.19.12",
     "@types/rsvp": "^4.0.9",
