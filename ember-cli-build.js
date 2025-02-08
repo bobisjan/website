@@ -23,6 +23,7 @@ module.exports = function (defaults) {
   return prerender(
     app,
     compatBuild(app, Webpack, {
+      staticEmberSource: true,
       staticAddonTestSupportTrees: true,
       staticAddonTrees: true,
       staticInvokables: true,
