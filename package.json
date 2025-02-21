@@ -51,7 +51,7 @@
     "@percy/cli": "^1.30.7",
     "@percy/ember": "^4.2.0",
     "@tsconfig/ember": "^3.0.9",
-    "@types/eslint__js": "^8.42.3",
+    "@types/eslint__js": "^9.14.0",
     "@types/qunit": "^2.19.12",
     "@types/rsvp": "^4.0.9",
     "broccoli-asset-rev": "^3.0.0",
