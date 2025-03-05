@@ -2,6 +2,7 @@
 
 module.exports = {
   extends: ['recommended', 'stylistic'],
+  reportUnusedDisableDirectives: true,
   rules: {
     'block-indentation': false,
     'eol-last': false,
