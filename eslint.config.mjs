@@ -5,7 +5,7 @@ import ts from 'typescript-eslint';
 
 import ember from 'eslint-plugin-ember/recommended';
 
-import prettier from 'eslint-plugin-prettier/recommended';
+import prettier from 'eslint-config-prettier/flat';
 import qunit from 'eslint-plugin-qunit';
 import n from 'eslint-plugin-n';
 
