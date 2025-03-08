@@ -1,3 +1,4 @@
+import { globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import js from '@eslint/js';
 
@@ -39,9 +40,7 @@ export default ts.config(
   ember.configs.gjs,
   ember.configs.gts,
   prettier,
-  {
-    ignores: ['dist/', 'node_modules/', 'coverage/', '!**/.*'],
-  },
+  globalIgnores(['dist/', 'node_modules/', 'coverage/', '!**/.*']),
   {
     linterOptions: {
       reportUnusedDisableDirectives: 'error',
