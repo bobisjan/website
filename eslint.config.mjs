@@ -1,6 +1,7 @@
 import { globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import js from '@eslint/js';
+import css from '@eslint/css';
 
 import ts from 'typescript-eslint';
 
@@ -35,7 +36,7 @@ const parserOptions = {
 };
 
 export default ts.config(
-  js.configs.recommended,
+  { files: ['**/*.{js,ts,cjs,mjs,mts}'], rules: js.configs.recommended.rules },
   ember.configs.base,
   ember.configs.gjs,
   ember.configs.gts,
@@ -84,7 +85,6 @@ export default ts.config(
       '.ember-cli.js',
       '.lintstagedrc.js',
       '.prettierrc.js',
-      '.stylelintrc.js',
       '.template-lintrc.js',
       'ember-cli-build.js',
     ],
@@ -114,5 +114,10 @@ export default ts.config(
         ...globals.node,
       },
     },
+  },
+  {
+    files: ['**/*.css'],
+    language: 'css/css',
+    ...css.configs.recommended,
   },
 );
