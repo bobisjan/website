@@ -1,4 +1,3 @@
-import RouteTemplate from 'ember-route-template';
 import type { TOC } from '@ember/component/template-only';
 import type { ApplicationRouteModel } from '../routes/application';
 
@@ -26,4 +25,4 @@ const Template: TOC<IndexRouteSignature> = <template>
   </main>
 </template>;
 
-export default RouteTemplate(Template);
+export default Template;
