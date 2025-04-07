@@ -10,7 +10,7 @@ export interface HeaderSignature {
   };
 }
 
-const Header: TOC<HeaderSignature> = <template>
+export default <template>
   <header class="masthead">
     <h3 class="masthead-brand">
       <Gravatar @hash={{@gravatar}} @size={{50}} @retina={{true}} />
@@ -29,6 +29,4 @@ const Header: TOC<HeaderSignature> = <template>
       {{/each}}
     </nav>
   </header>
-</template>;
-
-export default Header;
+</template> satisfies TOC<HeaderSignature>;
