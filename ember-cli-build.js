@@ -9,6 +9,8 @@ module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
     hinting: false,
 
+    'ember-cli-babel': { enableTypeScriptTransform: true },
+
     babel: {
       sourceMaps: 'inline',
     },
@@ -16,8 +18,6 @@ module.exports = function (defaults) {
     prember: {
       urls: ['/'],
     },
-
-    'ember-cli-babel': { enableTypeScriptTransform: true },
   });
 
   return prerender(
