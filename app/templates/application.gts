@@ -9,12 +9,10 @@ interface ApplicationRouteSignature {
   };
 }
 
-const Template: TOC<ApplicationRouteSignature> = <template>
+export default <template>
   <div class="cover-container">
     <Header @gravatar={{@model.gravatar}} @links={{@model.links}} />
     {{outlet}}
     <Footer @city={{@model.city}} />
   </div>
-</template>;
-
-export default Template;
+</template> satisfies TOC<ApplicationRouteSignature>;

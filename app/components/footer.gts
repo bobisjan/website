@@ -7,10 +7,8 @@ export interface FooterSignature {
   Args: { city: ApplicationRouteModel['city'] };
 }
 
-const Footer: TOC<FooterSignature> = <template>
+export default <template>
   <footer class="mastfoot">
     <p>{{(currentYear)}}, {{@city}}</p>
   </footer>
-</template>;
-
-export default Footer;
+</template> satisfies TOC<FooterSignature>;
