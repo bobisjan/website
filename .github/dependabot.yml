@@ -11,9 +11,11 @@ updates:
       ember-cli-deploy:
         patterns:
           - 'ember-cli-deploy-*'
-      typescript-eslint:
+      eslint:
         patterns:
-          - '@typescript-eslint/*'
+          - '@eslint/*'
+          - 'eslint-*'
+          - 'typescript-eslint'
   - package-ecosystem: github-actions
     directory: '/'
     schedule:
