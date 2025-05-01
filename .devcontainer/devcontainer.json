@@ -5,5 +5,5 @@
     "context": ".."
   },
   "forwardPorts": [4200],
-  "postCreateCommand": "pnpm install --offline"
+  "postCreateCommand": "pnpm install"
 }
