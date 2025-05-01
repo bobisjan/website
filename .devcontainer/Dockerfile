@@ -7,5 +7,3 @@ RUN corepack enable pnpm
 
 COPY pnpm-lock.yaml ./
 # COPY patches patches
-
-RUN pnpm fetch
