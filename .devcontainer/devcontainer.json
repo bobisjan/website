@@ -1,10 +1,9 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers-contrib/features/volta:1": {
-      "version": "1.1.1"
-    }
+  "name": "website",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
   "forwardPorts": [4200],
-  "postCreateCommand": "volta setup && . ~/.profile && npm ci"
+  "postCreateCommand": "pnpm install --offline"
 }
