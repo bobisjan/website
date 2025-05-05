@@ -11,7 +11,3 @@
 /pnpm-lock.yaml
 ember-cli-update.json
 *.html
-
-# ember-try
-/.node_modules.ember-try/
-/pnpm-lock.ember-try.yaml
