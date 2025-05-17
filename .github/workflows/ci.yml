@@ -10,6 +10,9 @@ concurrency:
   group: ci-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   test:
     name: Tests
@@ -34,6 +37,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: [test]
+
+    permissions:
+      contents: read
+      deployments: write
 
     if: github.ref == 'refs/heads/main'
 
