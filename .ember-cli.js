@@ -6,4 +6,16 @@ module.exports = {
     rather than JavaScript by default, when a TypeScript version of a given blueprint is available.
   */
   isTypeScriptProject: true,
+
+  /**
+    Setting `componentAuthoringFormat` to "strict" will force the blueprint generators to generate GJS
+    or GTS files for the component and the component rendering test. "loose" is the default.
+  */
+  componentAuthoringFormat: 'strict',
+
+  /**
+    Setting `routeAuthoringFormat` to "strict" will force the blueprint generators to generate GJS
+    or GTS templates for routes. "loose" is the default
+  */
+  routeAuthoringFormat: 'strict',
 };
