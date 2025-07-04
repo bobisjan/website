@@ -111,8 +111,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1
       ember-cli-deprecation-workflow:
-        specifier: ^3.3.0
-        version: 3.3.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
+        specifier: ^3.4.0
+        version: 3.4.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-cli-fastboot:
         specifier: ^4.1.5
         version: 4.1.5(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
@@ -3282,11 +3282,11 @@ packages:
     resolution: {integrity: sha512-x6vtuxruExD66qo/OvNldGbxZ3NTaeRSdL63Q9clJ/+JspLXeHtKxl5dDMqRNvl8sItVrZJqq9GYMJfPsg5SWA==}
     engines: {node: 12.* || 14.* || >= 16}
 
-  ember-cli-deprecation-workflow@3.3.0:
-    resolution: {integrity: sha512-AZTOv+xftPXNov+X7k/JZFMd5/Suzkuvg5Zc1W3MoJb+kjIwW/3sieBOXEbt7aMq9Px4ixb9FSrFPNlzggV4qA==}
+  ember-cli-deprecation-workflow@3.4.0:
+    resolution: {integrity: sha512-Ksrmib4mjD4xa0dqFgxJLBwkSp9EVYH6jSqe2NpODlBKEAZhsVzQj5wKPnC1dXfK3Erq/r1Fh3q4g46FZiCUiw==}
     engines: {node: '>= 18'}
     peerDependencies:
-      ember-source: '>= 4.0.0'
+      ember-source: '>= 3.28.0'
 
   ember-cli-fastboot-testing@0.6.2:
     resolution: {integrity: sha512-RwOM0Y2fT5PtiMkG7yXWCaCLGFatwKpfPT4Xt6Hxqf2ZAEkbVQWJw/aFaKLLOAo2kfted8nKdkRvZM6Jm647Pg==}
@@ -11268,7 +11268,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-deprecation-workflow@3.3.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
+  ember-cli-deprecation-workflow@3.4.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
     dependencies:
       '@babel/core': 7.28.0(supports-color@8.1.1)
       ember-cli-babel: 8.2.0(@babel/core@7.28.0)
