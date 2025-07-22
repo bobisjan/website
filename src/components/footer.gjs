@@ -1,4 +1,4 @@
-import currentYear from '../helpers/current-year';
+import currentYear from '#src/helpers/current-year.js';
 
 <template>
   <footer class="mastfoot">

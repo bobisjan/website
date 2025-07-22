@@ -1,5 +1,5 @@
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '#src/components/header.gjs';
+import Footer from '#src/components/footer.gjs';
 
 <template>
   <div class="cover-container">

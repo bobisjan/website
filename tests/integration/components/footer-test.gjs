@@ -1,7 +1,7 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
-import Footer from 'website/components/footer';
+import Footer from '#src/components/footer.gjs';
 
 module('Integration | Component | footer', function (hooks) {
   setupRenderingTest(hooks);

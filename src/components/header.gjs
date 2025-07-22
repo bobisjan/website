@@ -1,4 +1,4 @@
-import Gravatar from './gravatar';
+import Gravatar from './gravatar.gjs';
 
 <template>
   <header class="masthead">

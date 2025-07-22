@@ -11,13 +11,10 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+.ember-application,
+#ember-testing {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  height: 100%;
-}
-
-body {
+  height: 100vh;
   display: flex;
   background-color: var(--color-white);
   color: var(--color-grey-3);
@@ -25,14 +22,16 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  .ember-application,
+  #ember-testing {
     background-color: var(--color-grey-3);
     color: var(--color-white);
   }
 }
 
 @media (prefers-color-scheme: light) {
-  body {
+  .ember-application,
+  #ember-testing {
     background-color: var(--color-white);
     color: var(--color-grey-3);
   }

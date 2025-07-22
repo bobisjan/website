@@ -1,6 +1,5 @@
-'use strict';
-module.exports = {
-  '**/*.{js,ts,mjs,mts,css}': ['prettier --write', 'eslint --fix'],
-  '**/*.{gjs,gts}': ['prettier --write', 'ember-template-lint --fix'],
+export default {
+  '**/*.{js,css}': ['prettier --write', 'eslint --fix'],
+  '**/*.gjs': ['prettier --write', 'eslint --fix', 'ember-template-lint --fix'],
   '**/*.{html,json}': 'prettier --write',
 };

@@ -1,11 +1,11 @@
 import { module, test } from 'qunit';
-import { setup, visit } from 'ember-cli-fastboot-testing/test-support';
+import { visit } from '../helpers/fasboot.js';
 
-module('FastBoot | index', function (hooks) {
-  setup(hooks);
-
+module('FastBoot | index', function () {
   test('it renders', async function (assert) {
-    await visit('/');
+    const response = await visit('/');
+
+    assert.strictEqual(response.status, 200);
 
     assert.dom('h1').hasText('Jan Bobisud');
     assert.dom('p').hasText('Development on Zonky at Air Bank');
