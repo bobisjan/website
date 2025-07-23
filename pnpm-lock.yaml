@@ -85,7 +85,7 @@ importers:
         version: 6.5.0(handlebars@4.7.8)(underscore@1.13.7)
       ember-cli-app-version:
         specifier: ^7.0.0
-        version: 7.0.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
+        version: 7.0.0(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-cli-babel:
         specifier: ^8.2.0
         version: 8.2.0(@babel/core@7.28.0)
@@ -109,13 +109,13 @@ importers:
         version: 5.0.1
       ember-cli-deprecation-workflow:
         specifier: ^3.4.0
-        version: 3.4.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
+        version: 3.4.0(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-cli-fastboot:
         specifier: ^4.1.5
-        version: 4.1.5(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
+        version: 4.1.5(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-cli-fastboot-testing:
         specifier: ^0.6.2
-        version: 0.6.2(@ember/test-helpers@5.2.2(@babel/core@7.28.0)(@glint/template@1.5.2))(@glint/template@1.5.2)(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))(webpack@5.100.2)
+        version: 0.6.2(@ember/test-helpers@5.2.2(@babel/core@7.28.0)(@glint/template@1.5.2))(@glint/template@1.5.2)(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5))(webpack@5.100.2)
       ember-cli-htmlbars:
         specifier: ^6.3.0
         version: 6.3.0
@@ -130,7 +130,7 @@ importers:
         version: 4.0.2
       ember-load-initializers:
         specifier: ^3.0.1
-        version: 3.0.1(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
+        version: 3.0.1(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-modifier:
         specifier: ^4.2.2
         version: 4.2.2(@babel/core@7.28.0)
@@ -144,8 +144,8 @@ importers:
         specifier: ^13.1.1
         version: 13.1.1
       ember-source:
-        specifier: ~6.5.0
-        version: 6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
+        specifier: ~6.6.0
+        version: 6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-imports:
         specifier: ^4.3.0
         version: 4.3.0
@@ -895,6 +895,12 @@ packages:
 
   '@babel/plugin-transform-typescript@7.27.1':
     resolution: {integrity: sha512-Q5sT5+O4QUebHdbwKedFBEwRLb02zJ7r4A5Gg2hUoLuU3FjdMcyqcywqUrLCaDsFCxzokf7u9kuy7qz51YUuAg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+
+  '@babel/plugin-transform-typescript@7.28.0':
+    resolution: {integrity: sha512-4AEiDEBPIZvLQaWlc9liCavE0xRM0dNca41WtBeM3jgFptfUOSG9z0uteLhq6+3rq+WB6jIvUwKDTpXEHPJ2Vg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -3351,8 +3357,8 @@ packages:
     resolution: {integrity: sha512-89oVHVJwmLDvGvAUWgS87KpBoRhy3aZ6U0Ql6HOmU4TrPkyaa8pM0W81wj9cIwjYprcQtN9EwzZMHnq46+oUyw==}
     engines: {node: 8.* || 10.* || >= 12}
 
-  ember-source@6.5.0:
-    resolution: {integrity: sha512-se8UFNu9n017VmKry124jc+Mh1ybZ8sAf9IthYYGpdPYH4PRLxBbxa+YEUdtu1vWoKZG2lVthtOUbCmIAjNrpQ==}
+  ember-source@6.6.0:
+    resolution: {integrity: sha512-Tmwt18cqDesjAmmvfshyrF4OZWBRhpRTUk5bpOuflh3qOWPJcASTMcktAx96lbqaL14TNpHGMaD5q3hur6Wj+A==}
     engines: {node: '>= 18.*'}
     peerDependencies:
       '@glimmer/component': '>= 1.1.2'
@@ -7496,7 +7502,7 @@ snapshots:
       '@babel/core': 7.28.0(supports-color@8.1.1)
       '@babel/helper-annotate-as-pure': 7.27.3
       '@babel/helper-wrap-function': 7.27.1(supports-color@8.1.1)
-      '@babel/traverse': 7.27.1(supports-color@8.1.1)
+      '@babel/traverse': 7.28.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -7525,7 +7531,7 @@ snapshots:
   '@babel/helper-wrap-function@7.27.1(supports-color@8.1.1)':
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/traverse': 7.27.1(supports-color@8.1.1)
+      '@babel/traverse': 7.28.0(supports-color@8.1.1)
       '@babel/types': 7.28.0
     transitivePeerDependencies:
       - supports-color
@@ -7965,6 +7971,17 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.0(supports-color@8.1.1)
       '@babel/helper-annotate-as-pure': 7.27.1
+      '@babel/helper-create-class-features-plugin': 7.27.1(@babel/core@7.28.0)(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.27.1
+      '@babel/helper-skip-transparent-expression-wrappers': 7.27.1(supports-color@8.1.1)
+      '@babel/plugin-syntax-typescript': 7.27.1(@babel/core@7.28.0)
+    transitivePeerDependencies:
+      - supports-color
+
+  '@babel/plugin-transform-typescript@7.28.0(@babel/core@7.28.0)':
+    dependencies:
+      '@babel/core': 7.28.0(supports-color@8.1.1)
+      '@babel/helper-annotate-as-pure': 7.27.3
       '@babel/helper-create-class-features-plugin': 7.27.1(@babel/core@7.28.0)(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-skip-transparent-expression-wrappers': 7.27.1(supports-color@8.1.1)
@@ -11001,10 +11018,10 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-cli-app-version@7.0.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
+  ember-cli-app-version@7.0.0(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
     dependencies:
       ember-cli-babel: 7.26.11
-      ember-source: 6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
+      ember-source: 6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       git-repo-info: 2.1.1
     transitivePeerDependencies:
       - supports-color
@@ -11157,21 +11174,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-deprecation-workflow@3.4.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
+  ember-cli-deprecation-workflow@3.4.0(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
     dependencies:
       '@babel/core': 7.28.0(supports-color@8.1.1)
       ember-cli-babel: 8.2.0(@babel/core@7.28.0)
-      ember-source: 6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
+      ember-source: 6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-fastboot-testing@0.6.2(@ember/test-helpers@5.2.2(@babel/core@7.28.0)(@glint/template@1.5.2))(@glint/template@1.5.2)(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))(webpack@5.100.2):
+  ember-cli-fastboot-testing@0.6.2(@ember/test-helpers@5.2.2(@babel/core@7.28.0)(@glint/template@1.5.2))(@glint/template@1.5.2)(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5))(webpack@5.100.2):
     dependencies:
       '@ember/test-helpers': 5.2.2(@babel/core@7.28.0)(@glint/template@1.5.2)
       body-parser: 1.20.3
       ember-auto-import: 2.10.0(@glint/template@1.5.2)(webpack@5.100.2)
       ember-cli-babel: 7.26.11
-      ember-source: 6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
+      ember-source: 6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       fastboot: 4.1.5
       json-fn: 1.1.1
       minimist: 1.2.8
@@ -11186,7 +11203,7 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  ember-cli-fastboot@4.1.5(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
+  ember-cli-fastboot@4.1.5(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
     dependencies:
       broccoli-concat: 4.2.5
       broccoli-file-creator: 2.1.1
@@ -11198,7 +11215,7 @@ snapshots:
       ember-cli-lodash-subset: 2.0.1
       ember-cli-preprocess-registry: 3.3.0
       ember-cli-version-checker: 5.1.2
-      ember-source: 6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
+      ember-source: 6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       fastboot: 4.1.5
       fastboot-express-middleware: 4.1.2
       fastboot-transform: 0.1.3
@@ -11486,9 +11503,9 @@ snapshots:
     transitivePeerDependencies:
       - eslint
 
-  ember-load-initializers@3.0.1(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
+  ember-load-initializers@3.0.1(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
     dependencies:
-      ember-source: 6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
+      ember-source: 6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
 
   ember-modifier@4.2.2(@babel/core@7.28.0):
     dependencies:
@@ -11534,7 +11551,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5):
+  ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5):
     dependencies:
       '@babel/core': 7.28.0(supports-color@8.1.1)
       '@ember/edition-utils': 1.2.0
@@ -14241,7 +14258,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.0(supports-color@8.1.1)
       '@babel/plugin-syntax-decorators': 7.27.1(@babel/core@7.28.0)
-      '@babel/plugin-transform-typescript': 7.27.1(@babel/core@7.28.0)
+      '@babel/plugin-transform-typescript': 7.28.0(@babel/core@7.28.0)
       prettier: 2.8.8
     transitivePeerDependencies:
       - supports-color
