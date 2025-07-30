@@ -30,8 +30,8 @@ importers:
         specifier: ^3.5.5
         version: 3.5.6(@glint/template@1.5.2)
       '@embroider/macros':
-        specifier: ^1.18.0
-        version: 1.18.0(@glint/template@1.5.2)
+        specifier: ^1.18.1
+        version: 1.18.1(@glint/template@1.5.2)
       '@embroider/webpack':
         specifier: ^4.1.0
         version: 4.1.0(@embroider/core@3.5.6(@glint/template@1.5.2))(webpack@5.101.0)
@@ -81,8 +81,8 @@ importers:
         specifier: ^2.10.0
         version: 2.10.0(@glint/template@1.5.2)(webpack@5.101.0)
       ember-cli:
-        specifier: ~6.5.0
-        version: 6.5.0(handlebars@4.7.8)(underscore@1.13.7)
+        specifier: ~6.6.0
+        version: 6.6.0(handlebars@4.7.8)(underscore@1.13.7)
       ember-cli-app-version:
         specifier: ^7.0.0
         version: 7.0.0(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
@@ -91,7 +91,7 @@ importers:
         version: 8.2.0(@babel/core@7.28.0)
       ember-cli-dependency-checker:
         specifier: ^3.3.3
-        version: 3.3.3(ember-cli@6.5.0(handlebars@4.7.8)(underscore@1.13.7))
+        version: 3.3.3(ember-cli@6.6.0(handlebars@4.7.8)(underscore@1.13.7))
       ember-cli-deploy:
         specifier: ^2.0.0
         version: 2.0.0
@@ -951,8 +951,8 @@ packages:
     resolution: {integrity: sha512-1x3D2xEk2fRo3PAhwQwu5UubzgiVWSXTBfWpVd2Mx2AzRqJuDJCsgaDVZ7HB5iGzDW1Hl1sWN2mFyKjmR9uAog==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/runtime@7.27.6':
-    resolution: {integrity: sha512-vbavdySgbTTrmFE+EsiqUTzlOr5bzlnJtUv9PynGCAKvfQqjIXbvFdumPM/GxMDfyuGMJaJAU6TO4zc1Jf1i8Q==}
+  '@babel/runtime@7.28.2':
+    resolution: {integrity: sha512-KHp2IflsnGywDjBWDkR9iEqiWSpc8GIi0lgTT3mOElT0PP1tG26P4tmFI2YvAdzgq9RGyoHZQEIEdZy6Ec5xCA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -1057,8 +1057,8 @@ packages:
       '@glint/template':
         optional: true
 
-  '@embroider/macros@1.18.0':
-    resolution: {integrity: sha512-KanP80XxNK4bmQ1HKTcUjy/cdCt9n7knPMLK1vzHdOFymACHo+GbhgUjXjYdOCuBTv+ZwcjL2P2XDmBcYS9r8g==}
+  '@embroider/macros@1.18.1':
+    resolution: {integrity: sha512-hOQyzFBT1Rd6RdY4AbRSSGSeXyUzUrU9o6GWGD/kxg7cggKQax4R486KE10ZVSPRNqhRiNUcqe2VWc/+e8Z0MQ==}
     engines: {node: 12.* || 14.* || >= 16}
     peerDependencies:
       '@glint/template': ^1.0.0
@@ -1286,8 +1286,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@inquirer/figures@1.0.12':
-    resolution: {integrity: sha512-MJttijd8rMFcKJC8NYmprWr6hD3r9Gd9qUC0XwPNwoEPWSMVJwA2MlXxF+nhZZNMY+HXsWa+o7KY2emWYIn0jQ==}
+  '@inquirer/figures@1.0.13':
+    resolution: {integrity: sha512-lGPVU3yO9ZNqA7vTYz26jny41lE7yoQansmqdMLBEfqaGsmdg7V3W9mK9Pvb5IL4EVZ9GnSDGMO/cJXud5dMaw==}
     engines: {node: '>=18'}
 
   '@isaacs/cliui@8.0.2':
@@ -1409,16 +1409,16 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@pnpm/constants@1001.1.0':
-    resolution: {integrity: sha512-xb9dfSGi1qfUKY3r4Zy9JdC9+ZeaDxwfE7HrrGIEsBVY1hvIn6ntbR7A97z3nk44yX7vwbINNf9sizTp0WEtEw==}
+  '@pnpm/constants@1001.2.0':
+    resolution: {integrity: sha512-ohlStawRU3+C1AvUPtfkK+HfZ/5UbDGO79dujS2dbTpzl3O03L3Ggk7nnH361ubbMYZqp4yWlX030xhMGpr8Nw==}
     engines: {node: '>=18.12'}
 
-  '@pnpm/error@1000.0.2':
-    resolution: {integrity: sha512-2SfE4FFL73rE1WVIoESbqlj4sLy5nWW4M/RVdHvCRJPjlQHa9MH7m7CVJM204lz6I+eHoB+E7rL3zmpJR5wYnQ==}
+  '@pnpm/error@1000.0.3':
+    resolution: {integrity: sha512-Sr1wmJitZ768J+9MJVXXyd7tRaX3qThEiFH1K0AQovy2sIbLqo73MITphfVZH3YWIElt+Y1uMDnUZa676ZDA8g==}
     engines: {node: '>=18.12'}
 
-  '@pnpm/find-workspace-dir@1000.1.0':
-    resolution: {integrity: sha512-K5iG/z0SLV6bVW1jIYvbNBI6vWAD6ETJKyWj/wwHr7hxloxtm9xJCGbe/41pmM9nfFFUPbr1Z0YOi4q9yWkj6g==}
+  '@pnpm/find-workspace-dir@1000.1.1':
+    resolution: {integrity: sha512-mI3FqyEcEXHO2c0YvGfvssaK3ITzKmc10DKRO+HdrN9zFoJxNMerzmVGqea+jeSlApDFzKqyrGCewITPZN9d2g==}
     engines: {node: '>=18.12'}
 
   '@simple-dom/document@1.4.0':
@@ -1703,8 +1703,9 @@ packages:
   '@types/fs-extra@8.1.5':
     resolution: {integrity: sha512-0dzKcwO+S8s2kuF5Z9oUWatQJj5Uq/iqphEtE3GQJVRRYm/tD1LglU2UnXi2A8jLq5umkGouOXOR9y0n613ZwQ==}
 
-  '@types/glob@8.1.0':
-    resolution: {integrity: sha512-IO+MJPVhoqz+28h1qLAcBEH2+xHMK6MTyHJc7MTnnYb6wsoLR29POVGJ7LycmVXIqyy/4/2ShP5sUwTXuOwb/w==}
+  '@types/glob@9.0.0':
+    resolution: {integrity: sha512-00UxlRaIUvYm4R4W9WYkN8/J+kV8fmOQ7okeH6YFtGWFMt3odD45tpG5yA5wnL7HE6lLgjaTW5n14ju2hl2NNA==}
+    deprecated: This is a stub types definition. glob provides its own type definitions, so you do not need this installed.
 
   '@types/http-errors@2.0.5':
     resolution: {integrity: sha512-r8Tayk8HJnX0FztbZN7oVqGccWgw98T/0neJphO91KkmOzug1KkofZURD4UaD5uH8AqcFLfdPErnBod0u71/qg==}
@@ -1717,9 +1718,6 @@ packages:
 
   '@types/minimatch@3.0.5':
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
-
-  '@types/minimatch@5.1.2':
-    resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
   '@types/node@24.1.0':
     resolution: {integrity: sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==}
@@ -2020,8 +2018,8 @@ packages:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
 
-  aproba@2.0.0:
-    resolution: {integrity: sha512-lYe4Gx7QT+MKGbDsA+Z+he/Wtef0BiwDOlK/XkBrdfsh9J/jPPXbX0tE9x9cl27Tmu5gg3QUbUrQYa/y+KOHPQ==}
+  aproba@2.1.0:
+    resolution: {integrity: sha512-tLIEcj5GuR2RSTnxNKdkK0dJ/GrC7P38sUkiDmDuHfsHmbagTFAxDVIBltoklXEVIQ/f14IL8IMJ5pn9Hez1Ew==}
 
   are-we-there-yet@3.0.1:
     resolution: {integrity: sha512-QZW4EDmGwlYur0Yyf/b2uGucHQMa8aFUP7eu9ddR73vvhFyt4V0Vl3QHPcTNJ8l6qYOBdxgXdnBXQrHilfRQBg==}
@@ -2517,8 +2515,8 @@ packages:
     resolution: {integrity: sha512-rNjApaLzuwaOTjCiT8lSDdGN1APCiqkChLMJxJPWLunPAt5fy8xgU9/jNOchV84wfIxrA0lRQB7oCT8jrn/wrQ==}
     engines: {node: '>=6.0'}
 
-  ci-info@4.2.0:
-    resolution: {integrity: sha512-cYY9mypksY8NRqgDB1XD1RiJL338v/551niynFTGkZOO2LHuB2OmOYxDIe/ttN9AHwrqdum1360G3ald0W9kCg==}
+  ci-info@4.3.0:
+    resolution: {integrity: sha512-l+2bNRMiQgcfILUi33labAZYIWlH1kWDp+ecNo5iisRKrbm0xcRyCww71/YU0Fkw0mAFpz9bJayXPjey6vkmaQ==}
     engines: {node: '>=8'}
 
   class-utils@0.3.6:
@@ -2661,8 +2659,8 @@ packages:
     resolution: {integrity: sha512-AF3r7P5dWxL8MxyITRMlORQNaOA2IkAFaTr4k7BUumjPtRpGDTZpl0Pb1XCO6JeDCBdp126Cgs9sMxqSjgYyRg==}
     engines: {node: '>= 0.6'}
 
-  compression@1.8.0:
-    resolution: {integrity: sha512-k6WLKfunuqCYD3t6AsuPGvQWaKwuLLh2/xHNcX4qE+vIfDNXpSqnrhwA7O53R7WVQUnt8dVAIW+YHr7xTgOgGA==}
+  compression@1.8.1:
+    resolution: {integrity: sha512-9mAqGPHLakhCLeNyxPkK4xVo746zQ/czLH1Ky+vkitMnWfWZps8r0qXuwhwizagCRttsL4lfG4pIOvaWLpAP0w==}
     engines: {node: '>= 0.8.0'}
 
   concat-map@0.0.1:
@@ -3297,9 +3295,9 @@ packages:
     resolution: {integrity: sha512-rk7GY+FmLn/2e22HsZs0Ycrz8HQ1W3Fv+2TFOuEFW9optnDXDgkntPBIl6gact/LHsfBM5RKbM3dHsIIeLgl0Q==}
     engines: {node: 10.* || >= 12.*}
 
-  ember-cli@6.5.0:
-    resolution: {integrity: sha512-2qNqaD3iIFeFcYiKsgrsP0qdEilvT820+vX2Fz1x32XIgcsmy79ufc0rHrsHmEiazSQLC9XKUskwEzFBWjy54g==}
-    engines: {node: '>= 18'}
+  ember-cli@6.6.0:
+    resolution: {integrity: sha512-YwiOuzB/qlTGsiSjsfPATi9YUm3j4SqOK7h9POw9tgLeFu34g7UPVver5MUIRQV8eQGVJ3TbgqRg8iXyNClgZQ==}
+    engines: {node: '>= 20.11'}
     hasBin: true
 
   ember-eslint-parser@0.5.10:
@@ -4987,8 +4985,8 @@ packages:
     resolution: {integrity: sha512-IXnMcJ6ZyTuhRmJSjzvHSRhlVPiN9Jwc6e59V0bEJ0ba6OBeX2L0E+mRN1QseeOF4mM+F1Rit6Nh7o+rl2Yn/A==}
     engines: {node: '>0.9'}
 
-  morgan@1.10.0:
-    resolution: {integrity: sha512-AbegBVI4sh6El+1gNwvD5YIck7nSA36weD7xvIxG4in80j/UoK8AEGaWnnz8v1GxonMCltmlNs5ZKbGvl9b1XQ==}
+  morgan@1.10.1:
+    resolution: {integrity: sha512-223dMRJtI/l25dJKWpgij2cMtywuG/WiUKXdvwfbhGKBhy1puASqXwFzmWZ7+K73vUPoR7SS2Qz2cI/g9MKw0A==}
     engines: {node: '>= 0.8.0'}
 
   ms@2.0.0:
@@ -5140,8 +5138,8 @@ packages:
     resolution: {integrity: sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==}
     engines: {node: '>= 0.8'}
 
-  on-headers@1.0.2:
-    resolution: {integrity: sha512-pZAE+FJLoyITytdqK0U5s+FIpjN0JP3OzFi/u8Rx+EV5/W+JTWGXG8xFzevE7AjBfDqHv/8vL8qQsIhHnqRkrA==}
+  on-headers@1.1.0:
+    resolution: {integrity: sha512-737ZY3yNnXy37FHkQxPzt4UZ2UWPWiCZWLvFZ4fu5cueciegX0zGPnrlY6bwRg4FdQOe9YU8MkmJwGhoMybl8A==}
     engines: {node: '>= 0.8'}
 
   once@1.4.0:
@@ -6519,8 +6517,8 @@ packages:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
     hasBin: true
 
-  validate-npm-package-name@6.0.1:
-    resolution: {integrity: sha512-OaI//3H0J7ZkR1OqlhGA8cA+Cbk/2xFOQpJOt5+s27/ta9eZwpeervh4Mxh4w0im/kdgktowaqVNR7QOrUd7Yg==}
+  validate-npm-package-name@6.0.2:
+    resolution: {integrity: sha512-IUoow1YUtvoBBC06dXs8bR8B9vuA3aJfmQNKMoaPG/OFsPmoQvw8xh+6Ye25Gx9DQhoEom3Pcu9MKHerm/NpUQ==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
   vary@1.1.2:
@@ -6688,8 +6686,8 @@ packages:
   workerpool@6.5.1:
     resolution: {integrity: sha512-Fs4dNYcsdpYSAfVxhnl1L5zTksjvOJxtC5hzMNl+1t9B8hTJTdKDyZ5ju7ztgPy+ft9tBFXoOlDNiOT9WUXZlA==}
 
-  workerpool@9.3.2:
-    resolution: {integrity: sha512-Xz4Nm9c+LiBHhDR5bDLnNzmj6+5F+cyEAWPMkbs2awq/dYazR/efelZzUAjB/y3kNHL+uzkHvxVVpaOfGCPV7A==}
+  workerpool@9.3.3:
+    resolution: {integrity: sha512-slxCaKbYjEdFT/o2rH9xS1hf4uRDch1w7Uo+apxhZ+sf/1d9e0ZVkn42kPNGP2dgjIx6YFvSevj0zHvbWe2jdw==}
 
   wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
@@ -8090,7 +8088,7 @@ snapshots:
 
   '@babel/runtime@7.27.1': {}
 
-  '@babel/runtime@7.27.6': {}
+  '@babel/runtime@7.28.2': {}
 
   '@babel/template@7.27.2':
     dependencies:
@@ -8171,7 +8169,7 @@ snapshots:
     dependencies:
       '@ember/test-waiters': 4.1.0(@glint/template@1.5.2)
       '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.18.0(@glint/template@1.5.2)
+      '@embroider/macros': 1.18.1(@glint/template@1.5.2)
       '@simple-dom/interface': 1.4.0
       decorator-transforms: 2.3.0(@babel/core@7.28.0)
       dom-element-descriptors: 0.5.1
@@ -8183,7 +8181,7 @@ snapshots:
   '@ember/test-waiters@4.1.0(@glint/template@1.5.2)':
     dependencies:
       '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.18.0(@glint/template@1.5.2)
+      '@embroider/macros': 1.18.1(@glint/template@1.5.2)
     transitivePeerDependencies:
       - '@glint/template'
       - supports-color
@@ -8313,7 +8311,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/macros@1.18.0(@glint/template@1.5.2)':
+  '@embroider/macros@1.18.1(@glint/template@1.5.2)':
     dependencies:
       '@embroider/shared-internals': 3.0.0
       assert-never: 1.4.0
@@ -8642,7 +8640,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@inquirer/figures@1.0.12': {}
+  '@inquirer/figures@1.0.13': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -8875,15 +8873,15 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@pnpm/constants@1001.1.0': {}
+  '@pnpm/constants@1001.2.0': {}
 
-  '@pnpm/error@1000.0.2':
+  '@pnpm/error@1000.0.3':
     dependencies:
-      '@pnpm/constants': 1001.1.0
+      '@pnpm/constants': 1001.2.0
 
-  '@pnpm/find-workspace-dir@1000.1.0':
+  '@pnpm/find-workspace-dir@1000.1.1':
     dependencies:
-      '@pnpm/error': 1000.0.2
+      '@pnpm/error': 1000.0.3
       find-up: 5.0.0
 
   '@simple-dom/document@1.4.0':
@@ -9302,10 +9300,9 @@ snapshots:
     dependencies:
       '@types/node': 24.1.0
 
-  '@types/glob@8.1.0':
+  '@types/glob@9.0.0':
     dependencies:
-      '@types/minimatch': 5.1.2
-      '@types/node': 24.1.0
+      glob: 10.4.5
 
   '@types/http-errors@2.0.5': {}
 
@@ -9314,8 +9311,6 @@ snapshots:
   '@types/mime@1.3.5': {}
 
   '@types/minimatch@3.0.5': {}
-
-  '@types/minimatch@5.1.2': {}
 
   '@types/node@24.1.0':
     dependencies:
@@ -9329,7 +9324,7 @@ snapshots:
 
   '@types/rimraf@2.0.5':
     dependencies:
-      '@types/glob': 8.1.0
+      '@types/glob': 9.0.0
       '@types/node': 24.1.0
 
   '@types/rsvp@4.0.9': {}
@@ -9655,7 +9650,7 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  aproba@2.0.0: {}
+  aproba@2.1.0: {}
 
   are-we-there-yet@3.0.1:
     dependencies:
@@ -9859,7 +9854,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.0(supports-color@8.1.1)
       '@babel/plugin-syntax-decorators': 7.27.1(@babel/core@7.28.0)
-      '@babel/plugin-transform-typescript': 7.27.1(@babel/core@7.28.0)
+      '@babel/plugin-transform-typescript': 7.28.0(@babel/core@7.28.0)
       prettier: 2.8.8
     transitivePeerDependencies:
       - supports-color
@@ -10485,7 +10480,7 @@ snapshots:
 
   chrome-trace-event@1.0.4: {}
 
-  ci-info@4.2.0: {}
+  ci-info@4.3.0: {}
 
   class-utils@0.3.6:
     dependencies:
@@ -10603,13 +10598,13 @@ snapshots:
     dependencies:
       mime-db: 1.54.0
 
-  compression@1.8.0:
+  compression@1.8.1:
     dependencies:
       bytes: 3.1.2
       compressible: 2.0.18
       debug: 2.6.9
       negotiator: 0.6.4
-      on-headers: 1.0.2
+      on-headers: 1.1.0
       safe-buffer: 5.2.1
       vary: 1.1.2
     transitivePeerDependencies:
@@ -10948,7 +10943,7 @@ snapshots:
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.28.0)
       '@babel/plugin-transform-class-static-block': 7.27.1(@babel/core@7.28.0)(supports-color@8.1.1)
       '@babel/preset-env': 7.27.2(@babel/core@7.28.0)(supports-color@8.1.1)
-      '@embroider/macros': 1.18.0(@glint/template@1.5.2)
+      '@embroider/macros': 1.18.1(@glint/template@1.5.2)
       '@embroider/shared-internals': 2.9.0(supports-color@8.1.1)
       babel-loader: 8.4.1(@babel/core@7.28.0)(webpack@5.101.0)
       babel-plugin-ember-modules-api-polyfill: 3.5.0
@@ -11061,10 +11056,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-dependency-checker@3.3.3(ember-cli@6.5.0(handlebars@4.7.8)(underscore@1.13.7)):
+  ember-cli-dependency-checker@3.3.3(ember-cli@6.6.0(handlebars@4.7.8)(underscore@1.13.7)):
     dependencies:
       chalk: 2.4.2
-      ember-cli: 6.5.0(handlebars@4.7.8)(underscore@1.13.7)
+      ember-cli: 6.6.0(handlebars@4.7.8)(underscore@1.13.7)
       find-yarn-workspace-root: 2.0.0
       is-git-url: 1.0.0
       resolve: 1.22.10
@@ -11312,9 +11307,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli@6.5.0(handlebars@4.7.8)(underscore@1.13.7):
+  ember-cli@6.6.0(handlebars@4.7.8)(underscore@1.13.7):
     dependencies:
-      '@pnpm/find-workspace-dir': 1000.1.0
+      '@pnpm/find-workspace-dir': 1000.1.1
       babel-remove-types: 1.0.1
       broccoli: 3.5.2
       broccoli-concat: 4.2.5
@@ -11331,9 +11326,9 @@ snapshots:
       calculate-cache-key-for-tree: 2.0.0
       capture-exit: 2.0.0
       chalk: 4.1.2
-      ci-info: 4.2.0
+      ci-info: 4.3.0
       clean-base-url: 1.0.0
-      compression: 1.8.0
+      compression: 1.8.1
       configstore: 5.0.1
       console-ui: 3.1.2
       content-tag: 3.1.3
@@ -11371,7 +11366,7 @@ snapshots:
       markdown-it: 14.1.0
       markdown-it-terminal: 0.4.0(markdown-it@14.1.0)
       minimatch: 7.4.6
-      morgan: 1.10.0
+      morgan: 1.10.1
       nopt: 3.0.6
       npm-package-arg: 12.0.2
       os-locale: 5.0.0
@@ -11394,7 +11389,7 @@ snapshots:
       tree-sync: 2.1.0
       walk-sync: 3.0.0
       watch-detector: 1.0.2
-      workerpool: 9.3.2
+      workerpool: 9.3.3
       yam: 1.0.0
     transitivePeerDependencies:
       - arc-templates
@@ -11493,7 +11488,7 @@ snapshots:
     dependencies:
       '@ember/test-helpers': 5.2.2(@babel/core@7.28.0)(@glint/template@1.5.2)
       '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.18.0(@glint/template@1.5.2)
+      '@embroider/macros': 1.18.1(@glint/template@1.5.2)
       qunit: 2.24.1
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
@@ -12406,7 +12401,7 @@ snapshots:
 
   gauge@4.0.4:
     dependencies:
-      aproba: 2.0.0
+      aproba: 2.1.0
       color-support: 1.1.3
       console-control-strings: 1.1.0
       has-unicode: 2.0.1
@@ -12829,7 +12824,7 @@ snapshots:
 
   inquirer@9.3.7:
     dependencies:
-      '@inquirer/figures': 1.0.12
+      '@inquirer/figures': 1.0.13
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       external-editor: 3.1.0
@@ -12960,7 +12955,7 @@ snapshots:
 
   is-language-code@3.1.0:
     dependencies:
-      '@babel/runtime': 7.27.6
+      '@babel/runtime': 7.28.2
 
   is-map@2.0.3: {}
 
@@ -13571,13 +13566,13 @@ snapshots:
 
   mktemp@0.4.0: {}
 
-  morgan@1.10.0:
+  morgan@1.10.1:
     dependencies:
       basic-auth: 2.0.1
       debug: 2.6.9
       depd: 2.0.0
       on-finished: 2.3.0
-      on-headers: 1.0.2
+      on-headers: 1.1.0
     transitivePeerDependencies:
       - supports-color
 
@@ -13670,7 +13665,7 @@ snapshots:
       hosted-git-info: 8.1.0
       proc-log: 5.0.0
       semver: 7.7.2
-      validate-npm-package-name: 6.0.1
+      validate-npm-package-name: 6.0.2
 
   npm-run-path@2.0.2:
     dependencies:
@@ -13728,7 +13723,7 @@ snapshots:
     dependencies:
       ee-first: 1.1.1
 
-  on-headers@1.0.2: {}
+  on-headers@1.1.0: {}
 
   once@1.4.0:
     dependencies:
@@ -14927,7 +14922,7 @@ snapshots:
       bluebird: 3.7.2
       charm: 1.0.2
       commander: 2.20.3
-      compression: 1.8.0
+      compression: 1.8.1
       consolidate: 0.16.0(handlebars@4.7.8)(lodash@4.17.21)(mustache@4.2.0)(underscore@1.13.7)
       execa: 1.0.0
       express: 4.21.2
@@ -15302,7 +15297,7 @@ snapshots:
 
   uuid@9.0.1: {}
 
-  validate-npm-package-name@6.0.1: {}
+  validate-npm-package-name@6.0.2: {}
 
   vary@1.1.2: {}
 
@@ -15526,7 +15521,7 @@ snapshots:
 
   workerpool@6.5.1: {}
 
-  workerpool@9.3.2: {}
+  workerpool@9.3.3: {}
 
   wrap-ansi@6.2.0:
     dependencies:
