@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+export default {
   extends: ['recommended', 'stylistic'],
   reportUnusedDisableDirectives: true,
   rules: {

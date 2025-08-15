@@ -1,7 +1,7 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
-import Gravatar from 'website/components/gravatar';
+import Gravatar from '#src/components/gravatar.gjs';
 
 module('Integration | Component | gravatar', function (hooks) {
   setupRenderingTest(hooks);

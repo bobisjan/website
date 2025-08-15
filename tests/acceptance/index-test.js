@@ -1,7 +1,7 @@
 import { module, test } from 'qunit';
 import { setupApplicationTest } from 'ember-qunit';
 import { visit, currentURL } from '@ember/test-helpers';
-import percySnapshot from '@percy/ember';
+import percySnapshot from '../helpers/percy.js';
 
 module('Acceptance | index', function (hooks) {
   setupApplicationTest(hooks);

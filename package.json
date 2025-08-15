@@ -2,6 +2,7 @@
   "name": "website",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "description": "Source for personal website",
   "repository": {
     "type": "git",
@@ -14,7 +15,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build --environment=production",
+    "build": "vite build && vite build --ssr && node ./fastboot/cli.js /",
     "format": "prettier . --cache --write",
     "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
     "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\" --prefixColors auto && pnpm format",
@@ -24,47 +25,32 @@
     "lint:format": "prettier . --cache --check",
     "lint:hbs": "ember-template-lint .",
     "lint:format:fix": "prettier . --write",
-    "start": "PREMBER=true ember serve",
-    "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\" --prefixColors auto",
-    "test:ember": "percy exec -- ember test",
+    "start": "vite",
+    "test": "vite build --mode development && vite build --ssr --mode development && percy exec -- testem ci -f testem.config.js",
     "prepare": "husky"
   },
   "devDependencies": {
     "@babel/core": "^7.28.3",
     "@babel/eslint-parser": "^7.28.0",
-    "@babel/plugin-proposal-decorators": "^7.28.0",
-    "@ember/optional-features": "^2.2.0",
+    "@babel/plugin-transform-runtime": "^7.28.0",
     "@ember/test-helpers": "^5.2.2",
-    "@embroider/compat": "^3.8.5",
-    "@embroider/core": "^3.5.5",
+    "@embroider/core": "^4.0.3",
     "@embroider/macros": "^1.18.1",
-    "@embroider/webpack": "^4.1.0",
+    "@embroider/vite": "^1.1.1",
     "@eslint/css": "^0.10.0",
     "@eslint/js": "^9.33.0",
     "@glimmer/component": "^2.0.0",
     "@percy/cli": "^1.31.1",
     "@percy/ember": "^5.0.0",
-    "broccoli-asset-rev": "^3.0.0",
+    "@percy/sdk-utils": "^1.31.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "babel-plugin-ember-template-compilation": "^3.0.0",
     "concurrently": "^9.2.0",
-    "ember-auto-import": "^2.10.0",
-    "ember-cli": "~6.6.0",
-    "ember-cli-app-version": "^7.0.0",
-    "ember-cli-babel": "^8.2.0",
-    "ember-cli-dependency-checker": "^3.3.3",
-    "ember-cli-deprecation-workflow": "^3.4.0",
-    "ember-cli-fastboot": "^4.1.5",
-    "ember-cli-fastboot-testing": "^0.6.2",
-    "ember-cli-htmlbars": "^6.3.0",
-    "ember-cli-inject-live-reload": "^2.1.0",
-    "ember-cli-sri": "^2.1.1",
-    "ember-cli-terser": "^4.0.2",
-    "ember-load-initializers": "^3.0.1",
+    "decorator-transforms": "^2.3.0",
     "ember-modifier": "^4.2.2",
-    "ember-page-title": "^9.0.2",
     "ember-qunit": "^9.0.3",
-    "ember-resolver": "^13.1.1",
     "ember-source": "~6.6.0",
-    "ember-template-imports": "^4.3.0",
+    "ember-strict-application-resolver": "^0.0.2",
     "ember-template-lint": "^7.9.3",
     "eslint": "^9.33.0",
     "eslint-config-prettier": "^10.1.8",
@@ -74,14 +60,17 @@
     "globals": "^16.3.0",
     "husky": "^9.1.6",
     "lint-staged": "^16.1.5",
-    "loader.js": "^4.7.0",
-    "prember": "^2.1.0",
     "prettier": "^3.6.2",
     "prettier-plugin-ember-template-tag": "^2.1.0",
     "qunit": "^2.24.1",
     "qunit-dom": "^3.4.0",
-    "tracked-built-ins": "^4.0.0",
-    "webpack": "^5.101.2"
+    "simple-dom": "^1.4.0",
+    "testem": "^3.16.0",
+    "vite": "^6.0.0"
+  },
+  "imports": {
+    "#src/*.js": "./src/*.js",
+    "#src/*.gjs": "./src/*.gjs"
   },
   "ember": {
     "edition": "octane"
@@ -94,5 +83,9 @@
   "volta": {
     "node": "22.17.1",
     "pnpm": "10.13.1"
+  },
+  "ember-addon": {
+    "type": "app",
+    "version": 2
   }
 }
