@@ -5,7 +5,7 @@ module.exports = {
     Setting `isTypeScriptProject` to true will force the blueprint generators to generate TypeScript
     rather than JavaScript by default, when a TypeScript version of a given blueprint is available.
   */
-  isTypeScriptProject: true,
+  isTypeScriptProject: false,
 
   /**
     Setting `componentAuthoringFormat` to "strict" will force the blueprint generators to generate GJS

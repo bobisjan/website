@@ -1,9 +1,7 @@
-import { globalIgnores } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import js from '@eslint/js';
 import css from '@eslint/css';
-
-import ts from 'typescript-eslint';
 
 import ember from 'eslint-plugin-ember/recommended';
 
@@ -28,14 +26,10 @@ const parserOptions = {
         ],
       },
     },
-    ts: {
-      projectService: true,
-      tsconfigRootDir: import.meta.dirname,
-    },
   },
 };
 
-export default ts.config(
+export default defineConfig(
   { files: ['**/*.{js,ts,cjs,mjs,mts}'], rules: js.configs.recommended.rules },
   ember.configs.base,
   ember.configs.gjs,
@@ -61,14 +55,6 @@ export default ts.config(
         ...globals.browser,
       },
     },
-  },
-  {
-    files: ['**/*.{ts,gts}'],
-    languageOptions: {
-      parser: ember.parser,
-      parserOptions: parserOptions.esm.ts,
-    },
-    extends: [...ts.configs.recommendedTypeChecked, ember.configs.gts],
   },
   {
     files: ['tests/**/*-test.{js,gjs,ts,gts}'],

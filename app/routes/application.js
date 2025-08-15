@@ -1,7 +1,5 @@
 import Route from '@ember/routing/route';
 
-export type ApplicationRouteModel = ReturnType<ApplicationRoute['model']>;
-
 export default class ApplicationRoute extends Route {
   model() {
     return {

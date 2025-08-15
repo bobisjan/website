@@ -1,16 +1,6 @@
 import Gravatar from './gravatar';
-import type { TOC } from '@ember/component/template-only';
-import type { ApplicationRouteModel } from '../routes/application';
 
-export interface HeaderSignature {
-  Element: HTMLElement;
-  Args: {
-    gravatar: ApplicationRouteModel['gravatar'];
-    links: ApplicationRouteModel['links'];
-  };
-}
-
-export default <template>
+<template>
   <header class="masthead">
     <h3 class="masthead-brand">
       <Gravatar @hash={{@gravatar}} @size={{50}} @retina={{true}} />
@@ -29,4 +19,4 @@ export default <template>
       {{/each}}
     </nav>
   </header>
-</template> satisfies TOC<HeaderSignature>;
+</template>
