@@ -28,8 +28,7 @@
     "start": "PREMBER=true ember serve",
     "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\" --prefixColors auto",
     "test:ember": "percy exec -- ember test",
-    "prepare": "husky",
-    "deploy": "ember deploy production"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@babel/core": "^7.28.3",
@@ -60,11 +59,6 @@
     "ember-cli-app-version": "^7.0.0",
     "ember-cli-babel": "^8.2.0",
     "ember-cli-dependency-checker": "^3.3.3",
-    "ember-cli-deploy": "^2.0.0",
-    "ember-cli-deploy-build": "^3.0.0",
-    "ember-cli-deploy-gzip": "^3.0.0",
-    "ember-cli-deploy-manifest": "^3.0.0",
-    "ember-cli-deploy-s3": "^5.0.1",
     "ember-cli-deprecation-workflow": "^3.4.0",
     "ember-cli-fastboot": "^4.1.5",
     "ember-cli-fastboot-testing": "^0.6.2",

@@ -11,9 +11,6 @@ updates:
       embroider:
         patterns:
           - '@embroider/*'
-      ember-cli-deploy:
-        patterns:
-          - 'ember-cli-deploy-*'
       eslint:
         patterns:
           - '@eslint/*'
