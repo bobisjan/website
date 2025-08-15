@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit } from '../helpers/fasboot.js';
+import { visit } from '#tests/helpers/fasboot.js';
 
 module('FastBoot | index', function () {
   test('it renders', async function (assert) {

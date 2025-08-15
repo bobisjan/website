@@ -51,7 +51,7 @@ function scopeDOM(scope, dom) {
   dom.querySelector('#ember-testing')?.removeAttribute('id');
 }
 
-export default async function percySnapshot(
+export async function percySnapshot(
   name,
   {
     // separate SDK specific options from snapshot options

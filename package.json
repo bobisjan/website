@@ -70,7 +70,8 @@
   },
   "imports": {
     "#src/*.js": "./src/*.js",
-    "#src/*.gjs": "./src/*.gjs"
+    "#src/*.gjs": "./src/*.gjs",
+    "#tests/*.js": "./tests/*.js"
   },
   "ember": {
     "edition": "octane"
