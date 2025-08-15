@@ -1,15 +1,6 @@
 import Component from '@glimmer/component';
 
-export interface GravatarSignature {
-  Element: HTMLImageElement;
-  Args: {
-    hash: string;
-    retina: boolean;
-    size: number;
-  };
-}
-
-export default class Gravatar extends Component<GravatarSignature> {
+export default class Gravatar extends Component {
   get src() {
     const { s } = this;
     const { hash } = this.args;

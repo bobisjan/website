@@ -9,8 +9,6 @@ module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
     hinting: false,
 
-    'ember-cli-babel': { enableTypeScriptTransform: true },
-
     babel: {
       sourceMaps: 'inline',
     },

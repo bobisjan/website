@@ -13,7 +13,6 @@
           "options": [
             "--ci-provider=github",
             "--no-welcome",
-            "--typescript",
             "-pnpm"
           ]
         }

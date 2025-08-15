@@ -1,6 +1,6 @@
 import { helper } from '@ember/component/helper';
 
-let year: number;
+let year;
 
 export function currentYear() {
   year = year || new Date().getFullYear();
