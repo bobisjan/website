@@ -1,4 +1,3 @@
-import './env.js';
 import Application from 'ember-strict-application-resolver';
 import Router from './router.js';
 import { clear } from './services/fastboot.js';
