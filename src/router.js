@@ -1,9 +1,9 @@
 import EmberRouter from '@ember/routing/router';
-import config from './config.js';
+import { macroCondition, isTesting } from '@embroider/macros';
 
 export default class Router extends EmberRouter {
-  location = config.locationType;
-  rootURL = config.rootURL;
+  location = macroCondition(isTesting()) ? 'none' : 'history';
+  rootURL = import.meta.env.BASE_URL;
 }
 
 Router.map(function () {});

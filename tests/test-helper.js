@@ -1,13 +1,16 @@
 import Application from '#src/app.js';
-import config, { enterTestMode } from '#src/config.js';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';
 import { start as qunitStart, setupEmberOnerrorValidation } from 'ember-qunit';
 
 export function start() {
-  enterTestMode();
-  setApplication(Application.create(config.APP));
+  setApplication(
+    Application.create({
+      rootElement: '#ember-testing',
+      autoboot: false,
+    }),
+  );
 
   setup(QUnit.assert);
   setupEmberOnerrorValidation();
