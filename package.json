@@ -16,15 +16,14 @@
   },
   "scripts": {
     "build": "vite build && vite build --ssr && node ./fastboot/cli.js /",
-    "format": "prettier . --cache --write",
+    "format": "prettier . --cache --check",
+    "format:fix": "prettier . --cache --write",
     "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
-    "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\" --prefixColors auto && pnpm format",
+    "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\" --prefixColors auto",
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache --concurrency=auto",
     "lint:js:fix": "eslint . --cache --concurrency=auto --fix",
-    "lint:format": "prettier . --cache --check",
     "lint:hbs": "ember-template-lint .",
-    "lint:format:fix": "prettier . --write",
     "start": "vite",
     "test": "vite build --mode development && vite build --ssr --mode development && percy exec -- testem ci -f testem.config.js",
     "prepare": "husky"

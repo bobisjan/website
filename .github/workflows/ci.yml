@@ -30,6 +30,7 @@ jobs:
           node-version: 22.14.0
           cache: pnpm
       - run: pnpm install
+      - run: pnpm format
       - run: pnpm lint
       - run: pnpm test
 
