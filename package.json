@@ -76,13 +76,13 @@
     "edition": "octane"
   },
   "engines": {
-    "node": "22.17.1",
-    "pnpm": "10.13.1"
+    "node": "22.19.0",
+    "pnpm": "10.15.1"
   },
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.15.1",
   "volta": {
-    "node": "22.17.1",
-    "pnpm": "10.13.1"
+    "node": "22.19.0",
+    "pnpm": "10.15.1"
   },
   "ember-addon": {
     "type": "app",
