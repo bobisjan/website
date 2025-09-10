@@ -50,8 +50,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0(@babel/core@7.28.4)(webpack@5.101.3)
       '@percy/sdk-utils':
-        specifier: ^1.31.1
-        version: 1.31.1
+        specifier: ^1.31.2
+        version: 1.31.2
       '@rollup/plugin-babel':
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.28.4)(rollup@4.50.1)
@@ -1193,6 +1193,10 @@ packages:
 
   '@percy/sdk-utils@1.31.1':
     resolution: {integrity: sha512-OU+n/TGEPt7ZikJOwau9S0X0bCfKNTxHIry9dX57amL82PysCrzEfcKUJIAf1BTaVqDH4In8GPssjLVhut95Ag==}
+    engines: {node: '>=14'}
+
+  '@percy/sdk-utils@1.31.2':
+    resolution: {integrity: sha512-0FRe1rn/Lo5omkfuKJep4VJI9HkQeNriahm3WWAYLvyUvdPL0cgnmqZD6oMyptiCZYgIDZ4n2FSybixoGiozVw==}
     engines: {node: '>=14'}
 
   '@percy/webdriver-utils@1.31.1':
@@ -6223,7 +6227,7 @@ snapshots:
 
   '@percy/ember@5.0.0(@babel/core@7.28.4)(webpack@5.101.3)':
     dependencies:
-      '@percy/sdk-utils': 1.31.1
+      '@percy/sdk-utils': 1.31.2
       ember-auto-import: 2.10.0(webpack@5.101.3)
       ember-cli-babel: 8.2.0(@babel/core@7.28.4)
     transitivePeerDependencies:
@@ -6248,6 +6252,8 @@ snapshots:
       - typescript
 
   '@percy/sdk-utils@1.31.1': {}
+
+  '@percy/sdk-utils@1.31.2': {}
 
   '@percy/webdriver-utils@1.31.1(typescript@5.9.2)':
     dependencies:
