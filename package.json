@@ -65,7 +65,7 @@
     "qunit-dom": "^3.5.0",
     "simple-dom": "^1.4.0",
     "testem": "^3.16.0",
-    "vite": "^7.1.7"
+    "vite": "^7.1.9"
   },
   "imports": {
     "#src/*.js": "./src/*.js",
