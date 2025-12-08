@@ -53,8 +53,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0(@babel/core@7.28.5)(webpack@5.101.3)
       '@percy/sdk-utils':
-        specifier: ^1.31.4
-        version: 1.31.4
+        specifier: ^1.31.5
+        version: 1.31.5
       '@rollup/plugin-babel':
         specifier: ^6.1.0
         version: 6.1.0(@babel/core@7.28.5)(rollup@4.53.3)
@@ -1227,6 +1227,10 @@ packages:
 
   '@percy/sdk-utils@1.31.4':
     resolution: {integrity: sha512-IBzSQZ8jx1pnSyyn7tF4UX8BVffbw0xjsNsPl/MuYuFuE5rW/D8arc+sH6xI1Kog0+tECt2XdAf4hMGWij2lxw==}
+    engines: {node: '>=14'}
+
+  '@percy/sdk-utils@1.31.5':
+    resolution: {integrity: sha512-6hpu8k93LZBhlce+Bvve/tK95ymORpVOO36IDHlSTxm5V9NnMKuad3QyAz4Z70M1oVTdtdgYH+AiFI/IcQoQNw==}
     engines: {node: '>=14'}
 
   '@percy/webdriver-utils@1.31.4':
@@ -3078,8 +3082,8 @@ packages:
     resolution: {integrity: sha512-4gd7VpWNQNB4UKKCFFVcp1AVv+FMOgs9NKzjHKusc8jTMhd5eL1NqQqOpE0KzMds804/yHlglp3uxgluOqAPLw==}
     engines: {node: '>= 0.4'}
 
-  ip-address@10.0.1:
-    resolution: {integrity: sha512-NWv9YLW4PoW2B7xtzaS3NCot75m6nK7Icdv0o3lfMceJVRfSoQwqD4wEH5rLwoKJwUiZ/rfpiVBhnaF0FK4HoA==}
+  ip-address@10.1.0:
+    resolution: {integrity: sha512-XXADHxXmvT9+CRxhXg56LJovE+bmWnEWB78LB83VZTprKTmaC5QfruXocxzTZ2Kl0DNwKuBdlIhjL8LeY8Sf8Q==}
     engines: {node: '>= 12'}
 
   ipaddr.js@1.9.1:
@@ -6404,7 +6408,7 @@ snapshots:
 
   '@percy/ember@5.0.0(@babel/core@7.28.5)(webpack@5.101.3)':
     dependencies:
-      '@percy/sdk-utils': 1.31.4
+      '@percy/sdk-utils': 1.31.5
       ember-auto-import: 2.10.0(webpack@5.101.3)
       ember-cli-babel: 8.2.0(@babel/core@7.28.5)
     transitivePeerDependencies:
@@ -6430,6 +6434,12 @@ snapshots:
       - typescript
 
   '@percy/sdk-utils@1.31.4':
+    dependencies:
+      pac-proxy-agent: 7.2.0
+    transitivePeerDependencies:
+      - supports-color
+
+  '@percy/sdk-utils@1.31.5':
     dependencies:
       pac-proxy-agent: 7.2.0
     transitivePeerDependencies:
@@ -8647,7 +8657,7 @@ snapshots:
       hasown: 2.0.2
       side-channel: 1.1.0
 
-  ip-address@10.0.1: {}
+  ip-address@10.1.0: {}
 
   ipaddr.js@1.9.1: {}
 
@@ -9936,7 +9946,7 @@ snapshots:
 
   socks@2.8.7:
     dependencies:
-      ip-address: 10.0.1
+      ip-address: 10.1.0
       smart-buffer: 4.2.0
 
   source-map-js@1.2.1: {}
