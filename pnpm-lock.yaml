@@ -36,7 +36,7 @@ importers:
         version: 1.19.5
       '@embroider/vite':
         specifier: ^1.4.4
-        version: 1.4.4(@embroider/core@4.4.0)(rollup@4.53.3)(vite@7.2.7(@types/node@24.10.1)(terser@5.44.1)(yaml@2.8.2))
+        version: 1.4.4(@embroider/core@4.4.0)(rollup@4.53.3)(vite@7.2.7(@types/node@24.10.2)(terser@5.44.1)(yaml@2.8.2))
       '@eslint/css':
         specifier: ^0.14.1
         version: 0.14.1
@@ -77,8 +77,8 @@ importers:
         specifier: ~6.9.0
         version: 6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-strict-application-resolver:
-        specifier: ^0.1.0
-        version: 0.1.0(@babel/core@7.28.5)
+        specifier: ^0.1.1
+        version: 0.1.1(@babel/core@7.28.5)
       ember-template-lint:
         specifier: ^7.9.3
         version: 7.9.3
@@ -126,7 +126,7 @@ importers:
         version: 3.16.0(handlebars@4.7.8)(underscore@1.13.7)
       vite:
         specifier: ^7.2.7
-        version: 7.2.7(@types/node@24.10.1)(terser@5.44.1)(yaml@2.8.2)
+        version: 7.2.7(@types/node@24.10.2)(terser@5.44.1)(yaml@2.8.2)
 
 packages:
 
@@ -1421,6 +1421,9 @@ packages:
   '@types/node@24.10.1':
     resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
 
+  '@types/node@24.10.2':
+    resolution: {integrity: sha512-WOhQTZ4G8xZ1tjJTvKOpyEVSGgOTvJAfDK3FNFgELyaTpzhdgHVHeqW8V+UJvzF5BT+/B54T/1S2K6gd9c7bbA==}
+
   '@types/node@24.3.0':
     resolution: {integrity: sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==}
 
@@ -2414,8 +2417,8 @@ packages:
     peerDependencies:
       '@glimmer/component': '>= 1.1.2'
 
-  ember-strict-application-resolver@0.1.0:
-    resolution: {integrity: sha512-dmVJPLDoltiB5PN4xhUmg9JrUMPJxdeIlwqUtRBvIHpOLrbi069m7AvXGEh0b+Pq7g1HkLwt/lMm6ouHVry7hQ==}
+  ember-strict-application-resolver@0.1.1:
+    resolution: {integrity: sha512-/49JZ2Yk2ggicAGIoFNWcz05llhe2i+/2dpH5Pv1KlwZOBKkqMMJpTKEB4IMg+FjKBiE0r2yxuZzo9Oly9vc1A==}
 
   ember-template-lint@7.9.3:
     resolution: {integrity: sha512-iqC4rv/oVlXViGuf7hlOA/bC550ZqacZKAc8WvQV0ueeCtIYPkYYK+Tc7FwpM8qGx3jiwu/ZsTuNfPInI5pL7Q==}
@@ -5907,7 +5910,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/vite@1.4.4(@embroider/core@4.4.0)(rollup@4.53.3)(vite@7.2.7(@types/node@24.10.1)(terser@5.44.1)(yaml@2.8.2))':
+  '@embroider/vite@1.4.4(@embroider/core@4.4.0)(rollup@4.53.3)(vite@7.2.7(@types/node@24.10.2)(terser@5.44.1)(yaml@2.8.2))':
     dependencies:
       '@babel/core': 7.28.5
       '@embroider/core': 4.4.0
@@ -5926,7 +5929,7 @@ snapshots:
       send: 0.18.0
       source-map-url: 0.4.1
       terser: 5.44.1
-      vite: 7.2.7(@types/node@24.10.1)(terser@5.44.1)(yaml@2.8.2)
+      vite: 7.2.7(@types/node@24.10.2)(terser@5.44.1)(yaml@2.8.2)
     transitivePeerDependencies:
       - '@glint/template'
       - bufferutil
@@ -6587,6 +6590,10 @@ snapshots:
   '@types/minimatch@3.0.5': {}
 
   '@types/node@24.10.1':
+    dependencies:
+      undici-types: 7.16.0
+
+  '@types/node@24.10.2':
     dependencies:
       undici-types: 7.16.0
 
@@ -7742,9 +7749,9 @@ snapshots:
       - rsvp
       - supports-color
 
-  ember-strict-application-resolver@0.1.0(@babel/core@7.28.5):
+  ember-strict-application-resolver@0.1.1(@babel/core@7.28.5):
     dependencies:
-      '@embroider/addon-shim': 1.10.0
+      '@embroider/addon-shim': 1.10.2
       decorator-transforms: 2.3.0(@babel/core@7.28.5)
     transitivePeerDependencies:
       - '@babel/core'
@@ -8816,7 +8823,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 24.10.1
+      '@types/node': 24.10.2
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -10382,7 +10389,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite@7.2.7(@types/node@24.10.1)(terser@5.44.1)(yaml@2.8.2):
+  vite@7.2.7(@types/node@24.10.2)(terser@5.44.1)(yaml@2.8.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -10391,7 +10398,7 @@ snapshots:
       rollup: 4.53.3
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.10.1
+      '@types/node': 24.10.2
       fsevents: 2.3.3
       terser: 5.44.1
       yaml: 2.8.2
