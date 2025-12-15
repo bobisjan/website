@@ -11,11 +11,15 @@ updates:
       embroider:
         patterns:
           - '@embroider/*'
+          - 'vite'
       eslint:
         patterns:
           - '@eslint/*'
           - 'eslint*'
-          - 'typescript-eslint'
+      prettier:
+        patterns:
+          - 'prettier'
+          - 'prettier-plugin-*'
   - package-ecosystem: github-actions
     directory: '/'
     schedule:
