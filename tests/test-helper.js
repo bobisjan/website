@@ -6,6 +6,8 @@ import { start as qunitStart, setupEmberOnerrorValidation } from 'ember-qunit';
 import { getGlobalConfig } from '@embroider/macros/src/addon/runtime';
 
 export function start() {
+  getGlobalConfig()['@embroider/macros'] =
+    getGlobalConfig()['@embroider/macros'] ?? {};
   getGlobalConfig()['@embroider/macros'].isTesting = true;
 
   setApplication(
