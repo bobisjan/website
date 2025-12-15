@@ -1,6 +1,12 @@
 import { buildMacros } from '@embroider/macros/babel';
 
-const macros = buildMacros();
+const macros = buildMacros({
+  configure(config) {
+    config.setGlobalConfig(import.meta.filename, '@embroider/core', {
+      active: true,
+    });
+  },
+});
 
 export default {
   plugins: [
