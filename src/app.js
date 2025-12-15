@@ -3,6 +3,10 @@ import setupInspector from '@embroider/legacy-inspector-support/ember-source-4.1
 import Router from './router.js';
 import { clear } from './services/fastboot.js';
 
+if (import.meta.env.SSR) {
+  globalThis.window = globalThis;
+}
+
 export default class App extends Application {
   modules = {
     './router': { default: Router },

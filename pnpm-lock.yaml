@@ -29,6 +29,9 @@ importers:
       '@embroider/macros':
         specifier: ^1.19.5
         version: 1.19.5
+      '@embroider/router':
+        specifier: ^3.0.6
+        version: 3.0.6(@embroider/core@4.4.1)
       '@embroider/vite':
         specifier: ^1.4.4
         version: 1.4.4(@embroider/core@4.4.1)(rollup@4.53.4)(vite@7.3.0(@types/node@25.0.2)(terser@5.44.1)(yaml@2.8.2))
@@ -753,6 +756,14 @@ packages:
   '@embroider/reverse-exports@0.2.0':
     resolution: {integrity: sha512-WFsw8nQpHZiWGEDYpa/A79KEFfTisqteXbY+jg9eZiww1r1G+LZvsmdszDp86TkotUSCqrMbK/ewn0jR1CJmqg==}
     engines: {node: 12.* || 14.* || >= 16}
+
+  '@embroider/router@3.0.6':
+    resolution: {integrity: sha512-D+Us/ZwE1q1W7VHuq3tNDTavv9/uewh8IUFkMocve3X3rPYRiVzaw5G5wooX+409ng1W1ApLl7bxOwZHhYU9uQ==}
+    peerDependencies:
+      '@embroider/core': ^2.0.0||^3.0.0||^4.0.0-alpha.0
+    peerDependenciesMeta:
+      '@embroider/core':
+        optional: true
 
   '@embroider/shared-internals@2.9.2':
     resolution: {integrity: sha512-d96ub/WkS1Gx6dRDxZ0mCRPwFAHIMlMr2iti6uTYxTFzC85Wgt6j7bYr6ppkEuwEwKQVyzKRT0kTsJz6P74caQ==}
@@ -5661,6 +5672,16 @@ snapshots:
     dependencies:
       mem: 8.1.1
       resolve.exports: 2.0.3
+
+  '@embroider/router@3.0.6(@embroider/core@4.4.1)':
+    dependencies:
+      '@ember/test-waiters': 4.1.1
+      '@embroider/addon-shim': 1.10.2
+    optionalDependencies:
+      '@embroider/core': 4.4.1
+    transitivePeerDependencies:
+      - '@glint/template'
+      - supports-color
 
   '@embroider/shared-internals@2.9.2':
     dependencies:
