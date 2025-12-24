@@ -41,7 +41,7 @@
     "@eslint/css": "0.14.1",
     "@eslint/js": "9.39.2",
     "@glimmer/component": "2.0.0",
-    "@percy/cli": "1.31.5",
+    "@percy/cli": "1.31.6",
     "@percy/ember": "5.0.0",
     "@percy/sdk-utils": "1.31.6",
     "@rollup/plugin-babel": "6.1.0",
