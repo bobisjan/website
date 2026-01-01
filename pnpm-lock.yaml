@@ -51,8 +51,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(@babel/core@7.28.5)(webpack@5.103.0)
       '@percy/sdk-utils':
-        specifier: 1.31.6
-        version: 1.31.6
+        specifier: 1.31.7
+        version: 1.31.7
       '@rollup/plugin-babel':
         specifier: 6.1.0
         version: 6.1.0(@babel/core@7.28.5)(rollup@4.53.4)
@@ -1183,6 +1183,10 @@ packages:
     resolution: {integrity: sha512-bsDZOM3qs+aKyOzKjvUMEtDt8felCqXPPfOnv5PhO0P43Vspub2XUQzKUF9RlplmghzXhAvczacKTN6ef0M7PA==}
     engines: {node: '>=14'}
 
+  '@percy/sdk-utils@1.31.7':
+    resolution: {integrity: sha512-bkL9PZ3AFnI607ybQcFUtSGiSAVPV2NMx5nUZGkChjUknzz2WqrBENhmCUDX0Zs7IS7qonZFKqoMNLg0lFQjMQ==}
+    engines: {node: '>=14'}
+
   '@percy/webdriver-utils@1.31.6':
     resolution: {integrity: sha512-+Zswt3Y1L0tOP2zx9iplxKpAkrKoqXkcIchspuqDUu+uAzoIMlkmEoMWbN3YLhxZyiX1w1FVgyHmz6Pfn8uqSw==}
     engines: {node: '>=14'}
@@ -1681,8 +1685,8 @@ packages:
     resolution: {integrity: sha512-Sg0xJUNDU1sJNGdfGWhVHX0kkZ+HWcvmVymJbj6NSgZZmW/8S9Y2HQ5euytnIgakgxN6papOAWiwDo1ctFDcoQ==}
     hasBin: true
 
-  basic-ftp@5.0.5:
-    resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
+  basic-ftp@5.1.0:
+    resolution: {integrity: sha512-RkaJzeJKDbaDWTIPiJwubyljaEPwpVWkm9Rt5h9Nd6h7tEXTJ3VB4qxdZBioV7JO5yLUaOKwz7vDOzlncUsegw==}
     engines: {node: '>=10.0.0'}
 
   better-path-resolve@1.0.0:
@@ -6225,7 +6229,7 @@ snapshots:
 
   '@percy/ember@5.0.0(@babel/core@7.28.5)(webpack@5.103.0)':
     dependencies:
-      '@percy/sdk-utils': 1.31.6
+      '@percy/sdk-utils': 1.31.7
       ember-auto-import: 2.12.0(webpack@5.103.0)
       ember-cli-babel: 8.2.0(@babel/core@7.28.5)
     transitivePeerDependencies:
@@ -6251,6 +6255,12 @@ snapshots:
       - typescript
 
   '@percy/sdk-utils@1.31.6':
+    dependencies:
+      pac-proxy-agent: 7.2.0
+    transitivePeerDependencies:
+      - supports-color
+
+  '@percy/sdk-utils@1.31.7':
     dependencies:
       pac-proxy-agent: 7.2.0
     transitivePeerDependencies:
@@ -6765,7 +6775,7 @@ snapshots:
 
   baseline-browser-mapping@2.9.11: {}
 
-  basic-ftp@5.0.5: {}
+  basic-ftp@5.1.0: {}
 
   better-path-resolve@1.0.0:
     dependencies:
@@ -8249,7 +8259,7 @@ snapshots:
 
   get-uri@6.0.5:
     dependencies:
-      basic-ftp: 5.0.5
+      basic-ftp: 5.1.0
       data-uri-to-buffer: 6.0.2
       debug: 4.4.3
     transitivePeerDependencies:
