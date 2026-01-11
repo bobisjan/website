@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="../src/styles/app.css" />
+
+    <script type="module" vite-ignore>
+      window._embroider_macros_runtime_config ??= [];
+      window._embroider_macros_runtime_config.push((config) => {
+        config.getGlobalConfig()["@embroider/macros"].isTesting = true;
+      });
+    </script>
   </head>
   <body>
     <div id="qunit"></div>
