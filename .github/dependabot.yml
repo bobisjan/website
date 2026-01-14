@@ -16,6 +16,9 @@ updates:
         patterns:
           - '@eslint/*'
           - 'eslint*'
+      percy:
+        patterns:
+          - '@percy/*'
       prettier:
         patterns:
           - 'prettier'
