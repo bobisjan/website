@@ -45,7 +45,7 @@
     "@percy/ember": "5.0.0",
     "@percy/sdk-utils": "1.31.7",
     "@rollup/plugin-babel": "6.1.0",
-    "babel-plugin-ember-template-compilation": "3.0.1",
+    "babel-plugin-ember-template-compilation": "4.0.0",
     "concurrently": "9.2.1",
     "decorator-transforms": "2.3.1",
     "ember-modifier": "4.2.2",
