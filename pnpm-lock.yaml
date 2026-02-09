@@ -33,8 +33,8 @@ importers:
         specifier: 3.0.6
         version: 3.0.6(@babel/core@7.29.0)(@embroider/core@4.4.3)
       '@embroider/vite':
-        specifier: 1.5.1
-        version: 1.5.1(@embroider/core@4.4.3)(rollup@4.57.1)(vite@7.3.1(@types/node@25.2.2)(terser@5.46.0)(yaml@2.8.2))
+        specifier: 1.5.2
+        version: 1.5.2(@embroider/core@4.4.3)(rollup@4.57.1)(vite@7.3.1(@types/node@25.2.2)(terser@5.46.0)(yaml@2.8.2))
       '@eslint/css':
         specifier: 0.14.1
         version: 0.14.1
@@ -756,8 +756,8 @@ packages:
     resolution: {integrity: sha512-/SusdG+zgosc3t+9sPFVKSFOYyiSgLfXOT6lYNWoG1YtnhWDxlK4S8leZ0jhcVjemdaHln5rTyxCnq8oFLxqpQ==}
     engines: {node: 12.* || 14.* || >= 16}
 
-  '@embroider/vite@1.5.1':
-    resolution: {integrity: sha512-zjQLXlnMU8VfJKbQWYRa8yUBFZB6/o2UCiTcpwVYZsLJnCDCXbawZyAFwRXyMUD7tKzHbj6eVnRQbdwObdOz1A==}
+  '@embroider/vite@1.5.2':
+    resolution: {integrity: sha512-vaD2rSugRGAsBgoF6a098JqyL8grPAoPTx627wvxfUhE5uW19hGi7ybpTD3Zlkn4pKNKR9k9tPW3sP1Cnvbm4A==}
     peerDependencies:
       '@embroider/core': ^4.4.3
       vite: '>= 5.2.0'
@@ -5552,7 +5552,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/vite@1.5.1(@embroider/core@4.4.3)(rollup@4.57.1)(vite@7.3.1(@types/node@25.2.2)(terser@5.46.0)(yaml@2.8.2))':
+  '@embroider/vite@1.5.2(@embroider/core@4.4.3)(rollup@4.57.1)(vite@7.3.1(@types/node@25.2.2)(terser@5.46.0)(yaml@2.8.2))':
     dependencies:
       '@babel/core': 7.29.0
       '@embroider/core': 4.4.3
