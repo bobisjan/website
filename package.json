@@ -40,7 +40,7 @@
     "@embroider/vite": "1.7.2",
     "@eslint/css": "0.14.1",
     "@eslint/js": "9.39.2",
-    "@glimmer/component": "2.0.0",
+    "@glimmer/component": "2.1.1",
     "@percy/cli": "1.31.11",
     "@percy/ember": "5.0.0",
     "@percy/sdk-utils": "1.31.11",
