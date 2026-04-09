@@ -62,7 +62,7 @@
     "husky": "9.1.7",
     "lint-staged": "16.4.0",
     "prettier": "3.8.1",
-    "prettier-plugin-ember-template-tag": "2.1.3",
+    "prettier-plugin-ember-template-tag": "2.1.4",
     "qunit": "2.25.0",
     "qunit-dom": "3.5.0",
     "simple-dom": "1.4.0",
