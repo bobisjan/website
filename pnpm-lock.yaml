@@ -114,8 +114,8 @@ importers:
         specifier: 2.25.0
         version: 2.25.0
       qunit-dom:
-        specifier: 3.5.0
-        version: 3.5.0
+        specifier: 3.5.1
+        version: 3.5.1
       simple-dom:
         specifier: 1.4.0
         version: 1.4.0
@@ -3975,8 +3975,8 @@ packages:
   quick-temp@0.1.9:
     resolution: {integrity: sha512-yI0h7tIhKVObn03kD+Ln9JFi4OljD28lfaOsTdfpTR0xzrhGOod+q66CjGafUqYX2juUfT9oHIGrTBBo22mkRA==}
 
-  qunit-dom@3.5.0:
-    resolution: {integrity: sha512-eemLM5bflWafzmBnwlYbjf9NrjEkV2j7NO7mTvsMzQBJbEaq2zFvUFDtHV9JaK0TT5mgRZt034LCUewYGmjjjQ==}
+  qunit-dom@3.5.1:
+    resolution: {integrity: sha512-ZnvTADVXASdjLxrUDuS/8NaOzadhxN+fZgafjuQV1EOMFd3dJqLkP0RqsGdAxQBxZ7KzKg57AAJO20dM6/PxkA==}
 
   qunit-theme-ember@1.0.0:
     resolution: {integrity: sha512-vdMVVo6ecdCkWttMTKeyq1ZTLGHcA6zdze2zhguNuc3ritlJMhOXY5RDseqazOwqZVfCg3rtlmL3fMUyIzUyFQ==}
@@ -6181,10 +6181,7 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.31.11(typescript@5.9.3)
     transitivePeerDependencies:
-      - bufferutil
-      - supports-color
       - typescript
-      - utf-8-validate
 
   '@percy/cli-command@1.31.11(typescript@5.9.3)':
     dependencies:
@@ -6201,10 +6198,7 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.31.11(typescript@5.9.3)
     transitivePeerDependencies:
-      - bufferutil
-      - supports-color
       - typescript
-      - utf-8-validate
 
   '@percy/cli-doctor@1.31.11(typescript@5.9.3)':
     dependencies:
@@ -6240,10 +6234,7 @@ snapshots:
       '@percy/cli-command': 1.31.11(typescript@5.9.3)
       yaml: 2.8.3
     transitivePeerDependencies:
-      - bufferutil
-      - supports-color
       - typescript
-      - utf-8-validate
 
   '@percy/cli-upload@1.31.11(typescript@5.9.3)':
     dependencies:
@@ -6251,10 +6242,7 @@ snapshots:
       fast-glob: 3.3.3
       image-size: 1.2.1
     transitivePeerDependencies:
-      - bufferutil
-      - supports-color
       - typescript
-      - utf-8-validate
 
   '@percy/cli@1.31.11(typescript@5.9.3)':
     dependencies:
@@ -9292,7 +9280,7 @@ snapshots:
       rimraf: 5.0.10
       underscore.string: 3.3.6
 
-  qunit-dom@3.5.0:
+  qunit-dom@3.5.1:
     dependencies:
       dom-element-descriptors: 0.5.1
 
