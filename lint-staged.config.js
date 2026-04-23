@@ -1,5 +1,4 @@
 export default {
-  '**/*.{js,css}': ['prettier --write', 'eslint --fix'],
-  '**/*.gjs': ['prettier --write', 'eslint --fix', 'ember-template-lint --fix'],
+  '**/*.{js,gjs,css}': ['prettier --write', 'eslint --fix'],
   '**/*.{html,json}': 'prettier --write',
 };
