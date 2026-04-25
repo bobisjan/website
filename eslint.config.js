@@ -4,6 +4,7 @@ import js from '@eslint/js';
 import css from '@eslint/css';
 
 import ember from 'eslint-plugin-ember/recommended';
+import template from 'eslint-plugin-ember/configs/template-lint-migration';
 
 import prettier from 'eslint-config-prettier/flat';
 import qunit from 'eslint-plugin-qunit';
@@ -11,36 +12,35 @@ import n from 'eslint-plugin-n';
 
 import babelParser from '@babel/eslint-parser/experimental-worker';
 
-export default defineConfig(
-  {
-    files: ['src/**/*.js', 'tests/**/*.js'],
-    rules: js.configs.recommended.rules,
-  },
-  ember.configs.base,
-  ember.configs.gjs,
-  prettier,
-  globalIgnores(['dist/', 'node_modules/', 'coverage/', '!**/.*']),
+export default defineConfig([
+  globalIgnores(['.husky/', 'dist/', 'coverage/', 'pnpm-lock.yaml']),
   {
     linterOptions: {
       reportUnusedDisableDirectives: 'error',
     },
   },
+  ember.configs.base,
+  ember.configs.gjs,
   {
     files: ['src/**/*.js', 'tests/**/*.js'],
     languageOptions: {
       parser: babelParser,
+      parserOptions: { ecmaFeatures: { modules: true } },
     },
   },
   {
     files: ['src/**/*.{js,gjs}', 'tests/**/*.{js,gjs}'],
     languageOptions: {
-      parserOptions: {
-        ecmaFeatures: { modules: true },
-        ecmaVersion: 'latest',
-      },
       globals: {
         ...globals.browser,
       },
+    },
+    rules: js.configs.recommended.rules,
+  },
+  {
+    files: ['**/*.gjs'],
+    rules: {
+      ...template.at(-1).rules,
     },
   },
   {
@@ -54,7 +54,6 @@ export default defineConfig(
     plugins: {
       n,
     },
-
     languageOptions: {
       sourceType: 'module',
       ecmaVersion: 'latest',
@@ -68,4 +67,5 @@ export default defineConfig(
     language: 'css/css',
     ...css.configs.recommended,
   },
-);
+  prettier,
+]);
