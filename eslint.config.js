@@ -2,6 +2,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import js from '@eslint/js';
 import css from '@eslint/css';
+import json from '@eslint/json';
 import markdown from '@eslint/markdown';
 
 import ember from 'eslint-plugin-ember/recommended';
@@ -69,6 +70,13 @@ export default defineConfig([
     plugins: { css },
     language: 'css/css',
     extends: ['css/recommended'],
+  },
+  {
+    files: ['**/*.json'],
+    ignores: ['pnpm-lock.json'],
+    plugins: { json },
+    language: 'json/json',
+    extends: ['json/recommended'],
   },
   {
     files: ['**/*.md'],
