@@ -33,6 +33,7 @@ async function prerender(fastboot, path, outDir) {
   );
 }
 
+// eslint-disable-next-line no-unused-vars
 let [_, file, ...paths] = process.argv;
 
 if (import.meta.url === `file://${file}`) {

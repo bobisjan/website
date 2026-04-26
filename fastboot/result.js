@@ -2,9 +2,6 @@ import SimpleDOM from 'simple-dom/dist/commonjs/es5/index.js';
 
 const HTMLSerializer = new SimpleDOM.HTMLSerializer(SimpleDOM.voidMap);
 
-const SHOEBOX_TAG_PATTERN = '<script type="fastboot/shoebox"';
-const HTML_HEAD_REGEX = /^([\s\S]*<\/head>)([\s\S]*)/;
-
 export default class Result {
   constructor(doc, html, fastboot) {
     this._doc = doc;
