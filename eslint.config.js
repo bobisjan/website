@@ -46,8 +46,9 @@ export default defineConfig([
   },
   {
     files: ['tests/**/*-test.{js,gjs}'],
-    plugins: {
-      qunit,
+    plugins: { qunit },
+    rules: {
+      ...qunit.configs.recommended.rules,
     },
   },
   {
