@@ -12,6 +12,7 @@ import template from 'eslint-plugin-ember/configs/template-lint-migration';
 import prettier from 'eslint-config-prettier/flat';
 import qunit from 'eslint-plugin-qunit';
 import n from 'eslint-plugin-n';
+import yml from 'eslint-plugin-yml';
 
 import babelParser from '@babel/eslint-parser/experimental-worker';
 
@@ -91,6 +92,12 @@ export default defineConfig([
       'html/no-extra-spacing-attrs': 'off',
       'html/require-closing-tags': 'off',
     },
+  },
+  {
+    files: ['**/*.yml'],
+    plugins: { yml },
+    language: 'yml/yaml',
+    extends: ['yml/recommended'],
   },
   prettier,
 ]);
