@@ -4,6 +4,7 @@ import js from '@eslint/js';
 import css from '@eslint/css';
 import json from '@eslint/json';
 import markdown from '@eslint/markdown';
+import html from '@html-eslint/eslint-plugin';
 
 import ember from 'eslint-plugin-ember/recommended';
 import template from 'eslint-plugin-ember/configs/template-lint-migration';
@@ -82,6 +83,18 @@ export default defineConfig([
     files: ['**/*.md'],
     plugins: { markdown },
     extends: ['markdown/recommended'],
+  },
+  {
+    files: ['**/*.html'],
+    plugins: { html },
+    language: 'html/html',
+    extends: ['html/recommended'],
+    rules: {
+      'html/attrs-newline': 'off',
+      'html/indent': 'off',
+      'html/no-extra-spacing-attrs': 'off',
+      'html/require-closing-tags': 'off',
+    },
   },
   prettier,
 ]);
