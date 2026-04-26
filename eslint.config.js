@@ -64,8 +64,9 @@ export default defineConfig([
   },
   {
     files: ['**/*.css'],
+    plugins: { css },
     language: 'css/css',
-    ...css.configs.recommended,
+    extends: ['css/recommended'],
   },
   prettier,
 ]);
