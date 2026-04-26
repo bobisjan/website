@@ -2,6 +2,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import js from '@eslint/js';
 import css from '@eslint/css';
+import markdown from '@eslint/markdown';
 
 import ember from 'eslint-plugin-ember/recommended';
 import template from 'eslint-plugin-ember/configs/template-lint-migration';
@@ -67,6 +68,11 @@ export default defineConfig([
     plugins: { css },
     language: 'css/css',
     extends: ['css/recommended'],
+  },
+  {
+    files: ['**/*.md'],
+    plugins: { markdown },
+    extends: ['markdown/recommended'],
   },
   prettier,
 ]);
