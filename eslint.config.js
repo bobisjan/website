@@ -25,6 +25,11 @@ export default defineConfig([
   ember.configs.base,
   ember.configs.gjs,
   {
+    files: ['**/*.{js,gjs}'],
+    plugins: { js },
+    extends: ['js/recommended'],
+  },
+  {
     files: ['src/**/*.js', 'tests/**/*.js'],
     languageOptions: {
       parser: babelParser,
@@ -38,7 +43,6 @@ export default defineConfig([
         ...globals.browser,
       },
     },
-    rules: js.configs.recommended.rules,
   },
   {
     files: ['**/*.gjs'],
@@ -54,7 +58,7 @@ export default defineConfig([
     },
   },
   {
-    files: ['*.js'],
+    files: ['*.js', 'fastboot/**/*.js'],
     plugins: { n },
     extends: ['n/recommended'],
   },
