@@ -55,16 +55,8 @@ export default defineConfig([
   },
   {
     files: ['*.js'],
-    plugins: {
-      n,
-    },
-    languageOptions: {
-      sourceType: 'module',
-      ecmaVersion: 'latest',
-      globals: {
-        ...globals.node,
-      },
-    },
+    plugins: { n },
+    extends: ['n/recommended'],
   },
   {
     files: ['**/*.css'],
