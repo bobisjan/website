@@ -34,7 +34,7 @@ importers:
         version: 3.0.6(@babel/core@7.29.0)(@embroider/core@4.4.7)
       '@embroider/vite':
         specifier: 1.7.2
-        version: 1.7.2(@embroider/core@4.4.7)(vite@8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.8.4))
+        version: 1.7.2(@embroider/core@4.4.7)(vite@8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.9.0))
       '@eslint/css':
         specifier: 1.1.0
         version: 1.1.0
@@ -108,8 +108,8 @@ importers:
         specifier: 9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: 17.0.4
-        version: 17.0.4
+        specifier: 17.0.5
+        version: 17.0.5
       prettier:
         specifier: 3.8.3
         version: 3.8.3
@@ -130,7 +130,7 @@ importers:
         version: 3.20.0(@babel/core@7.29.0)(handlebars@4.7.9)(underscore@1.13.8)
       vite:
         specifier: 8.0.13
-        version: 8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.8.4)
+        version: 8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.9.0)
 
 packages:
 
@@ -3702,8 +3702,8 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  lint-staged@17.0.4:
-    resolution: {integrity: sha512-+rU9lSUyVOZ/hDUmRLVGzyS2v73cDdQjX+XQz1AaOdIE4RysLq0HoPW2HrrgeNCLklkhi904VBU1bmgWLHVnkA==}
+  lint-staged@17.0.5:
+    resolution: {integrity: sha512-d12yC+/e8RhBjZtaxZn71FyrgU/P5e+uAPifhCLwdosQZP/zamSdKRWDC30ocVIbzDKiFG1McHc/LUgB92GIPw==}
     engines: {node: '>=22.22.1'}
     hasBin: true
 
@@ -5326,8 +5326,8 @@ packages:
     peerDependencies:
       yaml: ^2.3.0
 
-  yaml@2.8.4:
-    resolution: {integrity: sha512-ml/JPOj9fOQK8RNnWojA67GbZ0ApXAUlN2UQclwv2eVgTgn7O9gg9o7paZWKMp4g0H3nTLtS9LVzhkpOFIKzog==}
+  yaml@2.9.0:
+    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -6366,7 +6366,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/vite@1.7.2(@embroider/core@4.4.7)(vite@8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.8.4))':
+  '@embroider/vite@1.7.2(@embroider/core@4.4.7)(vite@8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.9.0))':
     dependencies:
       '@babel/core': 7.29.0
       '@embroider/core': 4.4.7
@@ -6384,7 +6384,7 @@ snapshots:
       send: 0.18.0
       source-map-url: 0.4.1
       terser: 5.46.1
-      vite: 8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.8.4)
+      vite: 8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@glint/template'
       - bufferutil
@@ -6802,7 +6802,10 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.31.13(typescript@5.9.3)
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-command@1.31.13(typescript@5.9.3)':
     dependencies:
@@ -6819,7 +6822,10 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.31.13(typescript@5.9.3)
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-doctor@1.31.13(typescript@5.9.3)':
     dependencies:
@@ -6853,9 +6859,12 @@ snapshots:
   '@percy/cli-snapshot@1.31.13(typescript@5.9.3)':
     dependencies:
       '@percy/cli-command': 1.31.13(typescript@5.9.3)
-      yaml: 2.8.4
+      yaml: 2.9.0
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-upload@1.31.13(typescript@5.9.3)':
     dependencies:
@@ -6863,7 +6872,10 @@ snapshots:
       fast-glob: 3.3.3
       image-size: 1.2.1
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli@1.31.13(typescript@5.9.3)':
     dependencies:
@@ -6899,7 +6911,7 @@ snapshots:
       '@percy/logger': 1.31.13
       ajv: 8.20.0
       cosmiconfig: 8.3.6(typescript@5.9.3)
-      yaml: 2.8.4
+      yaml: 2.9.0
     transitivePeerDependencies:
       - typescript
 
@@ -6921,7 +6933,7 @@ snapshots:
       path-to-regexp: 6.3.0
       rimraf: 3.0.2
       ws: 8.20.0
-      yaml: 2.8.4
+      yaml: 2.9.0
     optionalDependencies:
       '@percy/cli-doctor': 1.31.13(typescript@5.9.3)
     transitivePeerDependencies:
@@ -9479,14 +9491,14 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  lint-staged@17.0.4:
+  lint-staged@17.0.5:
     dependencies:
       listr2: 10.2.1
       picomatch: 4.0.4
       string-argv: 0.3.2
       tinyexec: 1.1.2
     optionalDependencies:
-      yaml: 2.8.4
+      yaml: 2.9.0
 
   listr2@10.2.1:
     dependencies:
@@ -10967,8 +10979,8 @@ snapshots:
 
   tap-yaml@4.3.1:
     dependencies:
-      yaml: 2.8.4
-      yaml-types: 0.4.0(yaml@2.8.4)
+      yaml: 2.9.0
+      yaml-types: 0.4.0(yaml@2.9.0)
 
   tapable@2.3.3: {}
 
@@ -11270,7 +11282,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite@8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.8.4):
+  vite@8.0.13(@types/node@25.8.0)(esbuild@0.27.3)(terser@5.47.1)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -11282,7 +11294,7 @@ snapshots:
       esbuild: 0.27.3
       fsevents: 2.3.3
       terser: 5.47.1
-      yaml: 2.8.4
+      yaml: 2.9.0
 
   vscode-css-languageservice@6.3.10:
     dependencies:
@@ -11471,13 +11483,13 @@ snapshots:
   yaml-eslint-parser@2.0.0:
     dependencies:
       eslint-visitor-keys: 5.0.1
-      yaml: 2.8.4
+      yaml: 2.9.0
 
-  yaml-types@0.4.0(yaml@2.8.4):
+  yaml-types@0.4.0(yaml@2.9.0):
     dependencies:
-      yaml: 2.8.4
+      yaml: 2.9.0
 
-  yaml@2.8.4: {}
+  yaml@2.9.0: {}
 
   yauzl@2.10.0:
     dependencies:
