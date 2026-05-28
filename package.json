@@ -64,7 +64,7 @@
     "qunit": "2.25.0",
     "qunit-dom": "3.5.1",
     "simple-dom": "1.4.0",
-    "testem": "3.20.0",
+    "testem": "3.20.1",
     "vite": "8.0.13"
   },
   "imports": {

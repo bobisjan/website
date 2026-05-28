@@ -1,6 +1,6 @@
 import { fastboot } from './fastboot/testem.js';
 
-let config = {
+export default {
   test_page: 'tests/index.html?hidepassed',
   cwd: 'dist',
   middleware: [fastboot()],
@@ -23,5 +23,3 @@ let config = {
     },
   },
 };
-
-export { config as 'module.exports' };
