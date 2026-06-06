@@ -61,7 +61,7 @@
     "lint-staged": "17.0.5",
     "prettier": "3.8.3",
     "prettier-plugin-ember-template-tag": "2.1.6",
-    "qunit": "2.25.0",
+    "qunit": "2.26.0",
     "qunit-dom": "3.5.1",
     "simple-dom": "1.4.0",
     "testem": "3.20.1",
