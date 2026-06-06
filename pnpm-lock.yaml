@@ -76,7 +76,7 @@ importers:
         version: 4.3.0(@babel/core@7.29.7)
       ember-qunit:
         specifier: 9.0.4
-        version: 9.0.4(@babel/core@7.29.7)(@ember/test-helpers@5.4.2(@babel/core@7.29.7))(qunit@2.25.0)
+        version: 9.0.4(@babel/core@7.29.7)(@ember/test-helpers@5.4.2(@babel/core@7.29.7))(qunit@2.26.0)
       ember-source:
         specifier: 7.0.0
         version: 7.0.0(@glimmer/component@2.1.1)
@@ -117,8 +117,8 @@ importers:
         specifier: 2.1.6
         version: 2.1.6(prettier@3.8.3)
       qunit:
-        specifier: 2.25.0
-        version: 2.25.0
+        specifier: 2.26.0
+        version: 2.26.0
       qunit-dom:
         specifier: 3.5.1
         version: 3.5.1
@@ -2791,8 +2791,8 @@ packages:
     resolution: {integrity: sha512-wE4fDO8OjJhrPFH69HUQStq5oKvGRTNXEyW+k5C/pUQLASSsTu7obd2V3GvCDgPcY9AWjhJ4jz9Kh7iRvrxhJg==}
     engines: {node: '>=10.13.0'}
 
-  enhanced-resolve@5.22.1:
-    resolution: {integrity: sha512-6QEuw3zoX1SJQc7b87aBXke/no+mG2bTBgw29gWMQonLmpEkWoCAVkl+M49e48AZlWzxiDzDZzYdp6kobcyLww==}
+  enhanced-resolve@5.22.2:
+    resolution: {integrity: sha512-0rxICaFZ7NQho/sHely2bvOPRP0Eu2B0NZ9zM54YvRvWMn7jfz3DmnOZDR9LlXDdDcqntAVc6Hfy4gr/tdH/Ag==}
     engines: {node: '>=10.13.0'}
 
   ensure-posix-path@1.1.1:
@@ -4449,8 +4449,8 @@ packages:
   qunit-theme-ember@1.0.0:
     resolution: {integrity: sha512-vdMVVo6ecdCkWttMTKeyq1ZTLGHcA6zdze2zhguNuc3ritlJMhOXY5RDseqazOwqZVfCg3rtlmL3fMUyIzUyFQ==}
 
-  qunit@2.25.0:
-    resolution: {integrity: sha512-MONPKgjavgTqArCwZOEz8nEMbA19zNXIp5ZOW9rPYj5cbgQp0fiI36c9dPTSzTRRzx+KcfB5eggYB/ENqxi0+w==}
+  qunit@2.26.0:
+    resolution: {integrity: sha512-KSv16YomcYmiK90qTOJl3Bm5IvTf2upqQDdBQWCvSQWe94FWobnUgKOpvpvZdG7VkDt3TJSI8k8g9+GGGEd7Fw==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -7797,7 +7797,10 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.31.14(typescript@6.0.3)
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-command@1.31.14(typescript@6.0.3)':
     dependencies:
@@ -7814,7 +7817,10 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.31.14(typescript@6.0.3)
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-doctor@1.31.14(typescript@6.0.3)':
     dependencies:
@@ -7850,7 +7856,10 @@ snapshots:
       '@percy/cli-command': 1.31.14(typescript@6.0.3)
       yaml: 2.9.0
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-upload@1.31.14(typescript@6.0.3)':
     dependencies:
@@ -7858,7 +7867,10 @@ snapshots:
       fast-glob: 3.3.3
       image-size: 1.2.1
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli@1.31.14(typescript@6.0.3)':
     dependencies:
@@ -9142,12 +9154,12 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  ember-qunit@9.0.4(@babel/core@7.29.7)(@ember/test-helpers@5.4.2(@babel/core@7.29.7))(qunit@2.25.0):
+  ember-qunit@9.0.4(@babel/core@7.29.7)(@ember/test-helpers@5.4.2(@babel/core@7.29.7))(qunit@2.26.0):
     dependencies:
       '@ember/test-helpers': 5.4.2(@babel/core@7.29.7)
       '@embroider/addon-shim': 1.10.2
       '@embroider/macros': 1.20.3(@babel/core@7.29.7)
-      qunit: 2.25.0
+      qunit: 2.26.0
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
       - '@babel/core'
@@ -9234,7 +9246,7 @@ snapshots:
       graceful-fs: 4.2.11
       tapable: 2.3.3
 
-  enhanced-resolve@5.22.1:
+  enhanced-resolve@5.22.2:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.3
@@ -11219,7 +11231,7 @@ snapshots:
 
   qunit-theme-ember@1.0.0: {}
 
-  qunit@2.25.0:
+  qunit@2.26.0:
     dependencies:
       commander: 7.2.0
       node-watch: 0.7.3
@@ -12142,7 +12154,7 @@ snapshots:
       acorn-import-phases: 1.0.4(acorn@8.16.0)
       browserslist: 4.28.2
       chrome-trace-event: 1.0.4
-      enhanced-resolve: 5.22.1
+      enhanced-resolve: 5.22.2
       es-module-lexer: 2.1.0
       eslint-scope: 5.1.1
       events: 3.3.0
