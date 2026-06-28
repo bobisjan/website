@@ -78,8 +78,8 @@ importers:
         specifier: 9.1.0
         version: 9.1.0(@ember/test-helpers@5.4.3(@babel/core@7.29.7))(qunit@2.26.0)
       ember-source:
-        specifier: 7.0.0
-        version: 7.0.0(@glimmer/component@2.1.1)
+        specifier: 7.1.0
+        version: 7.1.0(@glimmer/component@2.1.1)
       ember-strict-application-resolver:
         specifier: 0.1.1
         version: 0.1.1(@babel/core@7.29.7)
@@ -2306,8 +2306,8 @@ packages:
     resolution: {integrity: sha512-89oVHVJwmLDvGvAUWgS87KpBoRhy3aZ6U0Ql6HOmU4TrPkyaa8pM0W81wj9cIwjYprcQtN9EwzZMHnq46+oUyw==}
     engines: {node: 8.* || 10.* || >= 12}
 
-  ember-source@7.0.0:
-    resolution: {integrity: sha512-30dv3f4jMKAFhUmyjbb5V8B+hhkhwn2Y+GbwIxbb4SuEXtJf0uPr1Ppp1g5s6LzrxU5zPlCXh2bfN3LCwqqGog==}
+  ember-source@7.1.0:
+    resolution: {integrity: sha512-qOHhTiVMeYcNp2UQKuAqsf33LKgNtzqvw46dQX5AqutTfXXPn4KYR0+aiGQdJaCuzs81nFvvTDJuHzELOZ5UBg==}
     engines: {node: '>= 20.19'}
     peerDependencies:
       '@glimmer/component': '>= 1.1.2'
@@ -7446,7 +7446,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-source@7.0.0(@glimmer/component@2.1.1):
+  ember-source@7.1.0(@glimmer/component@2.1.1):
     dependencies:
       '@babel/core': 7.29.7
       '@embroider/addon-shim': 1.10.3
