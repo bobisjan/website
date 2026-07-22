@@ -14,7 +14,7 @@ import qunit from 'eslint-plugin-qunit';
 import n from 'eslint-plugin-n';
 import yml from 'eslint-plugin-yml';
 
-import babelParser from '@babel/eslint-parser/experimental-worker';
+import babelParser from '@babel/eslint-parser';
 
 export default defineConfig([
   globalIgnores(['.husky/', 'dist/', 'coverage/', 'pnpm-lock.yaml']),
