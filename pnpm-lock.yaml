@@ -99,8 +99,8 @@ importers:
         specifier: 8.2.6
         version: 8.2.6(eslint@10.8.0)
       eslint-plugin-yml:
-        specifier: 3.6.0
-        version: 3.6.0(eslint@10.8.0)
+        specifier: 3.6.1
+        version: 3.6.1(eslint@10.8.0)
       globals:
         specifier: 17.8.0
         version: 17.8.0
@@ -2594,8 +2594,8 @@ packages:
     peerDependencies:
       eslint: '>=8.38.0'
 
-  eslint-plugin-yml@3.6.0:
-    resolution: {integrity: sha512-8lSqBIiOJO8ms1gktdlNaVGm3zXQJiYeKhQmtIG66XzU58kFDOjQae4sufQEMGHC4bP8VxiaH3tjU5PpDB6euw==}
+  eslint-plugin-yml@3.6.1:
+    resolution: {integrity: sha512-65KuRSfJHB3WEZfv6FytKkMUk/v94FyNEHpKMm8MDnZF5cPZHwFoIDNoA5yOrwZ/zDPjaHAV2Pf2PuNLGLGopw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24.0.0}
     peerDependencies:
       eslint: '>=9.38.0'
@@ -6942,7 +6942,10 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.32.5(typescript@6.0.3)
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-command@1.32.5(typescript@6.0.3)':
     dependencies:
@@ -6959,7 +6962,10 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.32.5(typescript@6.0.3)
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-doctor@1.32.5(typescript@6.0.3)':
     dependencies:
@@ -6995,7 +7001,10 @@ snapshots:
       '@percy/cli-command': 1.32.5(typescript@6.0.3)
       yaml: 2.9.0
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-upload@1.32.5(typescript@6.0.3)':
     dependencies:
@@ -7003,7 +7012,10 @@ snapshots:
       fast-glob: 3.3.3
       image-size: 1.0.2
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli@1.32.5(typescript@6.0.3)':
     dependencies:
@@ -8571,7 +8583,7 @@ snapshots:
       eslint: 10.8.0
       requireindex: 1.2.0
 
-  eslint-plugin-yml@3.6.0(eslint@10.8.0):
+  eslint-plugin-yml@3.6.1(eslint@10.8.0):
     dependencies:
       '@eslint/core': 1.2.1
       '@eslint/plugin-kit': 0.7.2
