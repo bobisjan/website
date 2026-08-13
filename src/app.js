@@ -1,4 +1,4 @@
-import Application from 'ember-strict-application-resolver';
+import Application from '@ember/application';
 import setupInspector from '@embroider/legacy-inspector-support/ember-source-4.12';
 import Router from './router.js';
 import ApplicationInstance from '@ember/application/instance';
