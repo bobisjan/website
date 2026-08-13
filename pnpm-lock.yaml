@@ -34,7 +34,7 @@ importers:
         version: 3.0.6(@embroider/core@4.6.3)
       '@embroider/vite':
         specifier: 1.7.9
-        version: 1.7.9(@embroider/core@4.6.3)(vite@8.2.1(@types/node@26.2.0)(terser@5.49.2)(yaml@2.9.0))
+        version: 1.7.9(@embroider/core@4.6.3)(vite@8.2.1(@types/node@26.2.0)(terser@5.50.0)(yaml@2.9.0))
       '@eslint/css':
         specifier: 1.4.0
         version: 1.4.0
@@ -78,8 +78,8 @@ importers:
         specifier: 9.1.0
         version: 9.1.0(@ember/test-helpers@5.4.3(@babel/core@8.0.1))(qunit@2.26.0)
       ember-source:
-        specifier: 7.1.0
-        version: 7.1.0(@glimmer/component@2.1.1)
+        specifier: 7.2.0
+        version: 7.2.0(@glimmer/component@2.1.1)
       ember-strict-application-resolver:
         specifier: 0.1.1
         version: 0.1.1(@babel/core@8.0.1)
@@ -130,7 +130,7 @@ importers:
         version: 3.20.1(@babel/core@8.0.1)(handlebars@4.7.9)(underscore@1.13.8)
       vite:
         specifier: 8.2.1
-        version: 8.2.1(@types/node@26.2.0)(terser@5.49.2)(yaml@2.9.0)
+        version: 8.2.1(@types/node@26.2.0)(terser@5.50.0)(yaml@2.9.0)
 
 packages:
 
@@ -1565,6 +1565,7 @@ packages:
   '@xmldom/xmldom@0.9.10':
     resolution: {integrity: sha512-A9gOqLdi6cV4ibazAjcQufGj0B1y/vDqYrcuP6d/6x8P27gRS8643Dj9o1dEKtB6O7fwxb2FgBmJS2mX7gpvdw==}
     engines: {node: '>=14.6'}
+    deprecated: this version has critical issues, please update to the latest version
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -2431,8 +2432,8 @@ packages:
     resolution: {integrity: sha512-89oVHVJwmLDvGvAUWgS87KpBoRhy3aZ6U0Ql6HOmU4TrPkyaa8pM0W81wj9cIwjYprcQtN9EwzZMHnq46+oUyw==}
     engines: {node: 8.* || 10.* || >= 12}
 
-  ember-source@7.1.0:
-    resolution: {integrity: sha512-qOHhTiVMeYcNp2UQKuAqsf33LKgNtzqvw46dQX5AqutTfXXPn4KYR0+aiGQdJaCuzs81nFvvTDJuHzELOZ5UBg==}
+  ember-source@7.2.0:
+    resolution: {integrity: sha512-pWjYFeM76vAgiFvqrBacAsQh94vTIy8SC1X2S3goULJHJ5/tVWAZ2NtaLFx9oZd3/Lk0gGRdsCMla9rQY58vyw==}
     engines: {node: '>= 20.19'}
     peerDependencies:
       '@glimmer/component': '>= 1.1.2'
@@ -4587,6 +4588,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  terser@5.50.0:
+    resolution: {integrity: sha512-CN9BVxWhgS/hRxtUMjtC2uRWSTcSfQFHMDWma6sKKfIivCD91sM+FOPfvwoaRMqCSrUpe1nv3jDamd9eEQ4y+w==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   testem@3.20.1:
     resolution: {integrity: sha512-HMbcVlrRDt+GjEGJZrPSCp0XFzM7SSdmLvNSJm++hIITEIMoccCQGikvelOO/NjfZJ0HTZCEyvg3+CIStjaZqQ==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
@@ -6582,7 +6588,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/vite@1.7.9(@embroider/core@4.6.3)(vite@8.2.1(@types/node@26.2.0)(terser@5.49.2)(yaml@2.9.0))':
+  '@embroider/vite@1.7.9(@embroider/core@4.6.3)(vite@8.2.1(@types/node@26.2.0)(terser@5.50.0)(yaml@2.9.0))':
     dependencies:
       '@babel/core': 7.29.7
       '@embroider/core': 4.6.3
@@ -6600,7 +6606,7 @@ snapshots:
       send: 1.2.1
       source-map-url: 0.4.1
       terser: 5.49.2
-      vite: 8.2.1(@types/node@26.2.0)(terser@5.49.2)(yaml@2.9.0)
+      vite: 8.2.1(@types/node@26.2.0)(terser@5.50.0)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@glint/template'
       - bufferutil
@@ -6947,7 +6953,10 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.32.6(typescript@6.0.3)
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-command@1.32.6(typescript@6.0.3)':
     dependencies:
@@ -6964,7 +6973,10 @@ snapshots:
     dependencies:
       '@percy/cli-command': 1.32.6(typescript@6.0.3)
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-doctor@1.32.6(typescript@6.0.3)':
     dependencies:
@@ -7000,7 +7012,10 @@ snapshots:
       '@percy/cli-command': 1.32.6(typescript@6.0.3)
       yaml: 2.9.0
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli-upload@1.32.6(typescript@6.0.3)':
     dependencies:
@@ -7008,7 +7023,10 @@ snapshots:
       fast-glob: 3.3.3
       image-size: 1.0.2
     transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - typescript
+      - utf-8-validate
 
   '@percy/cli@1.32.6(typescript@6.0.3)':
     dependencies:
@@ -8320,7 +8338,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-source@7.1.0(@glimmer/component@2.1.1):
+  ember-source@7.2.0(@glimmer/component@2.1.1):
     dependencies:
       '@babel/core': 7.29.7
       '@embroider/addon-shim': 1.10.3
@@ -9990,7 +10008,7 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
-      terser: 5.49.2
+      terser: 5.50.0
       webpack: 5.108.4(postcss@8.5.26)
     optionalDependencies:
       postcss: 8.5.26
@@ -10895,6 +10913,13 @@ snapshots:
       commander: 2.20.3
       source-map-support: 0.5.21
 
+  terser@5.50.0:
+    dependencies:
+      '@jridgewell/source-map': 0.3.11
+      acorn: 8.18.0
+      commander: 2.20.3
+      source-map-support: 0.5.21
+
   testem@3.20.1(@babel/core@8.0.1)(handlebars@4.7.9)(underscore@1.13.8):
     dependencies:
       '@xmldom/xmldom': 0.9.10
@@ -11158,7 +11183,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite@8.2.1(@types/node@26.2.0)(terser@5.49.2)(yaml@2.9.0):
+  vite@8.2.1(@types/node@26.2.0)(terser@5.50.0)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.5
@@ -11168,7 +11193,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 26.2.0
       fsevents: 2.3.3
-      terser: 5.49.2
+      terser: 5.50.0
       yaml: 2.9.0
 
   vscode-css-languageservice@6.3.10:
