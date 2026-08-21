@@ -39,7 +39,7 @@
     "@eslint/json": "2.0.1",
     "@eslint/markdown": "8.0.3",
     "@glimmer/component": "2.1.1",
-    "@html-eslint/eslint-plugin": "0.64.0",
+    "@html-eslint/eslint-plugin": "0.65.0",
     "@percy/cli": "1.32.6",
     "@percy/ember": "5.0.2",
     "@percy/sdk-utils": "1.32.6",
