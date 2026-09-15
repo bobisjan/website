@@ -29,11 +29,11 @@
     "@babel/eslint-parser": "8.0.1",
     "@babel/plugin-transform-runtime": "8.0.1",
     "@ember/test-helpers": "5.4.3",
-    "@embroider/core": "4.6.5",
+    "@embroider/core": "4.6.7",
     "@embroider/legacy-inspector-support": "0.1.3",
-    "@embroider/macros": "1.20.7",
+    "@embroider/macros": "1.21.1",
     "@embroider/router": "3.0.6",
-    "@embroider/vite": "1.7.11",
+    "@embroider/vite": "1.7.13",
     "@eslint/css": "2.0.0",
     "@eslint/js": "10.0.1",
     "@eslint/json": "2.1.0",
@@ -64,7 +64,7 @@
     "qunit-dom": "3.6.0",
     "simple-dom": "1.4.0",
     "testem": "3.20.2",
-    "vite": "8.2.2"
+    "vite": "8.3.0"
   },
   "imports": {
     "#src/*.js": "./src/*.js",
