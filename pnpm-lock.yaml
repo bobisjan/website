@@ -176,8 +176,8 @@ importers:
         specifier: 8.0.6
         version: 8.0.6(@babel/core@8.0.6)
       '@ember/test-helpers':
-        specifier: 5.4.3
-        version: 5.4.3(@babel/core@8.0.6)(supports-color@8.1.1)
+        specifier: 5.5.0
+        version: 5.5.0(@babel/core@8.0.6)(supports-color@8.1.1)
       '@embroider/core':
         specifier: 4.6.7
         version: 4.6.7(supports-color@8.1.1)
@@ -234,7 +234,7 @@ importers:
         version: 4.3.0(@babel/core@8.0.6)(supports-color@8.1.1)
       ember-qunit:
         specifier: 9.1.0
-        version: 9.1.0(@ember/test-helpers@5.4.3(@babel/core@8.0.6)(supports-color@8.1.1))(qunit@2.26.0)(supports-color@8.1.1)
+        version: 9.1.0(@ember/test-helpers@5.5.0(@babel/core@8.0.6)(supports-color@8.1.1))(qunit@2.26.0)(supports-color@8.1.1)
       ember-source:
         specifier: 7.3.0
         version: 7.3.0(@glimmer/component@2.1.1(supports-color@8.1.1))(supports-color@8.1.1)
@@ -981,8 +981,8 @@ packages:
   '@ember-data/rfc395-data@0.0.4':
     resolution: {integrity: sha512-tGRdvgC9/QMQSuSuJV45xoyhI0Pzjm7A9o/MVVA3HakXIImJbbzx/k/6dO9CUEQXIyS2y0fW6C1XaYOG7rY0FQ==}
 
-  '@ember/test-helpers@5.4.3':
-    resolution: {integrity: sha512-WeNABJsXBidEXP87AH5gaI/KAyb0zEUYJxWa31A/Us5lqg85E3tPlHjBwCrlReOrJbSgvvArMnrdCwt7TRpjPQ==}
+  '@ember/test-helpers@5.5.0':
+    resolution: {integrity: sha512-yTg0YqLQvPIy0rGGVa+Tnwis20orfsE5Mz2zphv4qtfZ9w5NbTdxNKed9CrrCANFQdLo7eXj9lmQ8ST8K/GBHw==}
 
   '@ember/test-waiters@4.1.2':
     resolution: {integrity: sha512-zJwFaHLHjJn6mKoXYVM1SEyMT+U1JpaaSKg3JBmxHJwiIoJRI5djJ/CE33Z7N09mk5JfXd2xdhbd9LBWdlvAzg==}
@@ -7132,7 +7132,7 @@ snapshots:
 
   '@ember-data/rfc395-data@0.0.4': {}
 
-  '@ember/test-helpers@5.4.3(@babel/core@8.0.6)(supports-color@8.1.1)':
+  '@ember/test-helpers@5.5.0(@babel/core@8.0.6)(supports-color@8.1.1)':
     dependencies:
       '@ember/test-waiters': 4.1.2(supports-color@8.1.1)
       '@embroider/addon-shim': 1.10.3(supports-color@8.1.1)
@@ -9332,9 +9332,9 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  ember-qunit@9.1.0(@ember/test-helpers@5.4.3(@babel/core@8.0.6)(supports-color@8.1.1))(qunit@2.26.0)(supports-color@8.1.1):
+  ember-qunit@9.1.0(@ember/test-helpers@5.5.0(@babel/core@8.0.6)(supports-color@8.1.1))(qunit@2.26.0)(supports-color@8.1.1):
     dependencies:
-      '@ember/test-helpers': 5.4.3(@babel/core@8.0.6)(supports-color@8.1.1)
+      '@ember/test-helpers': 5.5.0(@babel/core@8.0.6)(supports-color@8.1.1)
       '@embroider/addon-shim': 1.10.3(supports-color@8.1.1)
       qunit: 2.26.0
       qunit-theme-ember: 1.0.0
