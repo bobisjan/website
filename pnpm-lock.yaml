@@ -233,8 +233,8 @@ importers:
         specifier: 4.3.0
         version: 4.3.0(@babel/core@8.0.6)(supports-color@8.1.1)
       ember-qunit:
-        specifier: 9.1.0
-        version: 9.1.0(@ember/test-helpers@5.5.1(@babel/core@8.0.6)(supports-color@8.1.1))(qunit@2.26.0)(supports-color@8.1.1)
+        specifier: 9.2.0
+        version: 9.2.0(@ember/test-helpers@5.5.1(@babel/core@8.0.6)(supports-color@8.1.1))(qunit@2.26.0)(supports-color@8.1.1)
       ember-source:
         specifier: 7.3.0
         version: 7.3.0(@glimmer/component@2.1.1(supports-color@8.1.1))(supports-color@8.1.1)
@@ -2661,11 +2661,11 @@ packages:
   ember-modifier@4.3.0:
     resolution: {integrity: sha512-O0rirSLQbGg0VJ/NqoQ4uN1bh2iAekZC/Ykma+FkjCM2ofrO38u+d8n3+AK6uVWeMJmogGX2KL+Is5fofoInJg==}
 
-  ember-qunit@9.1.0:
-    resolution: {integrity: sha512-dE32lSODyv4em0ACBS8PDzrAIPKR75hhSpn/au0qFBlzbdmNA/VVsgv2aoFAVRdlQ0zYJ8EiNPFqsBFciIeXVA==}
+  ember-qunit@9.2.0:
+    resolution: {integrity: sha512-y/v9D7/wfH9fWh6p6NPNZ4KMJ97ZdowoASNmLvLrrzDYSVHJDbbbOfFMKLfdvHF942PHMlf6NulKVezO4yNfmw==}
     peerDependencies:
       '@ember/test-helpers': '>=3.0.3'
-      qunit: ^2.13.0
+      qunit: ^2.13.0 || ^3.0.0
 
   ember-rfc176-data@0.3.18:
     resolution: {integrity: sha512-JtuLoYGSjay1W3MQAxt3eINWXNYYQliK90tLwtb8aeCuQK8zKGCRbBodVIrkcTqshULMnRuTOS6t1P7oQk3g6Q==}
@@ -8973,7 +8973,7 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  ember-qunit@9.1.0(@ember/test-helpers@5.5.1(@babel/core@8.0.6)(supports-color@8.1.1))(qunit@2.26.0)(supports-color@8.1.1):
+  ember-qunit@9.2.0(@ember/test-helpers@5.5.1(@babel/core@8.0.6)(supports-color@8.1.1))(qunit@2.26.0)(supports-color@8.1.1):
     dependencies:
       '@ember/test-helpers': 5.5.1(@babel/core@8.0.6)(supports-color@8.1.1)
       '@embroider/addon-shim': 1.10.3(supports-color@8.1.1)
