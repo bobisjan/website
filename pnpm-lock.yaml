@@ -284,8 +284,8 @@ importers:
         specifier: 1.4.0
         version: 1.4.0
       testem:
-        specifier: 3.21.2
-        version: 3.21.2(@babel/core@8.0.6)(handlebars@4.7.9)(supports-color@8.1.1)(underscore@1.13.8)
+        specifier: 3.21.3
+        version: 3.21.3(@babel/core@8.0.6)(handlebars@4.7.9)(supports-color@8.1.1)(underscore@1.13.8)
       vite:
         specifier: 8.3.2
         version: 8.3.2(@types/node@26.5.0)(terser@5.51.2)(yaml@2.9.1)
@@ -5062,8 +5062,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  testem@3.21.2:
-    resolution: {integrity: sha512-OtzKbTKE01+Q0U7A0NFk8iT6SLhbtdjqFqHpi5wokxgTsVXgPcBH6aWMf6NwHvMagkzvzV1tcEvicPs7nGhPRw==}
+  testem@3.21.3:
+    resolution: {integrity: sha512-vZTaZajvrWjRnImBGGrkdFlGNqM9Llg9xdvYL7Yrb2BSzIjlZjV+7pc3FJTgagNgJaNsatp4s/Wtam5MSQrFvg==}
     engines: {node: ^20.19.0 || ^22.12.0 || ^24.0.0 || >= 26.0.0}
     hasBin: true
 
@@ -11701,7 +11701,7 @@ snapshots:
       commander: 2.20.3
       source-map-support: 0.5.21
 
-  testem@3.21.2(@babel/core@8.0.6)(handlebars@4.7.9)(supports-color@8.1.1)(underscore@1.13.8):
+  testem@3.21.3(@babel/core@8.0.6)(handlebars@4.7.9)(supports-color@8.1.1)(underscore@1.13.8):
     dependencies:
       '@xmldom/xmldom': 0.9.12
       backbone: 1.6.1
