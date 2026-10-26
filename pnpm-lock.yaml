@@ -206,8 +206,8 @@ importers:
         specifier: 8.0.3
         version: 8.0.3(supports-color@8.1.1)
       '@glimmer/component':
-        specifier: 2.1.1
-        version: 2.1.1(supports-color@8.1.1)
+        specifier: 2.2.0
+        version: 2.2.0(supports-color@8.1.1)
       '@html-eslint/eslint-plugin':
         specifier: 0.67.0
         version: 0.67.0(eslint@10.13.0(supports-color@8.1.1))
@@ -237,7 +237,7 @@ importers:
         version: 9.2.0(@ember/test-helpers@5.7.0(@babel/core@8.0.7)(supports-color@8.1.1))(qunit@3.0.0)(supports-color@8.1.1)
       ember-source:
         specifier: 7.3.1
-        version: 7.3.1(@glimmer/component@2.1.1(supports-color@8.1.1))(supports-color@8.1.1)
+        version: 7.3.1(@glimmer/component@2.2.0(supports-color@8.1.1))(supports-color@8.1.1)
       eslint:
         specifier: 10.13.0
         version: 10.13.0(supports-color@8.1.1)
@@ -1115,8 +1115,8 @@ packages:
     resolution: {integrity: sha512-IkO+/KEUvwbVpiURZg+P7zF74z5Jxe0UgJxVni+RtoHQ6IZieXaO02kmadomap/q+l6bc/jdPGGqTjhuZnuz1Q==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@glimmer/component@2.1.1':
-    resolution: {integrity: sha512-zFZFaMbWy+9WOcDg/kCgrkGgqkLT39EE4FgyFD0MIkQO5coQsrRZyLsiBu1tbchyM+8hT8jAv+EQVUd8u+MdSQ==}
+  '@glimmer/component@2.2.0':
+    resolution: {integrity: sha512-C0L4yd7ZOpTG2GVSOUdfbu4ve5zyx8iQp2uRBhtn/hsNpR4pYmaKa7qJuhCPct+eLwxz6rLEXYZVoAJL2cqVPA==}
     engines: {node: '>= 18'}
 
   '@glimmer/env@0.1.7':
@@ -7244,10 +7244,9 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@glimmer/component@2.1.1(supports-color@8.1.1)':
+  '@glimmer/component@2.2.0(supports-color@8.1.1)':
     dependencies:
       '@embroider/addon-shim': 1.10.3(supports-color@8.1.1)
-      '@glimmer/env': 0.1.7
     transitivePeerDependencies:
       - supports-color
 
@@ -9037,11 +9036,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-source@7.3.1(@glimmer/component@2.1.1(supports-color@8.1.1))(supports-color@8.1.1):
+  ember-source@7.3.1(@glimmer/component@2.2.0(supports-color@8.1.1))(supports-color@8.1.1):
     dependencies:
       '@babel/core': 7.29.7(supports-color@8.1.1)
       '@embroider/addon-shim': 1.10.3(supports-color@8.1.1)
-      '@glimmer/component': 2.1.1(supports-color@8.1.1)
+      '@glimmer/component': 2.2.0(supports-color@8.1.1)
       '@simple-dom/interface': 1.4.0
       backburner.js: 2.8.0
       broccoli-file-creator: 2.1.1
