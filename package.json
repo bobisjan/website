@@ -48,7 +48,7 @@
     "decorator-transforms": "2.4.0",
     "ember-modifier": "4.3.0",
     "ember-qunit": "9.2.0",
-    "ember-source": "7.3.1",
+    "ember-source": "7.4.0",
     "eslint": "10.13.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-ember": "13.9.0",
