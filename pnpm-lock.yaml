@@ -5080,8 +5080,8 @@ packages:
     resolution: {integrity: sha512-vngT2JmkSapgq0z7uIoYtB9kWOOzMihAAYq/D3Pjm/ODOGMgS4r++B+OZ09U4hWR6EaOdy9eqQ7/8ygbH3wehA==}
     engines: {node: 8.* || >= 10.*}
 
-  systeminformation@5.33.9:
-    resolution: {integrity: sha512-mlE+h4IVAA4F4O6sc8NFpClFvsO6yjQ/uVKTq3kmruYqno2CenyDQhyOqRO7q5sl2FZie9c+R3E7pKOBKPDHCA==}
+  systeminformation@5.33.19:
+    resolution: {integrity: sha512-Zm7wGeCG7PqfvzegMJIzrxICopWqYCeLATVmvxOOci1isLcNVKgY4Fr0hhYQzvc7cgtK3377jQVChTFAnznOiA==}
     engines: {node: '>=10.0.0'}
     os: [darwin, linux, win32, freebsd, openbsd, netbsd, sunos, android]
     hasBin: true
@@ -7727,7 +7727,7 @@ snapshots:
       '@percy/config': 1.32.12(typescript@6.0.3)
       '@percy/logger': 1.32.12
       '@percy/sdk-utils': 1.32.12(supports-color@8.1.1)
-      systeminformation: 5.33.9
+      systeminformation: 5.33.19
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -11774,7 +11774,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  systeminformation@5.33.9: {}
+  systeminformation@5.33.19: {}
 
   tap-parser@18.3.4:
     dependencies:
