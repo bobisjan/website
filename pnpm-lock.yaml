@@ -192,7 +192,7 @@ importers:
         version: 3.0.6(@embroider/core@4.6.10(supports-color@8.1.1))
       '@embroider/vite':
         specifier: 1.8.0
-        version: 1.8.0(@babel/core@8.1.0)(@embroider/core@4.6.10(supports-color@8.1.1))(supports-color@8.1.1)(vite@8.3.5(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1))
+        version: 1.8.0(@babel/core@8.1.0)(@embroider/core@4.6.10(supports-color@8.1.1))(supports-color@8.1.1)(vite@8.3.6(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1))
       '@eslint/css':
         specifier: 2.0.1
         version: 2.0.1
@@ -287,8 +287,8 @@ importers:
         specifier: 3.21.5
         version: 3.21.5(@babel/core@8.1.0)(handlebars@4.7.10)(supports-color@8.1.1)(underscore@1.13.8)
       vite:
-        specifier: 8.3.5
-        version: 8.3.5(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1)
+        specifier: 8.3.6
+        version: 8.3.6(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1)
 
 packages:
 
@@ -2678,10 +2678,6 @@ packages:
   engine.io@6.6.11:
     resolution: {integrity: sha512-z34mGpLoY/82ZbkX1LqGMIaf3wjVMPL6gVC681QDqnmzJ26synI8qAE32P+a7UazmpJZ8UGrFIeAavgRfXzYrg==}
     engines: {node: '>=10.2.0'}
-
-  enhanced-resolve@5.26.0:
-    resolution: {integrity: sha512-9vhedylFonb2YGogzUKX6+Ja72gOJbN1QHAqdrvqLwhdl/QWbKopzoUC9EbQNVsAns/bx/4uyqalrQAoy1IByw==}
-    engines: {node: '>=10.13.0'}
 
   enhanced-resolve@5.26.1:
     resolution: {integrity: sha512-PPnnSJq3azKOIewXR/uppBV/6h98dprBJ/WaQ9Qgj10xX1lJLNfg+XShpbsrSqcDSy2yYYyhfXM1wWhftqgyzw==}
@@ -5236,8 +5232,8 @@ packages:
     resolution: {integrity: sha512-u4J1hr6Y+C/hit34GwL3eIcUf3wngT8TlYUjK7tk0jxydKLAq3sYvifjdTDA6U3KCKRcQCQDGf/srjxfZF3l7g==}
     engines: {node: '>=18.12.0'}
 
-  vite@8.3.5:
-    resolution: {integrity: sha512-z1YpjieJ9g0ebTmQpLBv/oq9E3F9EIlOe+7LahW8SrE3LTiG3udBRUXQOlYXP9b+IC2q2phHeVxj9xGlw34OEQ==}
+  vite@8.3.6:
+    resolution: {integrity: sha512-UI7dK29NnS54Fk+mmo7o+jI6U8Fp7hDl+X5Q1k45WH+d4dSlbLVUETGQ+hfkNgvLQGyoElPj837nZyv4MBc0VA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -7042,7 +7038,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/vite@1.8.0(@babel/core@8.1.0)(@embroider/core@4.6.10(supports-color@8.1.1))(supports-color@8.1.1)(vite@8.3.5(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1))':
+  '@embroider/vite@1.8.0(@babel/core@8.1.0)(@embroider/core@4.6.10(supports-color@8.1.1))(supports-color@8.1.1)(vite@8.3.6(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1))':
     dependencies:
       '@embroider/core': 4.6.10(supports-color@8.1.1)
       '@embroider/macros': 1.21.4(@babel/core@8.1.0)(supports-color@8.1.1)
@@ -7058,7 +7054,7 @@ snapshots:
       jsdom: 25.0.1(supports-color@8.1.1)
       send: 1.2.1(supports-color@8.1.1)
       terser: 5.51.2
-      vite: 8.3.5(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1)
+      vite: 8.3.6(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1)
     optionalDependencies:
       '@babel/core': 8.1.0
     transitivePeerDependencies:
@@ -8985,11 +8981,6 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
-
-  enhanced-resolve@5.26.0:
-    dependencies:
-      graceful-fs: 4.2.11
-      tapable: 2.3.3
 
   enhanced-resolve@5.26.1:
     dependencies:
@@ -11928,7 +11919,7 @@ snapshots:
 
   verkit@0.5.0: {}
 
-  vite@8.3.5(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1):
+  vite@8.3.6(@types/node@26.6.6)(terser@5.51.2)(yaml@2.9.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -11997,7 +11988,7 @@ snapshots:
       '@webassemblyjs/wasm-parser': 1.14.1
       browserslist: 4.29.5
       chrome-trace-event: 1.0.4
-      enhanced-resolve: 5.26.0
+      enhanced-resolve: 5.26.1
       es-module-lexer: 2.3.2
       events: 3.3.0
       graceful-fs: 4.2.11
